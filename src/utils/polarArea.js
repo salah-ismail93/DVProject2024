@@ -146,7 +146,7 @@ function initChart(canvasElement) {
     .attr("opacity", 0.6);
 
   // Tooltip placeholder
-  tooltip = d3.select(".tooltip");
+  tooltip = d3.select(".tooltip2");
 }
 
 function updateChart(data) {

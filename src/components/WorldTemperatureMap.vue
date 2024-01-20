@@ -1,17 +1,12 @@
 <template>
-    <div class="mx-auto flex items-center justify-center">
-        <div>
-            <label for="country-list">Select Country:</label>
-            <select id="country-list">
-            </select>
-        </div>
-        <div>
-            <label for="year-list">Select Year:</label>
+    <div class="mx-auto mt-5 flex items-center justify-center">
+        <div class="mx-5">
+            <label for="year-list">Select Year: </label>
             <select id="year-list">
             </select>
         </div>
-        <div>
-            <label for="month-list">Select Month:</label>
+        <div class="mx-5">
+            <label for="month-list">Select Month: </label>
             <select id="month-list">
             </select>
         </div>
@@ -20,11 +15,17 @@
         <div class="mx-auto flex flex-col justify-center">
             <div class="centered-flex flex flex-col justify-center">
                 <div id="choroplethMap"></div>
-                <button id="play-button" class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                <button id="play-button"
+                    class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                     Pause
                 </button>
-                <input type="range" value="0"
-                    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 my-5" id="yearSlider" />
+                <div class="relative mb-6">
+                    <input type="range" value="0"
+                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5"
+                        id="yearSlider" />
+                    <span class="absolute start-0 -bottom-6">1901</span>
+                    <span class="absolute end-0 -bottom-6">2020</span>
+                </div>
             </div>
         </div>
     </div>
@@ -56,7 +57,6 @@ export default {
 
         const firstYear = 1901;
         const lastYear = 2020;
-        let country = "RUS";
         let year = firstYear;
         let month = 0;
 
@@ -120,7 +120,7 @@ export default {
             // Play/pause button
             // document.getElementById('month-list').addEventListener();
             const playButton = d3.select("#play-button");
-            playButton.on("click",(e) => {
+            playButton.on("click", (e) => {
                 console.log(e.target);
                 const button = d3.select(e.target);
                 if (button.text() == "Pause") {
@@ -150,7 +150,8 @@ export default {
                 .data(months)
                 .enter()
                 .append('option')
-                .text((d) => d.month + "(" + d.i + ")");
+                .attr('value', (d) => d.i)
+                .text((d) => d.month);
             // Change months according to month menu
             monthSelect.on('change', (value) => {
                 month = value.target.value;
@@ -174,25 +175,6 @@ export default {
             yearSelect.on('change', (value) => {
                 year = +value.target.value;
                 slider.value = year;
-                updateCharts();
-            });
-            // Add countries to countries drop down menu
-            let countries = [];
-            for (let [iso, isoData] of tempData.get(String(firstYear))) {
-                const countryName = isoData[0].Country;
-                countries.push({ countryName, iso });
-            }
-            // Populate the country selection dropdown
-            const countrySelect = d3.select('#country-list');
-            countrySelect
-                .selectAll('option')
-                .data(countries)
-                .enter()
-                .append('option')
-                .text((d) => d.countryName + "(" + d.iso + ")");
-            // Change country according to country menu
-            countrySelect.on('change', (value) => {
-                country = value.target.value;
                 updateCharts();
             });
         });

@@ -103,24 +103,32 @@ function initChart(canvasElement) {
       return d + "°C";
     });
 
-  //Add January for reference
-  barWrapper
-    .append("text")
-    .attr("class", "january")
-    .attr("x", 7)
-    .attr("y", -OUTERRADIUS)
-    .attr("dy", "0.9em")
-    .text("January");
+  
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   //Add a line to split the year
-  barWrapper
-    .append("line")
-    .attr("class", "yearLine")
-    .attr("stroke", "black")
-    .attr("opacity", 0.5)
-    .attr("x1", 0)
-    .attr("y1", -INNERRADIUS * 1.8) //.65
-    .attr("x2", 0)
-    .attr("y2", -OUTERRADIUS * 1.1);
+  for (let i = 0; i < 12; i++) {
+    const angle = (i * 30 * Math.PI) / 180; // Convert degrees to radians
+    const lineLength = OUTERRADIUS * 1;
+
+    barWrapper
+      .append("line")
+      .attr("class", "yearLine")
+      .attr("stroke", "black")
+      .attr("opacity", 0.2)
+      .attr("x1", 0)
+      .attr("y1", 0)
+      .attr("x2", lineLength * Math.sin(angle))
+      .attr("y2", -lineLength * Math.cos(angle));
+
+    // Add month names to each line
+    barWrapper
+      .append("text")
+      .attr("class", "monthText")
+      .attr("x", lineLength * 0.95 * Math.sin(angle)) // Adjust the position for better visibility
+      .attr("y", -lineLength * 0.95 * Math.cos(angle)) // Adjust the position for better visibility
+      .attr("dy", "0.9em")
+      .text(monthNames[i]);
+  }
 
   //Add year in center
   yearText = barWrapper

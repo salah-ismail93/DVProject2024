@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 // Plot constants
 const WIDTH = 1400;
-const HEIGHT = 800;
+const HEIGHT = 750;
 
 let svg, g, path, projection, colorScale, title, tooltip, tipCountry, tipData;
 let hovered = false;
