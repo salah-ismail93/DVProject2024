@@ -190,7 +190,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 svg {
     width: 100%;
     height: 100%;
