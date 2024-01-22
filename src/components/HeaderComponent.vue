@@ -21,6 +21,9 @@
         <div class="hidden lg:flex lg:gap-x-12">
           <router-link class="text-sm font-semibold leading-6 text-gray-900 butt" to="/WorldTemperature">World Temperature</router-link>
         </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <router-link class="text-sm font-semibold leading-6 text-gray-900 butt" to="/WorldContribution">Europe contribution</router-link>
+        </div>
         <div class="hidden lg:flex lg:gap-x-12 lg:flex-1 lg:justify-end">
             <a href="https://github.com/salah-ismail93/DVProject2024" target="_blank" class="text-sm font-semibold leading-6 text-gray-900 butt1"> Github <span aria-hidden="true">&rarr;</span></a>
             <a href="https://colab.research.google.com/drive/1TLsxtEaEJ_46qsB5GgplFFGG8l37FRmA" target="_blank" class="text-sm font-semibold leading-6 text-gray-900 butt1">Colab<span aria-hidden="true">&rarr;</span></a>
