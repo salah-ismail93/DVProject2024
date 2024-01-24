@@ -63,6 +63,10 @@
         <!-- Content for CO2 Emissions Race Tab -->
         <CO2EmissionsRace />
       </div>
+      <div v-show="selectedTab === 'CO2 Emissions VS GDP'">
+        <!-- Content for CO2 Emissions VS GDP Tab -->
+        <CO2EmissionsVSGDP />
+      </div>
     </div>
   </template>
   <script>
@@ -70,13 +74,15 @@
   import GHGCountries from '../components/GHGCountries.vue';
   import GHGGases from '../components/GHGGases.vue';
   import CO2EmissionsRace from '../components/CO2EmissionsRace.vue';
+  import CO2EmissionsVSGDP from '../components/CO2EmissionsVSGDP.vue';
   export default {
     name: 'ClimateChangeCauses',
     components: {
       GHGSectors,
       GHGCountries,
       GHGGases,
-      CO2EmissionsRace
+      CO2EmissionsRace,
+      CO2EmissionsVSGDP
     },
     data() {
       return {
@@ -85,6 +91,7 @@
           { name: 'GHG by Countries', href: '#', current: false },
           { name: 'GHG by Gases', href: '#', current: false },
           { name: 'CO2 Emissions Race', href: '#', current: false },
+          { name: 'CO2 Emissions VS GDP', href: '#', current: false },
         ],
         selectedTab: 'GHG by Sectors',
       };
