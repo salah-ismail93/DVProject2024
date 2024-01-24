@@ -158,10 +158,10 @@ export default {
                     .attr("class", "legend")
                     .attr("x", -(margin.left) * 0.6 + 15)
                     .attr("y", -(margin.top / 3.5))
-                    .text("N₂O emissions")
+                    .text("N₂O nitrous oxide")
                 svg
                     .append("rect")
-                    .attr("x", 60)
+                    .attr("x", 80)
                     .attr("y", -(margin.top / 2.5))
                     .attr("width", 13)
                     .attr("height", 13)
@@ -169,9 +169,9 @@ export default {
                 svg
                     .append("text")
                     .attr("class", "legend")
-                    .attr("x", 80)
+                    .attr("x", 100)
                     .attr("y", -(margin.top / 3.5))
-                    .text("CH₄ emissions")
+                    .text("CH₄ methane")
                 svg
                     .append("rect")
                     .attr("x", 170)
@@ -184,58 +184,58 @@ export default {
                     .attr("class", "legend")
                     .attr("x", 190)
                     .attr("y", -(margin.top / 3.5))
-                    .text("CO₂ emissions")
+                    .text("CO₂ carbon dioxide")
             })
     }
 }
 </script>
 
-<style>
-svg {
+<style scoped>
+::v-deep svg {
     width: 100%;
     height: 100%;
 }
 
-text {
+::v-deep text {
     font-family: lato;
     font-size: 10px;
     fill: #333333;
 }
 
-.grid path {
+::v-deep .grid path {
     stroke-width: 0;
     stroke: #333333;
 }
 
-.grid .tick line {
+::v-deep .grid .tick line {
     stroke: #333333;
     stroke-width: 0.3px;
     stroke-opacity: 0.3;
 }
 
-text.chart-title {
+::v-deep text.chart-title {
     font-size: 14px;
     font-weight: bold;
     fill: #222222
 }
 
-text.chart-label {
+::v-deep text.chart-label {
     font-size: 10px;
     font-weight: 400;
     fill: #999999;
 }
 
-text.chart-source {
+::v-deep text.chart-source {
     font-size: 8px;
     fill: #999999;
 }
 
-text.copyright {
+::v-deep text.copyright {
     font-size: 8px;
     fill: #999999;
 }
 
-.tooltip {
+::v-deep .tooltip {
     background-color: #ffffff;
     font-family: lato;
     font-size: 11px;
@@ -245,6 +245,6 @@ text.copyright {
     box-shadow: 0px 0px 3px 0px #E6E6E6;
 }
 
-.legend {
+::v-deep .legend {
     font-size: 10px;
 }</style>
