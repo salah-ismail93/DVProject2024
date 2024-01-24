@@ -67,6 +67,10 @@
         <!-- Content for CO2 Emissions VS GDP Tab -->
         <CO2EmissionsVSGDP />
       </div>
+      <div v-show="selectedTab === 'CO2 Average Capita Emissions'">
+        <!-- Content for CO2 Emissions VS GDP Tab -->
+        <CO2AverageCapitaEmissions />
+      </div>
     </div>
   </template>
   <script>
@@ -75,6 +79,7 @@
   import GHGGases from '../components/GHGGases.vue';
   import CO2EmissionsRace from '../components/CO2EmissionsRace.vue';
   import CO2EmissionsVSGDP from '../components/CO2EmissionsVSGDP.vue';
+  import CO2AverageCapitaEmissions from '../components/CO2AverageCapitaEmissions.vue';
   export default {
     name: 'ClimateChangeCauses',
     components: {
@@ -82,7 +87,8 @@
       GHGCountries,
       GHGGases,
       CO2EmissionsRace,
-      CO2EmissionsVSGDP
+      CO2EmissionsVSGDP,
+      CO2AverageCapitaEmissions
     },
     data() {
       return {
@@ -92,6 +98,7 @@
           { name: 'GHG by Gases', href: '#', current: false },
           { name: 'CO2 Emissions Race', href: '#', current: false },
           { name: 'CO2 Emissions VS GDP', href: '#', current: false },
+          { name: 'CO2 Average Capita Emissions', href: '#', current: false },
         ],
         selectedTab: 'GHG by Sectors',
       };
