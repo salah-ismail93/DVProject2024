@@ -158,10 +158,10 @@ export default {
                     .attr("class", "legend")
                     .attr("x", -(margin.left) * 0.6 + 15)
                     .attr("y", -(margin.top / 3.5))
-                    .text("N₂O emissions")
+                    .text("N₂O nitrous oxide")
                 svg
                     .append("rect")
-                    .attr("x", 60)
+                    .attr("x", 80)
                     .attr("y", -(margin.top / 2.5))
                     .attr("width", 13)
                     .attr("height", 13)
@@ -169,9 +169,9 @@ export default {
                 svg
                     .append("text")
                     .attr("class", "legend")
-                    .attr("x", 80)
+                    .attr("x", 100)
                     .attr("y", -(margin.top / 3.5))
-                    .text("CH₄ emissions")
+                    .text("CH₄ methane")
                 svg
                     .append("rect")
                     .attr("x", 170)
@@ -184,7 +184,7 @@ export default {
                     .attr("class", "legend")
                     .attr("x", 190)
                     .attr("y", -(margin.top / 3.5))
-                    .text("CO₂ emissions")
+                    .text("CO₂ carbon dioxide")
             })
     }
 }
