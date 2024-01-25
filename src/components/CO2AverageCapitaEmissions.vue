@@ -1,7 +1,7 @@
 <template>
     <div class="mx-auto max-w-5xl py-3">
         <p class="mt-4 text-base leading-7 text-indigo-600 sm:text-2xl text-center">Are per capita CO₂ emissions above or
-            below the global average?</p>
+            below the global average? (in 2022)</p>
         <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 text-center">
             This map denotes whether a country's average per capita emissions are above or below the value of global per
             capita emissions. This is based on territorial emissions, which don't
@@ -10,7 +10,7 @@
     </div>
     <div class="mx-auto max-w-7xl text-center">
         <div id="chart4Div3" class="flex flex-col items-center">
-            <svg id="chart4_3" width="900" height="500"></svg>
+            <svg id="chart4_3" width="1200" height="500"></svg>
         </div>
     </div>
 </template>
@@ -90,7 +90,7 @@ export default {
                             d.properties.name +
                             "<br>" +
                             "<span style='color:grey'>Annual CO₂ emissions (per capita): </span>" +
-                            d.total
+                            d.total.toFixed(2) + "<span style='color:grey'> tonnes per person</span>"
                         )
                         .style("top", event.pageY + "px");
                 };
@@ -133,7 +133,7 @@ export default {
                             d.Entity +
                             "<br>" +
                             "<span style='color:grey'>Annual CO₂ emissions (per capita): </span>" +
-                            d["Annual CO₂ emissions (per capita)"]
+                            d["Annual CO₂ emissions (per capita)"].toFixed(2) + "<span style='color:grey'> tonnes per person</span>"
                         )
                         .style("top", event.pageY + "px");
                 };
@@ -182,7 +182,7 @@ export default {
 
                 // Legend
                 // Calculate the position for the legend
-                const legendX = width + 350;
+                const legendX = width - 500;
                 const legendY = height / 2;
 
                 const x = d3.scaleLinear()
@@ -201,7 +201,44 @@ export default {
                         return d;
                     }))
                     .enter().append("g")
-                    .attr("class", "legend_entry");
+                    .attr("class", "legend_entry")
+                    .classed("Below_global_equity", function (d, i) {
+                        // Add your condition based on data or index if needed
+                        return i === 0; // Example: apply the class to the first data point
+                    })
+                    .classed("Above_global_equity", function (d, i) {
+                        // Add your condition based on data or index if needed
+                        return i === 1; // Example: apply the class to the second data point
+                    });
+                legend_entry.filter(".Below_global_equity")
+                    .on("mouseover", function (d, i, nodes) {
+                        // Your mouseover event handling code for Below_global_equity here
+                        console.log("Mouseover on Below_global_equity:", d, i, nodes);
+                        // Add any additional code you want to execute on mouseover
+                        // Adjust the opacity of map elements associated with "Below_global_equity"
+                        world.filter(d => data4.get(d.properties.name) > 5)
+                            .style("opacity", 0.1);  // Adjust the opacity as needed
+                    }).on("mouseout", function () {
+                        // Your mouseout event handling code for Below_global_equity here
+
+                        // Reset the opacity of map elements on mouseout
+                        world.style("opacity", 1);
+                    });
+
+                legend_entry.filter(".Above_global_equity")
+                    .on("mouseover", function (d, i, nodes) {
+                        // Your mouseover event handling code for Above_global_equity here
+                        console.log("Mouseover on Above_global_equity:", d, i, nodes);
+                        // Add any additional code you want to execute on mouseover
+                        // Adjust the opacity of map elements associated with "Below_global_equity"
+                        world.filter(d => data4.get(d.properties.name) < 5)
+                            .style("opacity", 0.1);  // Adjust the opacity as needed
+                    }).on("mouseout", function () {
+                        // Your mouseout event handling code for Below_global_equity here
+
+                        // Reset the opacity of map elements on mouseout
+                        world.style("opacity", 1);
+                    });
 
                 const ls_w = 20,
                     ls_h = 20;
