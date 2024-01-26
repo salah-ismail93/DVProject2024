@@ -68,8 +68,12 @@
         <CO2EmissionsVSGDP />
       </div>
       <div v-show="selectedTab === 'CO2 Average Capita Emissions'">
-        <!-- Content for CO2 Emissions VS GDP Tab -->
+        <!-- Content for CO2 Average Capita Emissions Tab -->
         <CO2AverageCapitaEmissions />
+      </div>
+      <div v-show="selectedTab === 'Global Fossil Fuel Consumption'">
+        <!-- Content for Global Fossil Fuel Consumption Tab -->
+        <GlobalFossilFuelConsumption />
       </div>
     </div>
   </template>
@@ -80,6 +84,7 @@
   import CO2EmissionsRace from '../components/CO2EmissionsRace.vue';
   import CO2EmissionsVSGDP from '../components/CO2EmissionsVSGDP.vue';
   import CO2AverageCapitaEmissions from '../components/CO2AverageCapitaEmissions.vue';
+  import GlobalFossilFuelConsumption from '../components/GlobalFossilFuelConsumption.vue';
   export default {
     name: 'ClimateChangeCauses',
     components: {
@@ -88,7 +93,8 @@
       GHGGases,
       CO2EmissionsRace,
       CO2EmissionsVSGDP,
-      CO2AverageCapitaEmissions
+      CO2AverageCapitaEmissions,
+      GlobalFossilFuelConsumption
     },
     data() {
       return {
@@ -99,6 +105,7 @@
           { name: 'CO2 Emissions Race', href: '#', current: false },
           { name: 'CO2 Emissions VS GDP', href: '#', current: false },
           { name: 'CO2 Average Capita Emissions', href: '#', current: false },
+          { name: 'Global Fossil Fuel Consumption', href: '#', current: false },
         ],
         selectedTab: 'GHG by Sectors',
       };
