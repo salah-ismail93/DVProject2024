@@ -159,6 +159,7 @@ export default {
                     sumstat[xIndex].values.forEach((el) => {
                         // Get the single values from `sumstat`
                         yVals[el.resourceType].hours = el.hours;
+                        yVals[el.resourceType].year = el.date;
                     });
                     function mapResourceType(resourceType) {
                         if (resourceType.includes("Gas")) {
@@ -203,6 +204,24 @@ export default {
                         .style("text-anchor", hoverTextAnchor)
                         .style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px black")
                         .text(d => `${d.hours || 0} Twh`);
+
+                    const hoverText = svg
+                        .selectAll(".hoverText")
+                        .data(Object.values(yVals));  // Use data to bind a single element
+
+                    hoverText
+                        .enter()
+                        .append("text")
+                        .classed("hoverText", true)
+                        .attr("text-anchor", "middle")
+                        .attr("alignment-baseline", "middle")
+                        .style("font-size", "10px")
+                        .style("fill", "#333")
+                        .merge(hoverText)
+                        .attr("x", xScale(mouseDate))
+                        .attr("y", yScale.range()[1] + 10)  // Adjust the Y position as needed
+                        .style("text-shadow",  "1px 1px 1px black, 0 0 1px blue, 0 0 1px black")
+                        .text(d => `${d.year || 0}`);  // Replace with the actual text you want to display
                 }
                 const mouseleave = function (d) {
                     tooltip
