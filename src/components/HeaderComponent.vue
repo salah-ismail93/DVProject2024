@@ -20,7 +20,7 @@
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
           <router-link class="text-sm font-semibold leading-6 text-gray-900 butt" to="/WorldTemperature">World Temperature</router-link>
-          <router-link class="text-sm font-semibold leading-6 text-gray-900 butt" to="/ClimateChangeCauses">Causes</router-link>
+          <router-link class="text-sm font-semibold leading-6 text-gray-900 butt" to="/ClimateChangeCauses">Climate Change Causes</router-link>
           <router-link class="text-sm font-semibold leading-6 text-gray-900 butt" to="/WorldContribution">Europe contribution</router-link>
         </div>
         <div class="hidden lg:flex lg:gap-x-12 lg:flex-1 lg:justify-end">
@@ -44,7 +44,7 @@
                   <router-link class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 butt" to="/WorldTemperature">World Temperature</router-link>
               </div>
               <div class="space-y-2 py-6">
-                  <router-link class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 butt" to="/ClimateChangeCauses">Causes</router-link>
+                  <router-link class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 butt" to="/ClimateChangeCauses">Climate Change Causes</router-link>
               </div>
               <div class="space-y-2 py-6">
                   <router-link class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 butt" to="/WorldContribution">Europe Contribution</router-link>
