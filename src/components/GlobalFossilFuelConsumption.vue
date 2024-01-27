@@ -17,8 +17,8 @@ export default {
         // append the svg object to the body of the page
         const svg = d3.select("#area_chart")
             .append("svg")
-            .attr("width", "100%")
-            .attr("height", "100%")
+            .attr("width", 900)
+            .attr("height", 900)
             .attr("viewBox", "0 0 450 350")
             .attr("preserveAspectRatio", "xMinYMin")
             .append("g")
@@ -216,10 +216,6 @@ export default {
 
 <style scoped>
 /* Your component's CSS code goes here */
-::v-deep svg {
-    width: 100%;
-    height: 100%;
-}
 
 ::v-deep text {
     font-family: lato;

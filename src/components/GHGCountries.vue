@@ -1,26 +1,24 @@
 <template>
-    <div class="bg-white">
-        <div class="mx-auto max-w-7xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
-            <div class="flex">
-                <div id="GHGCountries"></div>
-                <div id="GHGCountrieslegend"></div>
-                <div class="text-gray-700">
-                    <p class="font-bold">Shifting Focus to Asia: Exploring the Global Impact of Covid-19</p>
-                    <p class="mt-2">Geographical knowledge informs us about the division of the world into seven significant
-                        land masses.</p>
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <div class="flex">
+            <div id="GHGCountries"></div>
+            <div id="GHGCountrieslegend"></div>
+            <div class="text-gray-700">
+                <p class="font-bold">Shifting Focus to Asia: Exploring the Global Impact of Covid-19</p>
+                <p class="mt-2">Geographical knowledge informs us about the division of the world into seven significant
+                    land masses.</p>
 
-                    <p class="mt-2">In order to comprehend the global repercussions of Covid-19, it is crucial to emphasize
-                        the significance of Asia. Not only does it occupy the largest land area, accounting for 30% of the
-                        Earth's surface, but it is also home to the majority of the world's population, representing 60%.
-                    </p>
+                <p class="mt-2">In order to comprehend the global repercussions of Covid-19, it is crucial to emphasize
+                    the significance of Asia. Not only does it occupy the largest land area, accounting for 30% of the
+                    Earth's surface, but it is also home to the majority of the world's population, representing 60%.
+                </p>
 
-                    <p class="mt-2">The pie chart illustrates the distribution of GHG across different
-                        Industries.</p>
+                <p class="mt-2">The pie chart illustrates the distribution of GHG across different
+                    Industries.</p>
 
-                    <p class="mt-4">
-                        <a href="#chart-container" class="text-blue-700">Next ...</a>
-                    </p>
-                </div>
+                <p class="mt-4">
+                    <a href="#chart-container" class="text-blue-700">Next ...</a>
+                </p>
             </div>
         </div>
     </div>
