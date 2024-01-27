@@ -1,35 +1,37 @@
 <template>
-    <div class="mx-auto mt-5 flex items-center justify-center">
-        <div class="mx-5">
-            <label for="year-list">Select Year: </label>
-            <select id="year-list">
-            </select>
+    <div class="flex flex-col">
+        <div class="mx-auto mt-5 flex items-center justify-center">
+            <div class="mx-5">
+                <label for="year-list">Select Year: </label>
+                <select id="year-list">
+                </select>
+            </div>
+            <div class="mx-5">
+                <label for="month-list">Select Month: </label>
+                <select id="month-list">
+                </select>
+            </div>
         </div>
-        <div class="mx-5">
-            <label for="month-list">Select Month: </label>
-            <select id="month-list">
-            </select>
-        </div>
-    </div>
-    <div id="outerContainer" class="flex flex-col justify-center">
-        <div class="mx-auto flex flex-col justify-center">
-            <div class="centered-flex flex flex-col justify-center">
-                <div id="choroplethMap"></div>
-                <button id="play-button"
-                    class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                    Pause
-                </button>
-                <div class="relative mb-6">
-                    <input type="range" value="0"
-                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5"
-                        id="yearSlider" />
-                    <span class="absolute start-0 -bottom-6">1901</span>
-                    <span class="absolute end-0 -bottom-6">2020</span>
+        <div id="outerContainer" class="flex flex-col justify-center">
+            <div class="mx-auto flex flex-col justify-center">
+                <div class="centered-flex flex flex-col justify-center">
+                    <div id="choroplethMap"></div>
+                    <button id="play-button"
+                        class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                        Pause
+                    </button>
+                    <div class="relative mb-6">
+                        <input type="range" value="0"
+                            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5"
+                            id="yearSlider" />
+                        <span class="absolute start-0 -bottom-6">1901</span>
+                        <span class="absolute end-0 -bottom-6">2020</span>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="tooltip" style="opacity: 0"></div>
     </div>
-    <div class="tooltip" style="opacity: 0"></div>
 </template>
 
 <script>

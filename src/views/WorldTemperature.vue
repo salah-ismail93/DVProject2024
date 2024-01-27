@@ -17,40 +17,18 @@
       </div>
     </div>
   
-    <div>
-      <div class="sm:hidden">
-        <label for="tabs" class="sr-only">
-          Select a tab
-        </label>
-        <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-        <select id="tabs" name="tabs" v-model="selectedTab"
-          class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
-          <option v-for="tab in tabs" :key="tab.name" :value="tab.name">
-            {{ tab.name }}
-          </option>
-        </select>
-      </div>
-      <div class="hidden sm:block">
-        <div class="border-b border-gray-200">
-          <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-            <a v-for="tab in tabs" :key="tab.name" :href="tab.href" :class="{
-              'border-indigo-500 text-indigo-600': tab.current,
-              'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700': !tab.current,
-              'whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium': true,
-            }" :aria-current="tab.current ? 'page' : undefined" @click.prevent="selectTab(tab)">
-              {{ tab.name }}
-            </a>
-          </nav>
+    <div class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+        <div class="flex justify-center">
+          <WorldTemperatureMap />
         </div>
       </div>
-      <!-- Your tab content goes here -->
-      <div v-show="selectedTab === 'World Temperature Map'">
-        <!-- Content for World Temperature Map Tab -->
-        <WorldTemperatureMap />
-      </div>
-      <div v-show="selectedTab === 'World Temperature timeline'">
-        <!-- Content for World Temperature Map Tab -->
-        <WorldTemperatureTimeline />
+    </div>
+    <div class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+        <div class="flex justify-center">
+          <WorldTemperatureTimeline />
+        </div>
       </div>
     </div>
   </template>
@@ -62,23 +40,6 @@
     components: {
       WorldTemperatureMap,
       WorldTemperatureTimeline
-    },
-    data() {
-      return {
-        tabs: [
-          { name: 'World Temperature Map', href: '#', current: true },
-          { name: 'World Temperature timeline', href: '#', current: false },
-        ],
-        selectedTab: 'World Temperature Map',
-      };
-    },
-    methods: {
-      selectTab(tab) {
-        this.tabs.forEach((t) => {
-          t.current = t.name === tab.name;
-          this.selectedTab = tab.name;
-        });
-      },
     },
   };
   </script>
