@@ -136,7 +136,7 @@ export default {
                     .attr("x", -(margin.left) * 0.6)
                     .attr("y", height + margin.bottom * 0.7)
                     .attr("text-anchor", "start")
-                    .text("Source: UNHCR Refugee Data Finder")
+                    .text("Source: Our World in Data")
 
                 // set copyright
                 svg
@@ -145,7 +145,7 @@ export default {
                     .attr("x", -(margin.left) * 0.6)
                     .attr("y", height + margin.bottom * 0.9)
                     .attr("text-anchor", "start")
-                    .text("©UNHCR, The UN Refugee Agency")
+                    .text("Article, https://ourworldindata.org/fossil-fuels")
 
                 //set legend
                 svg

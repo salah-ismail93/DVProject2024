@@ -134,7 +134,7 @@ export default {
                     .attr("x", -(margin.left) * 0.7)
                     .attr("y", height + margin.bottom * 0.7)
                     .attr("text-anchor", "start")
-                    .text("Source: UNHCR")
+                    .text("Source: Our World in Data")
 
                 // set copyright
                 svg
@@ -143,7 +143,7 @@ export default {
                     .attr("x", -(margin.left) * 0.7)
                     .attr("y", height + margin.bottom * 0.9)
                     .attr("text-anchor", "start")
-                    .text("©UNHCR, The UN Refugee Agency")
+                    .text("Article, https://ourworldindata.org/greenhouse-gas-emissions")
 
                 //set legend
                 svg
