@@ -44,6 +44,7 @@ export default {
         var color = d3.scaleOrdinal(d3.schemeCategory10);
 
         // Create SVG element
+        d3.select("#GHGCountries").html(""); // Clear the content before re-rendering
         var svg = d3
             .select("#GHGCountries")
             .append("svg")
@@ -104,6 +105,7 @@ export default {
                 .style("visibility", "hidden");
 
             // Create legend
+            d3.select("#GHGCountrieslegend").html(""); // Clear the content before re-rendering
             var legendSvg = d3
                 .select("#GHGCountrieslegend")
                 .append("svg")
