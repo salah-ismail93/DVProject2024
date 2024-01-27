@@ -32,6 +32,7 @@ export default {
     const heatmapHeight = 500 - heatmapMargin.top - heatmapMargin.bottom;
 
     // Create SVG element for Heatmap
+    d3.select("#heatmap-container").html(""); // Clear the content before re-rendering
     const heatmapSvg = d3.select('#heatmap-container')
       .append('svg')
       .attr('width', heatmapWidth + heatmapMargin.left + heatmapMargin.right)
@@ -129,6 +130,7 @@ export default {
         .call(legendAxis);
 
       // Set up SVG container for the legend
+      d3.select("#chart_2_legend").html(""); // Clear the content before re-rendering
       const svg = d3
         .select(this.$refs.legend)
         .append('svg')
