@@ -180,7 +180,8 @@ export default {
 <style >
  .tooltip {
   opacity: 0;
-  background-color: green;
+  background-color: #2f2f2f;
+  color: #f0f0f0;
   border: solid;
   border-width: 2px;
   border-radius: 5px;
