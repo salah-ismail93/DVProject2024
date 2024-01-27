@@ -27,6 +27,38 @@ export default {
         // parse the Data
         d3.csv("/global-fossil-fuel-consumption.csv")
             .then(function (data) {
+                const transformedData = data.flatMap(entry => {
+                    const date = parseInt(entry.Year);
+
+                    return [
+                        {
+                            date,
+                            hours: parseFloat(entry["Gas (TWh, direct energy)"]),
+                            resourceType: "Gas"
+                        },
+                        {
+                            date,
+                            hours: parseFloat(entry["Oil (TWh, direct energy)"]),
+                            resourceType: "Oil"
+                        },
+                        {
+                            date,
+                            hours: parseFloat(entry["Coal (TWh, direct energy)"]),
+                            resourceType: "Coal"
+                        }
+                    ];
+                });
+
+                const groupedData = transformedData.reduce((acc, entry) => {
+                    const key = entry.date.toString();
+                    if (!acc[key]) {
+                        acc[key] = { key, values: [] };
+                    }
+                    acc[key].values.push(entry);
+                    return acc;
+                }, {});
+
+                const sumstat = Object.values(groupedData);
 
                 // list of value keys
                 const typeKeys = data.columns.slice(1);
@@ -88,6 +120,90 @@ export default {
                     d3.select(this)
                         .style("opacity", .5)
                 }
+                const mouseover2 = function (event) {
+                    event.preventDefault();
+                    const mouse = d3.pointer(event);
+                    const [xCoord, yCoord] = mouse;
+                    //const mouseDate = xScale.invert(xCoord);
+                    const domainValues = xScale.domain();
+                    const mouseDate = domainValues.reduce((closest, d) => (
+                        Math.abs(xScale(d) - xCoord) < Math.abs(xScale(closest) - xCoord) ? d : closest
+                    ), domainValues[0]);
+                    // Use `sumstat`, not `data`, to get the correct data object for all traces
+                    const bisectDate = d3.bisector(d => d.key).left;
+                    const xIndex = bisectDate(sumstat, mouseDate);
+                    // We get the key directly from xVal
+                    const xVal = sumstat[xIndex].key;
+
+                    if (xScale(xVal) <= 0) return;
+
+                    svg
+                        .selectAll(".hoverLine")
+                        .attr("x1", xScale(xVal))
+                        .attr("y1", yScale.range()[0])
+                        .attr("x2", xScale(xVal))
+                        .attr("y2", yScale.range()[1])
+                        .attr("stroke", "#69b3a2")
+                        .attr("fill", "#cce5df");
+
+                    const isLessThanHalf = xIndex > sumstat.length / 2;
+                    const hoverTextX = isLessThanHalf ? "-0.75em" : "0.75em";
+                    const hoverTextAnchor = isLessThanHalf ? "end" : "start";
+
+                    // Create a mapping of type (DMND/SPLY) to single and stacked Y values
+                    const yVals = {
+                        Gas: { color: "black" },
+                        Oil: { color: "black" },
+                        Coal: { color: "black" },
+                    };
+                    sumstat[xIndex].values.forEach((el) => {
+                        // Get the single values from `sumstat`
+                        yVals[el.resourceType].hours = el.hours;
+                    });
+                    function mapResourceType(resourceType) {
+                        if (resourceType.includes("Gas")) {
+                            return "Gas";
+                        } else if (resourceType.includes("Oil")) {
+                            return "Oil";
+                        } else if (resourceType.includes("Coal")) {
+                            return "Coal";
+                        } else {
+                            // If none of the conditions match, return the original value
+                            return resourceType;
+                        }
+                    }
+                    stackedData.forEach((group) => {
+                        // Get the cumulative values from `stackedData`
+                        yVals[mapResourceType(group.key)].cumulative = group[xIndex][1];
+                    });
+
+                    let hoverPoints = svg
+                        .selectAll(".hoverPoint")
+                        .data(Object.values(yVals));
+
+                    const newHoverPoints = hoverPoints
+                        .enter()
+                        .append("g")
+                        .classed("hoverPoint", true);
+
+                    newHoverPoints
+                        .append("circle")
+                        .attr("r", 3)
+                        .attr("fill", d => d.color);
+
+                    newHoverPoints
+                        .append("text")
+                        .attr("dy", "-1.25em");
+
+                    newHoverPoints
+                        .merge(hoverPoints)
+                        .attr("transform", d => `translate(${xScale(xVal)}, ${yScale(d.cumulative)})`)
+                        .select("text")
+                        .attr("dx", hoverTextX)
+                        .style("text-anchor", hoverTextAnchor)
+                        .style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px black")
+                        .text(d => `${d.hours || 0} Twh`);
+                }
                 const mouseleave = function (d) {
                     tooltip
                         .style("opacity", 0)
@@ -95,6 +211,7 @@ export default {
                         .style("opacity", 1)
                 }
 
+                svg.append("line").classed("hoverLine", true);
                 svg
                     .append("g")
                     .selectAll("g")
@@ -111,6 +228,7 @@ export default {
                     .on("mouseover", mouseover)
                     .on("mouseleave", mouseleave)
 
+                svg.on("mousemove", mouseover2);
                 // set title
                 svg
                     .append("text")
@@ -195,7 +313,6 @@ export default {
 
                 // Select and keep only the ticks for the target years
                 const ticks = Array.from(svg2.firstElementChild.childNodes[0].childNodes);
-                console.log("ticks", ticks);
                 for (let i = 0; i < ticks.length; i++) {
                     if (i == 0) {
                         continue;
