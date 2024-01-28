@@ -16,10 +16,7 @@
             <div class="mx-auto flex flex-col justify-center">
                 <div class="centered-flex flex flex-col justify-center">
                     <div id="choroplethMap"></div>
-                    <button id="play-button"
-                        class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                        Pause
-                    </button>
+                    <button id="play-button" class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Pause</button>
                     <div class="relative mb-6">
                         <input type="range" value="0"
                             class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5"
