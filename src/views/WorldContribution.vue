@@ -1,6 +1,6 @@
 <template>
   <!-- Heat Map Contribution Chart -->
-  <div class="bg-white px-6 lg:px-8 py-22 main">
+  <div class="bg-white px-6 lg:px-8 py-22 main" id="WorldContribution">
     <div class="mx-auto max-w-5xl text-center">
       <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">World Contribution</h2>
     </div>

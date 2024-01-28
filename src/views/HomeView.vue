@@ -1,7 +1,7 @@
 
 <template>
   <main>
-    <div class="flex screen	justify-center items-center">
+    <div class="flex screen	justify-center items-center my-6">
       <div class="flex-auto hero m-auto self-center">
         <h1 class="Text">Climate change & Global warming <img src="../assets/developer.png" class="king"></h1>
       </div>
@@ -10,10 +10,20 @@
           These shifts may be natural, but since the 1800s, human activities have been the main driver of climate change,
            primarily due to the burning of fossil fuels (like coal, oil and gas), which produces heat-trapping gases.</p>
       </div>
+      <info />
     </div>
   </main>
 </template>
+<script>
+import info from "../components/info.vue";
 
+export default {
+  name: "HomeView",
+  components: {
+    info
+  },
+};
+</script>
 <style>
 .screen {
   height: 70vh;
