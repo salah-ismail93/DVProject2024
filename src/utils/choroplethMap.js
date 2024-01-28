@@ -23,6 +23,7 @@ const monthNames = [
 
 function initChart(canvasElement) {
   // Visualization canvas
+  d3.select(canvasElement).html(""); // Clear the content before re-rendering
   svg = d3
     .select(canvasElement)
     .append("svg")

@@ -27,6 +27,7 @@ const domLow = -1.5, //-15, low end of data
 
 function initChart(canvasElement) {
   // Visualization canvas
+  d3.select(canvasElement).html(""); // Clear the content before re-rendering
   svg = d3
     .select(canvasElement)
     .append("svg")
