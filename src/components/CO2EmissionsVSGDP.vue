@@ -16,9 +16,7 @@ import * as d3 from 'd3';
 
 export default {
     name: 'CO2EmissionsVSGDP',
-    // Your component's JavaScript logic goes here
     mounted() {
-        // Your code here
         // set the dimensions and margins of the graph
         var margin = { top: 60, right: 150, bottom: 60, left: 160 },
             width = 720 - margin.left - margin.right,
@@ -56,23 +54,16 @@ export default {
             //   return (d.Neighborhood)
             // }).keys()
             // Add X axis
-            var tickValues = [2000, 5000, 10000, 20000, 50000, 100000];
-            var x = d3
+            var tickValues = [2000, 5000, 10000, 50000, 75000, 100000];
+          
+             var x = d3
                 .scaleLinear()
                 .domain([0, d3.max(data, (d) => d["GDP per capita, PPP (constant 2017 international)"])])
                 .range([0, width]);
             svg5
                 .append("g")
                 .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x).tickValues(tickValues).tickFormat(d3.format("~s")));
-
-            // Add X axis label:
-            svg5
-                .append("text")
-                .attr("text-anchor", "end")
-                .attr("x", width)
-                .attr("y", height + 50)
-                .text("GDP per capita (US dollars)");
+                .call(d3.axisBottom(x).tickValues(tickValues).tickFormat(d3.format("~s"))); 
 
             // Add Y axis
             var y = d3
@@ -94,7 +85,7 @@ export default {
             var z = d3
                 .scaleSqrt()
                 .domain([0, d3.max(data, (d) => d["Population (historical estimates)"])])
-                .range([2, 20]);
+                .range([5, 20]);
 
             // Add a scale for bubble color
             // var myColor = d3.scaleOrdinal()
@@ -158,15 +149,31 @@ export default {
             // ---------------------------//
             //       HIGHLIGHT GROUP      //
             // ---------------------------//
-
+            var isHighlighted = false;
             // What to do when one group is hovered
             var highlight = function (e, d) {
                 // reduce opacity of all groups
-                d3.selectAll(".bubbles").style("opacity", 0.05);
+                d3.selectAll(".bubbles").style("opacity", 0);
                 // expect the one that is hovered
                 d3.selectAll(".bubbles." + d.replaceAll(" ", ".")).style("opacity", 1);
                 console.log(d.replaceAll(" ", "."))
             };
+
+      
+
+            var highlight2 = function (e, d) {
+                isHighlighted = !isHighlighted;
+                if (isHighlighted) {
+               // If highlighted, set opacity to 1 for the selected bubbles
+               d3.selectAll(".bubbles").style("opacity", 0);
+               d3.selectAll(".bubbles." + d.replaceAll(" ", ".")).style("opacity", 0.7);
+                } else {
+                 // If not highlighted, set opacity back to 0.8 for all bubbles
+                  d3.selectAll(".bubbles").style("opacity", 0.7);
+                  }
+                console.log(d.replaceAll(" ", "."))
+            };
+
 
             // And when it is not hovered anymore
             var noHighlight = function (e, d) {
@@ -310,7 +317,7 @@ export default {
                     return myColor(d);
                 })
                 .on("mouseover", function (e, d) { })
-                .on("mouseleave", noHighlight);
+                //.on("mouseleave", noHighlight);
 
             // Add labels beside legend dots
             svg5
@@ -330,8 +337,9 @@ export default {
                 })
                 .attr("text-anchor", "left")
                 .style("alignment-baseline", "middle")
-                .on("mouseover", highlight)
-                .on("mouseleave", noHighlight);
+                .on("click", highlight2) // .on("mouseover",highlight)
+               
+               // .on("mouseleave", noHighlight);
         }).catch((err) => {
             console.error(err);
         });
