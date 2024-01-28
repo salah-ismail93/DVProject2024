@@ -196,6 +196,7 @@ export default {
                         .append("text")
                         .attr("dy", "-1.25em");
 
+                    if (xVal>1950) {
                     newHoverPoints
                         .merge(hoverPoints)
                         .attr("transform", d => `translate(${xScale(xVal)}, ${yScale(d.cumulative)})`)
@@ -204,6 +205,17 @@ export default {
                         .style("text-anchor", hoverTextAnchor)
                         .style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px black")
                         .text(d => `${d.hours || 0} Twh`);
+                    } else {
+                    newHoverPoints
+                        .merge(hoverPoints)
+                        .attr("transform", (d, i) => `translate(${xScale(xVal)}, ${50 + i * 20})`)
+                        .select("text")
+                        .attr("dx", hoverTextX)
+                        .style("text-anchor", hoverTextAnchor)
+                        .style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px black")
+                        .text(d => `${d.hours || 0} Twh`); 
+                    }
+                    
 
                     const hoverText = svg
                         .selectAll(".hoverText")
