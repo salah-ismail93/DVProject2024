@@ -18,7 +18,7 @@ export default {
 </script>
 <style>
 .screen {
-  height: 70vh;
+  height: 70.7vh;
 }
 
 

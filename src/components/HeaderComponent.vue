@@ -101,10 +101,11 @@ const scrollToSection = (sectionId) => {
 
 .names {
   margin-top: 40px;
+  color: white;
 }
 
 .butt {
-  background: crimson;
+  background: none;
   border: 0;
   padding: 10px 20px;
 
