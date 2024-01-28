@@ -1,16 +1,18 @@
 <template>
-    <div class="flex-auto hero m-auto self-center">
-        <img src="../assets/globe2.gif" class="king" />
-    </div>
-    <div class="flex-auto my-auto mx-10 self-center">
-        <h1 class="Text">Climate change & Global warming</h1>
-        <p class="text-left">
-            <br />
-            Climate change refers to long-term shifts in temperatures and weather
-            patterns. These shifts may be natural, but since the 1800s, human activities
-            have been the main driver of climate change, primarily due to the burning of
-            fossil fuels (like coal, oil and gas), which produces heat-trapping gases.
-        </p>
+    <div class="flex">
+        <div class="flex-auto hero m-auto self-center">
+            <img src="../assets/globe2.gif" class="king" />
+        </div>
+        <div class="flex-auto my-auto mx-10 self-center">
+            <h1 class="Text">Climate change & Global warming</h1>
+            <p class="text-left">
+                <br />
+                Climate change refers to long-term shifts in temperatures and weather
+                patterns. These shifts may be natural, but since the 1800s, human activities
+                have been the main driver of climate change, primarily due to the burning of
+                fossil fuels (like coal, oil and gas), which produces heat-trapping gases.
+            </p>
+        </div>
     </div>
 
     <h1 class="text-center mText">What a long time!</h1>
