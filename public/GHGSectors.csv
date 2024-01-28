@@ -1,6 +1,12 @@
-Industry,percentage
-Transportation,35
-Electricity,31
-Industry,15
-Commercial,11
-Others,8
+Industry,value,percentage
+Agriculture,116258050.5,12.14
+Land use change and Forestry,26289366.7,2.75
+Waste,33081083.89,3.46
+Buildings,60498966.25,6.34
+Industry,61651071.47,6.46
+Manufacturing and Construction,123822215.9,12.98
+Transport,132548028.1,13.95
+Electricity and Heat,300228569.8,31.65
+Energy Production,63064187.11,6.64
+Fuel Combustion,11729063.92,1.24
+Bunker fuels,18427340.18,1.95

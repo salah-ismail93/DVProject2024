@@ -284,6 +284,12 @@ export default {
 <style scoped>
 /*! CSS Used from: https://climate.nasa.gov/assets/public_manifest-ae4faaa75a10c8ee4379d403dccf297a83f9595d3af0a9ab8549d3bb408b043d.css ; media=all */
 @media all {
+    @font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/robotoslab/v14/BngMUXZYTXPIvIBgJJSb6ufN5qA.woff2') format('woff2'); /* You can change this URL to the appropriate one if you have the font files locally */
+}
     .slick-slider {
         position: relative;
         display: block;

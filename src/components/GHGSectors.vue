@@ -6,16 +6,16 @@
                 <div id="GHGSectorslegend"></div>
                 <div class="text-gray-700">
                     <h1 class="font-bold">What sectors have the most impact on our globe?</h1>
-                    <p class="mt-2">According to the most recent statistics regarding the impact of each life sector in the global warming, 
+                    <p class="mt-2">According to the 2020 statistics from <b><u>Ourworldindata.org</u></b> regarding the impact of each life sector in the global warming, 
                         we can make a small comparison to know where to target with our efforts in general.</p>
                      
                     <p class="mt-2">The aside pie chart illustrates the distribution of GHG across different
                         Industries.</p>
 
-                    <p class="mt-2">We can notice that Transportation has the most powerful impact regarding the GHG, followed by Electricity, which 
+                    <p class="mt-2">We can notice that Electricity and heat has the most powerful impact regarding the GHG, followed by Transportation, which 
                         is very predictable since these sectors relay the most on engines and machines run by gas.
                     </p>
-                    <p class="mt-2">After that we have Industry for 15% and Commercial with slightly less value for 11%, and finally we can sum up other activities to 8% in total.
+                    <p class="mt-2">After that we have Manufacturing and Construction  for almost 13% and Agriculture with slightly less value for 12.14%, and then we have other sectors that are under 10%.
                     </p>
                    
                 </div>
@@ -115,7 +115,7 @@ export default {
             var legendSvg = d3
                 .select("#GHGSectorslegend")
                 .append("svg")
-                .attr("width", 300)
+                .attr("width", 400)
                 .attr("height", height);
 
             var legendItems = legendSvg
@@ -157,6 +157,15 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/robotoslab/v14/BngMUXZYTXPIvIBgJJSb6ufN5qA.woff2') format('woff2'); /* You can change this URL to the appropriate one if you have the font files locally */
+}
+h1{
+    font-family: "Roboto Slab";
+}
 #GHGSectorslegend {
     margin-left: 20px;
 }
@@ -182,5 +191,6 @@ export default {
     margin-bottom: 2px;
     padding: 0;
 }
+
 </style>
 
