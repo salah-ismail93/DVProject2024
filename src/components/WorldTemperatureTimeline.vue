@@ -139,8 +139,14 @@ export default {
 
         // Init slider variables
         const slider = document.getElementById("yearSliderArea");
+        const slider2 = document.getElementById('yearSliderPolar');
+        const slider3 = document.getElementById('yearSliderRadial');
         slider.min = firstYear;
         slider.max = lastYear;
+        slider2.min = firstYear;
+        slider2.max = lastYear;
+        slider3.min = firstYear;
+        slider3.max = lastYear;
 
         // Init charts
         areaChart.initChart("#areaChart");
@@ -178,6 +184,8 @@ export default {
             let interval = d3.interval(() => {
                 year = year < lastYear ? year + 1 : firstYear;
                 slider.value = year;
+                slider2.value = year;
+                slider3.value = year;
                 updateCharts();
             }, 400);
 
@@ -192,12 +200,50 @@ export default {
                 year = +slider.value;
                 updateCharts();
             });
+            slider2.addEventListener("input", (event) => {
+                if (moving) {
+                    interval.stop();
+                }
+                year = +slider2.value;
+                updateCharts();
+            });
+            slider3.addEventListener("input", (event) => {
+                if (moving) {
+                    interval.stop();
+                }
+                year = +slider3.value;
+                updateCharts();
+            });
             // eslint-disable-next-line no-unused-vars
             slider.addEventListener("pointerup", (event) => {
                 if (moving) {
                     interval = d3.interval(() => {
                         year = year < lastYear ? year + 1 : firstYear;
                         slider.value = year;
+                        slider2.value = year;
+                        slider3.value = year;
+                        updateCharts();
+                    }, 400);
+                }
+            });
+            slider2.addEventListener("pointerup", (event) => {
+                if (moving) {
+                    interval = d3.interval(() => {
+                        year = year < lastYear ? year + 1 : firstYear;
+                        slider.value = year;
+                        slider2.value = year;
+                        slider3.value = year;
+                        updateCharts();
+                    }, 400);
+                }
+            });
+            slider3.addEventListener("pointerup", (event) => {
+                if (moving) {
+                    interval = d3.interval(() => {
+                        year = year < lastYear ? year + 1 : firstYear;
+                        slider.value = year;
+                        slider2.value = year;
+                        slider3.value = year;
                         updateCharts();
                     }, 400);
                 }
@@ -215,6 +261,8 @@ export default {
                     interval = d3.interval(() => {
                         year = year < lastYear ? year + 1 : firstYear;
                         slider.value = year;
+                        slider2.value = year;
+                        slider3.value = year;
                         updateCharts();
                     }, 400);
                     button.text("Pause");
@@ -238,6 +286,8 @@ export default {
             yearSelect.on('change', (value) => {
                 year = +value.target.value;
                 slider.value = year;
+                slider2.value = year;
+                slider3.value = year;
                 updateCharts();
             });
             // Add countries to countries drop down menu
