@@ -5,7 +5,7 @@
                 <div id="GHGSectors"></div>
                 <div id="GHGSectorslegend"></div>
                 <div class="text-gray-700">
-                    <p class="font-bold">What sectors have the most impact on our globe?</p>
+                    <h1 class="font-bold">What sectors have the most impact on our globe?</h1>
                     <p class="mt-2">According to the most recent statistics regarding the impact of each life sector in the global warming, 
                         we can make a small comparison to know where to target with our efforts in general.</p>
                      
