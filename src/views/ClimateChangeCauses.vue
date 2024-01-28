@@ -1,6 +1,6 @@
 <template>
   <!-- GHG Chart -->
-  <div class="bg-white px-6 lg:px-8 py-22 main" id="ClimateChangeCauses">
+  <div class="bg-white px-6 py-16 lg:px-8 py-22 main" id="ClimateChangeCauses">
     <div class="mx-auto max-w-5xl text-center">
       <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Climate Change Causes</h2>
     </div>
@@ -37,7 +37,7 @@
     </div>
   </div>
   <div class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-7xl px-6 pt-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GHGGases />
       </div>
