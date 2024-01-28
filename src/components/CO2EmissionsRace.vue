@@ -35,12 +35,7 @@ export default {
             .attr('y', 24)
             .text('21 years of CO2 Emissions - Top 10 Countries (across 220 countries)');
 
-        /*let subTitle = svg.append("text")
-            .attr("class", "subTitle")
-            .attr('x', 30)
-            .attr("y", 45)
-            .html("CO2 emission value (megatons)");*/
-
+    
         let subTitle = svg.append('text')
             .attr('class', 'caption')
             .attr('x', width - 20)
