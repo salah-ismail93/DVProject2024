@@ -55,8 +55,8 @@ export default {
     // Function to handle the scroll behavior
     scrollFunction() {
       this.isButtonVisible =
-        document.body.scrollTop > 6000 ||
-        document.documentElement.scrollTop > 6000;
+        document.body.scrollTop > 3000 ||
+        document.documentElement.scrollTop > 3000;
     },
     // Function to scroll back to the top
     scrollToTop() {
