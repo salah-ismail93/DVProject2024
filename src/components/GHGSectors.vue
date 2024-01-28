@@ -5,21 +5,19 @@
                 <div id="GHGSectors"></div>
                 <div id="GHGSectorslegend"></div>
                 <div class="text-gray-700">
-                    <p class="font-bold">Shifting Focus to Asia: Exploring the Global Impact of Covid-19</p>
-                    <p class="mt-2">Geographical knowledge informs us about the division of the world into seven significant
-                        land masses.</p>
-
-                    <p class="mt-2">In order to comprehend the global repercussions of Covid-19, it is crucial to emphasize
-                        the significance of Asia. Not only does it occupy the largest land area, accounting for 30% of the
-                        Earth's surface, but it is also home to the majority of the world's population, representing 60%.
-                    </p>
-
-                    <p class="mt-2">The pie chart illustrates the distribution of GHG across different
+                    <p class="font-bold">What sectors have the most impact on our globe?</p>
+                    <p class="mt-2">According to the most recent statistics regarding the impact of each life sector in the global warming, 
+                        we can make a small comparison to know where to target with our efforts in general.</p>
+                     
+                    <p class="mt-2">The aside pie chart illustrates the distribution of GHG across different
                         Industries.</p>
 
-                    <p class="mt-4">
-                        <a href="#chart-container" class="text-blue-700">Next ...</a>
+                    <p class="mt-2">We can notice that Transportation has the most powerful impact regarding the GHG, followed by Electricity, which 
+                        is very predictable since these sectors relay the most on engines and machines run by gas.
                     </p>
+                    <p class="mt-2">After that we have Industry for 15% and Commercial with slightly less value for 11%, and finally we can sum up other activities to 8% in total.
+                    </p>
+                   
                 </div>
             </div>
         </div>
@@ -76,7 +74,12 @@ export default {
                 .attr("stroke", "white")
                 .attr("stroke-width", "2px")
                 .on("mouseover", function (e, d) {
+                    d3.select(this)
+                  
+                    .attr("fill", "grey")
+                    .attr("stroke-width", "7px");
                     tooltip
+
                         .html(
                             d.data.Industry +
                             "<br>" +
@@ -84,7 +87,8 @@ export default {
                             ((d.data.percentage)) +
                             "%)"
                         )
-                        .style("visibility", "visible");
+                        .style("visibility", "visible")
+
                 })
                 .on("mousemove", function () {
                     tooltip
@@ -92,6 +96,10 @@ export default {
                         .style("left", event.pageX + 10 + "px");
                 })
                 .on("mouseout", function () {
+                    d3.select(this)
+                    .attr("stroke-width","2px")
+
+                    .attr("fill", (d) => color(d.data.Industry));
                     tooltip.style("visibility", "hidden");
                 });
 
