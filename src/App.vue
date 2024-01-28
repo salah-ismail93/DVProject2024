@@ -4,6 +4,7 @@
       <HeaderComponent />
       <HomeView />
     </div>
+    <IntroToStory />
     <WorldTemperature />
     <ClimateChangeCauses />
     <WorldContribution />
@@ -22,6 +23,7 @@
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
 import HomeView from './views/HomeView.vue'
+import IntroToStory from './components/IntroToStory.vue'
 import WorldTemperature from './views/WorldTemperature.vue'
 import ClimateChangeCauses from './views/ClimateChangeCauses.vue'
 import WorldContribution from './views/WorldContribution.vue'
@@ -31,6 +33,7 @@ export default {
   components: {
     HeaderComponent,
     HomeView,
+    IntroToStory,
     WorldTemperature,
     ClimateChangeCauses,
     WorldContribution
