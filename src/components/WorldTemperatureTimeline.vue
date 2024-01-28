@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col">
+    <div class="bg-indigo-100 flex flex-col">
         <div class="mx-auto my-5 flex items-center justify-center">
             <div class="mx-5">
                 <label for="country-list2">Select Country:</label>
