@@ -203,7 +203,7 @@ export default {
                         .select("text")
                         .attr("dx", hoverTextX)
                         .style("text-anchor", hoverTextAnchor)
-                        .style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px black")
+                        //.style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px white")
                         .text(d => `${d.hours || 0} Twh`);
                     } else {
                     newHoverPoints
@@ -212,7 +212,7 @@ export default {
                         .select("text")
                         .attr("dx", hoverTextX)
                         .style("text-anchor", hoverTextAnchor)
-                        .style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px black")
+                       // .style("text-shadow",  "1px 1px 2px white, 0 0 25px blue, 0 0 5px white")
                         .text(d => `${d.hours || 0} Twh`); 
                     }
                     
@@ -232,7 +232,7 @@ export default {
                         .merge(hoverText)
                         .attr("x", xScale(mouseDate))
                         .attr("y", yScale.range()[1] + 10)  // Adjust the Y position as needed
-                        .style("text-shadow",  "1px 1px 1px black, 0 0 1px blue, 0 0 1px black")
+                        .style("text-shadow",  "1px 1px 1px black, 0 0 1px blue, 0 0 1px white")
                         .text(d => `${d.year || 0}`);  // Replace with the actual text you want to display
                 }
                 const mouseleave = function (d) {
