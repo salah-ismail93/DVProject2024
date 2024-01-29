@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 
 // Plot constants
-const WIDTH = 1400;
+const WIDTH = 1300;
 const HEIGHT = 750;
 
 let svg, g, path, projection, colorScale, title, tooltip, tipCountry, tipData;
