@@ -22,49 +22,49 @@
   </div>
 
   <div class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GHGSectors />
       </div>
     </div>
   </div>
   <div class="bg-indigo-100">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GHGCountries />
       </div>
     </div>
   </div>
   <div class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 pt-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-10xl px-6 pt-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GHGGases />
       </div>
     </div>
   </div>
   <div class="bg-indigo-100">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2EmissionsRace />
       </div>
     </div>
   </div>
   <div class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2EmissionsVSGDP />
       </div>
     </div>
   </div>
   <div class="bg-indigo-100">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2AverageCapitaEmissions />
       </div>
     </div>
   </div>
   <div class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+    <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GlobalFossilFuelConsumption />
       </div>

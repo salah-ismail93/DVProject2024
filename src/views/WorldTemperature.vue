@@ -18,7 +18,7 @@
     </div>
   
     <div class="bg-white">
-      <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 flex justify-center">
+      <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
         <div class="flex justify-center">
           <WorldTemperatureMap />
         </div>

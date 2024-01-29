@@ -9,7 +9,7 @@
                 adjust for trade.
             </p>
         </div>
-        <div class="mx-auto max-w-7xl text-center">
+        <div class="mx-auto max-w-10xl text-center">
             <div id="chart4Div3" class="flex flex-col items-center">
                 <svg id="chart4_3" width="1200" height="500"></svg>
             </div>

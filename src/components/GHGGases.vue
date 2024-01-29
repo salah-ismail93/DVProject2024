@@ -1,5 +1,29 @@
 <template>
-    <div id="viz_container"></div>
+    <div class="bg-white">
+        <div class="mx-auto max-w-10xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+            <div class="flex">
+                <div id="viz_container"></div>
+                <div class="text-gray-700">
+                    <h1 class="font-bold">What sectors have the most impact on our globe?</h1>
+                    <p class="mt-2">According to the 2020 statistics from <b><u>Ourworldindata.org</u></b> regarding the
+                        impact of each life sector in the global warming,
+                        we can make a small comparison to know where to target with our efforts in general.</p>
+
+                    <p class="mt-2">The aside pie chart illustrates the distribution of GHG across different
+                        Industries.</p>
+
+                    <p class="mt-2">We can notice that Electricity and heat has the most powerful impact regarding the GHG,
+                        followed by Transportation, which
+                        is very predictable since these sectors relay the most on engines and machines run by gas.
+                    </p>
+                    <p class="mt-2">After that we have Manufacturing and Construction for almost 13% and Agriculture with
+                        slightly less value for 12.14%, and then we have other sectors that are under 10%.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

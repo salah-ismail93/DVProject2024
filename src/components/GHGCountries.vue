@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+    <div class="mx-auto max-w-10xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
         <div class="flex">
 
             <div class="text-gray-700">
