@@ -18,25 +18,13 @@
                     <div id="areaChart" class="mr-16"></div>
                 <div class="flex flex-col">
                     <div class="text-gray-700 ml-16">
-                        <p class="font-bold">Shifting Focus to Asia: Exploring the Global Impact of Covid-19</p>
-                        <p class="mt-2">Geographical knowledge informs us about the division of the world into seven
-                            significant
-                            land masses.</p>
+                        <h1 class="font-bold">The average temperature of countries over years</h1>
+                        <p class="mt-2">we can notice the area chart how it changes over the years, in general we can notice a raise in the temperature in the last 100 years</p>
 
-                        <p class="mt-2">In order to comprehend the global repercussions of Covid-19, it is crucial to
-                            emphasize
-                            the significance of Asia. Not only does it occupy the largest land area, accounting for 30% of
-                            the
-                            Earth's surface, but it is also home to the majority of the world's population, representing
-                            60%.
+                        <p class="mt-2">Also if we select multiple countries from the upper hemisphere or the lower one, we notice this changes over the years
                         </p>
 
-                        <p class="mt-2">The pie chart illustrates the distribution of GHG across different
-                            Industries.</p>
-
-                        <p class="mt-4">
-                            <a href="#chart-container" class="text-blue-700">Next ...</a>
-                        </p>
+    
                     </div>
                     <button class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
                     <div class="relative mb-6">
@@ -52,25 +40,12 @@
                     <div id="polarArea" class="mr-16"></div>
                 <div class="flex flex-col">
                     <div class="text-gray-700 ml-16">
-                        <p class="font-bold">Shifting Focus to Asia: Exploring the Global Impact of Covid-19</p>
-                        <p class="mt-2">Geographical knowledge informs us about the division of the world into seven
-                            significant
-                            land masses.</p>
+                        <h1 class="font-bold">Another representation...</h1>
+                        <p class="mt-2">This polar area chart represent the same values above, but in a different way</p>
 
-                        <p class="mt-2">In order to comprehend the global repercussions of Covid-19, it is crucial to
-                            emphasize
-                            the significance of Asia. Not only does it occupy the largest land area, accounting for 30% of
-                            the
-                            Earth's surface, but it is also home to the majority of the world's population, representing
-                            60%.
+                        <p class="mt-2">we can notice the changes, trends and abnormality
                         </p>
 
-                        <p class="mt-2">The pie chart illustrates the distribution of GHG across different
-                            Industries.</p>
-
-                        <p class="mt-4">
-                            <a href="#chart-container" class="text-blue-700">Next ...</a>
-                        </p>
                     </div>
                     <button class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
                     <div class="relative mb-6">
@@ -86,25 +61,13 @@
                     <div id="anomalyRadial" class="mr-16"></div>
                 <div class="flex flex-col">
                     <div class="text-gray-700 ml-16">
-                        <p class="font-bold">Shifting Focus to Asia: Exploring the Global Impact of Covid-19</p>
-                        <p class="mt-2">Geographical knowledge informs us about the division of the world into seven
-                            significant
-                            land masses.</p>
+                        <h1 class="font-bold">The temperature is raising!</h1>
+                        <p class="mt-2">Over the years we can notice how differences between temperatures are increasing</p>
 
-                        <p class="mt-2">In order to comprehend the global repercussions of Covid-19, it is crucial to
-                            emphasize
-                            the significance of Asia. Not only does it occupy the largest land area, accounting for 30% of
-                            the
-                            Earth's surface, but it is also home to the majority of the world's population, representing
-                            60%.
+                        <p class="mt-2">It's obvious how each year we see a raise in the temperature<br> 
+                            after the chart finishes drawing, it's clear how much difference there are 
                         </p>
 
-                        <p class="mt-2">The pie chart illustrates the distribution of GHG across different
-                            Industries.</p>
-
-                        <p class="mt-4">
-                            <a href="#chart-container" class="text-blue-700">Next ...</a>
-                        </p>
                     </div>
                     <button class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
                     <div class="relative mb-6">
