@@ -40,7 +40,7 @@ export default {
       .append('g')
       .attr('transform', `translate(${heatmapMargin.left},${heatmapMargin.top})`);
 
-    d3.csv('/public/transformed_file.csv').then((data) => {
+    d3.csv('/transformed_file.csv').then((data) => {
       const aggregatedData = d3.rollup(
         data,
         (v) => d3.sum(v, (d) => +d.value),
