@@ -141,7 +141,7 @@ export default {
       const gradient = svg
         .append('defs')
         .append('linearGradient')
-        .attr('id', 'gradient')
+        .attr('id', 'gradientHeatMap')
         .attr('x1', '0%')
         .attr('y1', '0%')
         .attr('x2', '100%')
@@ -164,7 +164,7 @@ export default {
         .append('rect')
         .attr('width', 500) // adjust the width as needed
         .attr('height', 20) // adjust the height as needed
-        .style('fill', 'url(#gradient)');
+        .style('fill', 'url(#gradientHeatMap)');
 
       // Add axis for reference
       const axisScale = d3.scaleLinear().domain([0, d3.max(data, (d) => +d.value)]).range([0, 500]); // adjust the range as needed
