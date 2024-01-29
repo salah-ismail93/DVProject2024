@@ -95,7 +95,7 @@ export default {
                 // color palette
                 const color = d3.scaleOrdinal()
                     .domain(typeKeys)
-                    .range(["#4c699c", "#883039", "#578145"])
+                    .range(["#4c699c", "#db4852", "#578145"])
 
                 // set horizontal grid line
                 const GridLine = () => d3.axisLeft().scale(yScale);
@@ -318,7 +318,7 @@ export default {
                     .attr("y", -(margin.top / 2))
                     .attr("width", 13)
                     .attr("height", 13)
-                    .style("fill", "#883039")
+                    .style("fill", "#db4852")
                 svg
                     .append("text")
                     .attr("class", "legend")
