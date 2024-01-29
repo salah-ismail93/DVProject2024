@@ -72,7 +72,9 @@ export default {
 
       function mouseover(event, d) {
         const value = d.value;
+        console.log("value=", value);
         const country = d.geo;
+        console.log("country=", country);
         tooltip
           .html(`Country: ${country}<br>Year: ${d.year}<br>Value: ${value}`)
           .style('opacity', 1);
@@ -138,22 +140,22 @@ export default {
         .attr('height', 50); // adjust the height as needed
 
       // Define the gradient
-      const gradient = svg
+      const gradientHeatMap = svg
         .append('defs')
         .append('linearGradient')
-        .attr('id', 'gradient')
+        .attr('id', 'gradientHeatMap')
         .attr('x1', '0%')
         .attr('y1', '0%')
         .attr('x2', '100%')
         .attr('y2', '0%');
 
       // Add gradient stops
-      gradient
+      gradientHeatMap
         .append('stop')
         .attr('offset', '0%')
         .attr('stop-color', colorScale(0));
 
-      gradient
+      gradientHeatMap
         .append('stop')
         .attr('offset', '100%')
         .attr('stop-color', colorScale(d3.max(data, (d) => +d.value)));
@@ -164,7 +166,7 @@ export default {
         .append('rect')
         .attr('width', 500) // adjust the width as needed
         .attr('height', 20) // adjust the height as needed
-        .style('fill', 'url(#gradient)');
+        .style('fill', 'url(#gradientHeatMap)');
 
       // Add axis for reference
       const axisScale = d3.scaleLinear().domain([0, d3.max(data, (d) => +d.value)]).range([0, 500]); // adjust the range as needed
