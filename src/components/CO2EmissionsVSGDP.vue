@@ -65,6 +65,13 @@ export default {
                 .attr("transform", "translate(0," + height + ")")
                 .call(d3.axisBottom(x).tickValues(tickValues).tickFormat(d3.format("~s"))); 
 
+            svg5
+                .append("text")
+                .attr("text-anchor", "end")
+                .attr("x", width)
+                .attr("y", height + 40)
+                .text("GDP per capita (US dollars)");
+
             // Add Y axis
             var y = d3
                 .scaleLinear()
@@ -228,7 +235,7 @@ export default {
                 ).toFixed(2),
                 d3.max(data, (d) => d["Population (historical estimates)"]),
             ];
-            var moveX = 50;
+            var moveX = 100;
             var moveY = 70;
             var xCircle = 390 + moveX;
             var xLabel = 440 + moveX;
@@ -289,7 +296,7 @@ export default {
                 .append("text")
                 .attr("x", xCircle)
                 .attr("y", height - moveY + 30)
-                .text("Population (historical estimates)")
+                .text("Population (historical)")
                 .attr("text-anchor", "middle");
 
             // Add one dot in the legend for each Continent.
