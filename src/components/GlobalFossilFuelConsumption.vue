@@ -204,6 +204,7 @@ export default {
                         .attr("dx", hoverTextX)
                         .style("text-anchor", hoverTextAnchor)
                         //.style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px white")
+                        .style("font-weight",  "bold")
                         .text(d => `${d.hours || 0} Twh`);
                     } else {
                     newHoverPoints
@@ -213,6 +214,7 @@ export default {
                         .attr("dx", hoverTextX)
                         .style("text-anchor", hoverTextAnchor)
                        // .style("text-shadow",  "1px 1px 2px white, 0 0 25px blue, 0 0 5px white")
+                        .style("font-weight",  "bold")
                         .text(d => `${d.hours || 0} Twh`); 
                     }
                     
