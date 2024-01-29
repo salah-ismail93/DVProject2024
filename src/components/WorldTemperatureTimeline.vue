@@ -1,83 +1,88 @@
 <template>
-    <div class="bg-indigo-100 flex flex-col">
-        <div class="mx-auto my-5 flex items-center justify-center">
-            <div class="mx-5">
-                <label for="country-list2">Select Country:</label>
-                <select id="country-list2">
-                </select>
-            </div>
-            <div class="mx-5">
-                <label for="year-list2">Select Year:</label>
-                <select id="year-list2">
-                </select>
-            </div>
-        </div>
+    <div class="flex flex-col">
         <div id="outerContainer2" class="flex flex-col justify-center">
             <div class="mx-auto flex flex-col justify-center">
-                <div class="bg-indigo-100 mx-auto px-16 py-20 flex items-center justify-center">
+                <div class="bg-indigo-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
                     <div id="areaChart" class="mr-16"></div>
-                <div class="flex flex-col">
-                    <div class="text-gray-700 ml-16">
-                        <h1 class="font-bold">The average temperature of countries over years</h1>
-                        <p class="mt-2">we can notice the area chart how it changes over the years, in general we can notice a raise in the temperature in the last 100 years</p>
+                    <div class="flex flex-col">
+                        <div class="mx-auto mb-16 flex items-center justify-center">
+                            <div class="mx-5">
+                                <label for="country-list2">Select Country:</label>
+                                <select id="country-list2">
+                                </select>
+                            </div>
+                            <div class="mx-5">
+                                <label for="year-list2">Select Year:</label>
+                                <select id="year-list2">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-gray-700 ml-16 my-8">
+                            <h1 class="font-bold">The average temperature of countries over years</h1>
+                            <p class="mt-2">we can notice the area chart how it changes over the years, in general we can
+                                notice a raise in the temperature in the last 100 years</p>
 
-                        <p class="mt-2">Also if we select multiple countries from the upper hemisphere or the lower one, we notice this changes over the years
-                        </p>
-
-    
-                    </div>
-                    <button class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
-                    <div class="relative mb-6">
-                        <input type="range" value="0"
-                            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
-                            id="yearSliderArea" />
-                        <span class="absolute start-0 -bottom-6">1901</span>
-                        <span class="absolute end-0 -bottom-6">2020</span>
-                    </div>
+                            <p class="mt-2">Also if we select multiple countries from the upper hemisphere or the lower one,
+                                we notice this changes over the years
+                            </p>
+                        </div>
+                        <button
+                            class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
+                        <div class="relative mb-6">
+                            <input type="range" value="0"
+                                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
+                                id="yearSliderArea" />
+                            <span class="absolute start-0 -bottom-6">1901</span>
+                            <span class="absolute end-0 -bottom-6">2020</span>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-white mx-auto px-16 py-20 flex items-center justify-center">
+                <div class="bg-white w-full mx-auto px-16 py-20 flex items-center justify-center">
                     <div id="polarArea" class="mr-16"></div>
-                <div class="flex flex-col">
-                    <div class="text-gray-700 ml-16">
-                        <h1 class="font-bold">Another representation...</h1>
-                        <p class="mt-2">This polar area chart represent the same values above, but in a different way</p>
+                    <div class="flex flex-col">
+                        <div class="text-gray-700 ml-16 my-8">
+                            <h1 class="font-bold">Another representation...</h1>
+                            <p class="mt-2">This polar area chart represent the same values above, but in a different way
+                            </p>
 
-                        <p class="mt-2">we can notice the changes, trends and abnormality
-                        </p>
+                            <p class="mt-2">we can notice the changes, trends and abnormality
+                            </p>
 
-                    </div>
-                    <button class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
-                    <div class="relative mb-6">
-                        <input type="range" value="0"
-                            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
-                            id="yearSliderPolar" />
-                        <span class="absolute start-0 -bottom-6">1901</span>
-                        <span class="absolute end-0 -bottom-6">2020</span>
-                    </div>
+                        </div>
+                        <button
+                            class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
+                        <div class="relative mb-6">
+                            <input type="range" value="0"
+                                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
+                                id="yearSliderPolar" />
+                            <span class="absolute start-0 -bottom-6">1901</span>
+                            <span class="absolute end-0 -bottom-6">2020</span>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-indigo-100 mx-auto px-16 py-20 flex items-center justify-center">
+                <div class="bg-indigo-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
                     <div id="anomalyRadial" class="mr-16"></div>
-                <div class="flex flex-col">
-                    <div class="text-gray-700 ml-16">
-                        <h1 class="font-bold">The temperature is raising!</h1>
-                        <p class="mt-2">Over the years we can notice how differences between temperatures are increasing</p>
+                    <div class="flex flex-col">
+                        <div class="text-gray-700 ml-16 my-8">
+                            <h1 class="font-bold">The temperature is raising!</h1>
+                            <p class="mt-2">Over the years we can notice how differences between temperatures are increasing
+                            </p>
 
-                        <p class="mt-2">It's obvious how each year we see a raise in the temperature<br> 
-                            after the chart finishes drawing, it's clear how much difference there are 
-                        </p>
+                            <p class="mt-2">It's obvious how each year we see a raise in the temperature<br>
+                                after the chart finishes drawing, it's clear how much difference there are
+                            </p>
 
+                        </div>
+                        <button
+                            class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
+                        <div class="relative mb-6">
+                            <input type="range" value="0"
+                                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
+                                id="yearSliderRadial" />
+                            <span class="absolute start-0 -bottom-6">1901</span>
+                            <span class="absolute end-0 -bottom-6">2020</span>
+                        </div>
                     </div>
-                    <button class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
-                    <div class="relative mb-6">
-                        <input type="range" value="0"
-                            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
-                            id="yearSliderRadial" />
-                        <span class="absolute start-0 -bottom-6">1901</span>
-                        <span class="absolute end-0 -bottom-6">2020</span>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
