@@ -1,5 +1,22 @@
 <template>
-    <div id="area_chart"></div>
+    <div class="mx-auto max-w-10xl py-16 lg:flex lg:items-center lg:justify-between">
+        <div class="flex">
+            <div class="text-gray-700 mt-10 mr-16">
+                <H1 class="font-bold">What countries have the most impact on our globe</H1>
+                <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
+                    emission they have</p>
+
+                <p class="mt-2">It's noticeable that the United State of America has the lion's share with almost the
+                    quarter 23%, followed by the east Part of the world China,
+                    with 13% and its neighbor India having 14%.
+                </p>
+                <p class="mt-2">Italy on the other hand has a reasonable percentage around 5% sharing this score similarly
+                    with Japan
+                </p>
+            </div>
+            <div id="area_chart"></div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -196,28 +213,28 @@ export default {
                         .append("text")
                         .attr("dy", "-1.25em");
 
-                    if (xVal>1950) {
-                    newHoverPoints
-                        .merge(hoverPoints)
-                        .attr("transform", d => `translate(${xScale(xVal)}, ${yScale(d.cumulative)})`)
-                        .select("text")
-                        .attr("dx", hoverTextX)
-                        .style("text-anchor", hoverTextAnchor)
-                        //.style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px white")
-                        .style("font-weight",  "bold")
-                        .text(d => `${d.hours || 0} Twh`);
+                    if (xVal > 1950) {
+                        newHoverPoints
+                            .merge(hoverPoints)
+                            .attr("transform", d => `translate(${xScale(xVal)}, ${yScale(d.cumulative)})`)
+                            .select("text")
+                            .attr("dx", hoverTextX)
+                            .style("text-anchor", hoverTextAnchor)
+                            //.style("text-shadow",  "1px 1px 2px black, 0 0 25px blue, 0 0 5px white")
+                            .style("font-weight", "bold")
+                            .text(d => `${d.hours || 0} Twh`);
                     } else {
-                    newHoverPoints
-                        .merge(hoverPoints)
-                        .attr("transform", (d, i) => `translate(${xScale(xVal)}, ${50 + i * 20})`)
-                        .select("text")
-                        .attr("dx", hoverTextX)
-                        .style("text-anchor", hoverTextAnchor)
-                       // .style("text-shadow",  "1px 1px 2px white, 0 0 25px blue, 0 0 5px white")
-                        .style("font-weight",  "bold")
-                        .text(d => `${d.hours || 0} Twh`); 
+                        newHoverPoints
+                            .merge(hoverPoints)
+                            .attr("transform", (d, i) => `translate(${xScale(xVal)}, ${50 + i * 20})`)
+                            .select("text")
+                            .attr("dx", hoverTextX)
+                            .style("text-anchor", hoverTextAnchor)
+                            // .style("text-shadow",  "1px 1px 2px white, 0 0 25px blue, 0 0 5px white")
+                            .style("font-weight", "bold")
+                            .text(d => `${d.hours || 0} Twh`);
                     }
-                    
+
 
                     const hoverText = svg
                         .selectAll(".hoverText")
@@ -234,7 +251,7 @@ export default {
                         .merge(hoverText)
                         .attr("x", xScale(mouseDate))
                         .attr("y", yScale.range()[1] + 10)  // Adjust the Y position as needed
-                        .style("text-shadow",  "1px 1px 1px black, 0 0 1px blue, 0 0 1px white")
+                        .style("text-shadow", "1px 1px 1px black, 0 0 1px blue, 0 0 1px white")
                         .text(d => `${d.year || 0}`);  // Replace with the actual text you want to display
                 }
                 const mouseleave = function (d) {
