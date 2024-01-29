@@ -1,20 +1,23 @@
 <template>
     <div class="mx-auto max-w-7xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
         <div class="flex">
-            
+
             <div class="text-gray-700">
                 <H1 class="font-bold">What countries have the most impact on our globe</H1>
-                <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02 emission they have</p>
+                <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
+                    emission they have</p>
 
-                <p class="mt-2">It's noticeable that the United State of America has the lion's share with almost the quarter 23%, followed by the east Part of the world China,
-                     with 13% and its neighbor India having 14%.     
+                <p class="mt-2">It's noticeable that the United State of America has the lion's share with almost the
+                    quarter 23%, followed by the east Part of the world China,
+                    with 13% and its neighbor India having 14%.
                 </p>
-                <p class="mt-2">Italy on the other hand has a reasonable percentage around 5% sharing this score similarly with Japan  
+                <p class="mt-2">Italy on the other hand has a reasonable percentage around 5% sharing this score similarly
+                    with Japan
                 </p>
             </div>
             <div id="GHGCountrieslegend"></div>
             <div id="GHGCountries"></div>
-          
+
         </div>
     </div>
 </template>
@@ -24,13 +27,13 @@ import * as d3 from 'd3';
 
 export default {
     name: 'GHGCountries',
-  
+
     mounted() {
         // Width and height of the chart
-        var width = 400;
-        var height = 400;
+        var width = 500;
+        var height = 500;
 
-        // Radius of the pie chart
+        // Radius of the donut chart
         var radius = Math.min(width, height) / 2;
 
         // Color scale
@@ -53,27 +56,28 @@ export default {
                 d.percentage = +d.percentage;
             });
 
-            // Generate pie chart
-            var pie = d3
+            // Generate donut chart
+            var donut = d3
                 .pie()
                 .value((d) => d.percentage)
                 .sort(null);
 
-            var path = d3.arc().outerRadius(radius).innerRadius(0);
+            var arc = d3.arc().outerRadius(radius - 30).innerRadius(radius / 2); // Adjust innerRadius for the donut hole
 
-            var arc = svg.selectAll("arc").data(pie(data)).enter();
 
-            arc
+            var path = svg.selectAll("path")
+                .data(donut(data))
+                .enter()
                 .append("path")
-                .attr("d", path)
+                .attr("d", arc)
                 .attr("fill", (d) => color(d.data.Country))
                 .attr("stroke", "white")
                 .attr("stroke-width", "2px")
                 .on("mouseover", function (e, d) {
                     d3.select(this)
-                  
-                  .attr("fill", "grey")
-                  .attr("stroke-width", "7px");
+
+                        .attr("fill", "grey")
+                        .attr("stroke-width", "7px");
                     tooltip
                         .html(
                             d.data.Country +
@@ -92,9 +96,9 @@ export default {
                 })
                 .on("mouseout", function () {
                     d3.select(this)
-                  
-                  .attr("fill", (d) => color(d.data.Country))
-                  .attr("stroke-width", "2px");
+
+                        .attr("fill", (d) => color(d.data.Country))
+                        .attr("stroke-width", "2px");
                     tooltip.style("visibility", "hidden");
                 });
 
@@ -115,7 +119,7 @@ export default {
 
             var legendItems = legendSvg
                 .selectAll(".legend-item")
-                .data(pie(data))
+                .data(donut(data))
                 .enter()
                 .append("g")
                 .attr("class", "legend-item")
@@ -154,7 +158,7 @@ export default {
 <style>
 #GHGCountrieslegend {
     margin-left: 15px;
-    
+
 
 }
 </style>
