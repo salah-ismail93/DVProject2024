@@ -126,13 +126,13 @@ export default {
                 tooltipA2T5
                     .html(
                         "<span style='color:grey'>Population (historical estimates): </span> " +
-                        d["Population (historical estimates)"] +
+                        d["Population (historical estimates)"].toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) +
                         "<br> <span style='color:grey'>Country: </span>" +
                         d.Entity +
                         "<br><span style='color:grey'>Per capita consumption-based CO₂ emissions: </span>" +
-                        d["Per capita consumption-based CO₂ emissions"] +
+                        d["Per capita consumption-based CO₂ emissions"].toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) +
                         "<br><span style='color:grey'>GDP per capita: </span> " +
-                        d["GDP per capita, PPP (constant 2017 international)"]
+                        d["GDP per capita, PPP (constant 2017 international)"].toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
                     ) // + d.Prior_disorder + "<br>" + "HR: " +  d.HR)
                     .style("left", event.pageX + 10 + "px")
                     .style("top", event.pageY + "px");
@@ -257,11 +257,11 @@ export default {
                     return xCircle + z(d);
                 })
                 .attr("x2", xLabel)
-                .attr("y1", function (d) {
-                    return height - moveY - z(d);
+                .attr("y1", function (d, i) {
+                    return height - moveY - z(d) - i * 3;
                 })
-                .attr("y2", function (d) {
-                    return height - moveY - z(d);
+                .attr("y2", function (d, i) {
+                    return height - moveY - z(d) - i * 3;
                 })
                 .attr("stroke", "black")
                 .style("stroke-dasharray", "2,2");
@@ -273,13 +273,15 @@ export default {
                 .enter()
                 .append("text")
                 .attr("x", xLabel)
-                .attr("y", function (d) {
-                    return height - moveY - z(d);
+                .attr("y", function (d, i) {
+                    return height - moveY - z(d) - i * 3;
                 })
                 .text(function (d) {
-                    return d;
+                    let Population = parseInt(d);
+                    return Population.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
                 })
-                .style("font-size", 10)
+                .style("font-size", 9)
+                .style("font-weight", "bold")
                 .attr("alignment-baseline", "middle");
 
             // Legend title
