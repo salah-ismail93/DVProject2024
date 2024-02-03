@@ -8,10 +8,11 @@
         <div class="bg-white px-6 lg:px-8 text-center">
           <div class="mx-auto max-w-5xl">
             <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 text-center">
-              A new dataset containing information on 5.6 million trees from 63 major US cities has been compiled, including
-              details on location, species, nativity, health, and more.
+             Let's start with a global look at the world temperature over the last 120 years,
+             in the below dynamic map, you can notice the changing in the average temperature over the years in each country, you can pause the slider to 
+             select the country and year you want to investigate more.
             </p>
-            <p class="mt-4 text-base leading-7 text-indigo-600 sm:text-2xl">1900-2020</p>
+            <p class="mt-4 text-base leading-7 text-black-600 sm:text-2xl">1900-2020</p>
           </div>
         </div>
       </div>
