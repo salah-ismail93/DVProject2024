@@ -663,7 +663,7 @@ export default {
 
     section.dashboard {
         position: absolute;
-        bottom: 0;
+        bottom: 30px;
         overflow: hidden;
         width: 100%;
         color: #F1F1F1;
