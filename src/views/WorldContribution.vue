@@ -47,7 +47,7 @@ h1{
   position: relative;
 }
 
-.WorldContribution::before,
+/*.WorldContribution::before,
 .WorldContribution::after {
   content: "";
   position: absolute;
@@ -57,14 +57,14 @@ h1{
 }
 
 .WorldContribution::before {
-  top: 0; /* Change from bottom to top */
+  top: 0;
   background: linear-gradient(to top, transparent, #ffffff);
 }
 
 .WorldContribution::after {
-  bottom: 0; /* Keep at the bottom */
+  bottom: 0;
   background: linear-gradient(to bottom, transparent, #ffffff);
-}
+}*/
 
 .WorldContribution h1 {
   margin-top: 25%;

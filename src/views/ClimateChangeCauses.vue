@@ -103,7 +103,7 @@ export default {
   position: relative;
 }
 
-.ClimateChangeCauses::before,
+/*.ClimateChangeCauses::before,
 .ClimateChangeCauses::after {
   content: "";
   position: absolute;
@@ -113,14 +113,14 @@ export default {
 }
 
 .ClimateChangeCauses::before {
-  top: 0; /* Change from bottom to top */
+  top: 0; 
   background: linear-gradient(to top, transparent, #ffffff);
 }
 
 .ClimateChangeCauses::after {
-  bottom: 0; /* Keep at the bottom */
+  bottom: 0; 
   background: linear-gradient(to bottom, transparent, #ffffff);
-}
+}*/
 
 .ClimateChangeCauses h1 {
   color: #fff; /* Text color */

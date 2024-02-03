@@ -85,7 +85,7 @@ export default {
   background-repeat: no-repeat;
 }
 
-.background-div::before {
+/*.background-div::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -93,5 +93,5 @@ export default {
   right: 0;
   height: 5%;
   background: linear-gradient(to bottom, transparent, #ffffff);
-}
+}*/
 </style>

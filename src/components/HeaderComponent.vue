@@ -1,6 +1,6 @@
 <template>
-  <header>
-    <nav class="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <header class="sticky z-30 top-0">
+    <nav class="mx-auto flex items-center justify-between px-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <div>
           <img src="../assets/logo1.png" class="logo">
@@ -134,5 +134,9 @@ const scrollToSection = (sectionId) => {
 .butt1:hover {
   background: rgb(116, 47, 22);
 
+}
+
+header{
+  background-color: black;
 }
 </style>
