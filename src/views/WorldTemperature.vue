@@ -1,6 +1,6 @@
 <template>
     <!-- World Temperature Map Chart -->
-    <div class="bg-white px-6 lg:px-8 py-16 main" id="WorldTemperature">
+    <div class="bg-white px-6 lg:px-8 pt-16 main" id="WorldTemperature">
       <div class="mx-auto max-w-5xl text-center">
         <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">World Temperature</h2>
       </div>
@@ -18,7 +18,7 @@
     </div>
   
     <div class="bg-white">
-      <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
+      <div class="mx-auto max-w-10xl px-6 lg:px-8 flex justify-center">
         <div class="flex justify-center">
           <WorldTemperatureMap />
         </div>

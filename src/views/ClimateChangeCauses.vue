@@ -28,7 +28,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-indigo-100">
+  <div class="bg-green-100">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GHGCountries />
@@ -42,7 +42,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-indigo-100">
+  <div class="bg-green-100">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2EmissionsRace />
@@ -56,7 +56,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-indigo-100">
+  <div class="bg-green-100">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2AverageCapitaEmissions />
@@ -128,5 +128,9 @@ export default {
   font-weight: bold;
   text-align: right;
   text-shadow: 20px 20px 40px rgba(0, 0, 0, 1); /* Add a subtle text shadow for better visibility */
+}
+.bg-green-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 249 226 / var(--tw-bg-opacity));
 }
 </style>

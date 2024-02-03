@@ -2,7 +2,7 @@
     <div class="flex flex-col">
         <div id="outerContainer2" class="flex flex-col justify-center">
             <div class="mx-auto flex flex-col justify-center">
-                <div class="bg-indigo-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
+                <div class="bg-green-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
                     <div id="areaChart" class="mr-16"></div>
                     <div class="flex flex-col">
                         <div class="mx-auto mb-16 flex items-center justify-center">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-indigo-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
+                <div class="bg-green-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
                     <div id="anomalyRadial" class="mr-16"></div>
                     <div class="flex flex-col">
                         <div class="text-gray-700 ml-16 my-8">
@@ -312,5 +312,9 @@ export default {
     line-break: auto;
     font-size: .875rem;
     word-wrap: break-word;
+}
+.bg-green-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 249 226 / var(--tw-bg-opacity));
 }
 </style>
