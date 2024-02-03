@@ -45,7 +45,7 @@ export default {
     .range(['#FFB6C1', '#FFD700', '#98FB98', '#ADD8E6', '#FFA07A', '#B0C4DE', '#FFC0CB', '#FF6347', '#696969', '#FFFF00']);
 
   // Load the combined CSV file
-  d3.csv('/public/Total attendance at COPs through the years.csv').then((data) => {
+  d3.csv('/Total attendance at COPs through the years.csv').then((data) => {
     // Sort the data based on COP, you may need to adjust the sorting logic
     data.sort((a, b) => (a.COP > b.COP) ? 1 : -1);
 
