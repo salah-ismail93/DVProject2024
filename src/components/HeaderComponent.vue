@@ -2,13 +2,12 @@
   <header class="sticky z-30 top-0">
     <nav class="mx-auto flex items-center justify-between px-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <div>
-          <img src="../assets/logo1.png" class="logo">
-        </div>
+        
         <div class="names">
           <router-link to="/">
-            <p>Husam Jenidi</p>
             <p>Salah Ismail</p>
+            <p>Husam Jenidi</p>
+           
           </router-link>
         </div>
       </div>
@@ -100,7 +99,7 @@ const scrollToSection = (sectionId) => {
 }
 
 .names {
-  margin-top: 35px;
+  margin-top: 1px;
   color: white;
 }
 
@@ -114,7 +113,7 @@ const scrollToSection = (sectionId) => {
 }
 
 .butt:hover {
-  background: rgb(95, 12, 28);
+  background: rgba(27, 116, 22, 0.964);
 }
 
 .butt:selected {
@@ -123,7 +122,7 @@ const scrollToSection = (sectionId) => {
 }
 
 .butt1 {
-  background: coral;
+  
   border: 0;
   padding: 10px 20px;
 
@@ -132,11 +131,11 @@ const scrollToSection = (sectionId) => {
 }
 
 .butt1:hover {
-  background: rgb(116, 47, 22);
+  background: rgba(27, 116, 22, 0.964);
 
 }
 
 header{
-  background-color: black;
+  background-color: rgba(8, 52, 26, 0.944);
 }
 </style>
