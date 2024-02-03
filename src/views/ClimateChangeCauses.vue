@@ -45,7 +45,7 @@
   <div class="overlayColor">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
-        <CO2EmissionsRace />
+        <GlobalFossilFuelConsumption />
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@
   <div class="bg-white">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
-        <GlobalFossilFuelConsumption />
+        <CO2EmissionsRace />
       </div>
     </div>
   </div>
