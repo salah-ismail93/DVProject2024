@@ -100,7 +100,7 @@ const scrollToSection = (sectionId) => {
 }
 
 .names {
-  margin-top: 40px;
+  margin-top: 35px;
   color: white;
 }
 

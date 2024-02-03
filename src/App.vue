@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-col min-h-screen font-Roboto mr-30 main">
-    <div class="background-div">
+    <div class="sticky z-30 top-0">
       <HeaderComponent />
+    </div>
+    <div class="background-div">
       <HomeView />
     </div>
     <IntroToStory />
