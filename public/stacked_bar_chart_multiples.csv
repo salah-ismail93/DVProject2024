@@ -1,0 +1,819 @@
+city,state,scientific_name,tree_count
+Albuquerque,New Mexico,Acer platanoides,216
+Albuquerque,New Mexico,Acer saccharum,186
+Albuquerque,New Mexico,Acer rubrum,159
+Albuquerque,New Mexico,Acer saccharinum,149
+Albuquerque,New Mexico,Tilia cordata,148
+Albuquerque,New Mexico,Other,1616
+Anaheim,California,Acer platanoides,5266
+Anaheim,California,Acer saccharum,4379
+Anaheim,California,Acer rubrum,3771
+Anaheim,California,Acer saccharinum,2567
+Anaheim,California,Tilia cordata,2317
+Anaheim,California,Other,36121
+Arlington,Texas,Acer platanoides,1570
+Arlington,Texas,Acer saccharum,1195
+Arlington,Texas,Acer rubrum,1139
+Arlington,Texas,Acer saccharinum,1081
+Arlington,Texas,Tilia cordata,691
+Arlington,Texas,Other,8997
+Atlanta,Georgia,Acer platanoides,3678
+Atlanta,Georgia,Acer saccharum,2581
+Atlanta,Georgia,Acer rubrum,1742
+Atlanta,Georgia,Acer saccharinum,1612
+Atlanta,Georgia,Tilia cordata,1263
+Atlanta,Georgia,Other,24859
+AvondaleEstates,Georgia,Acer platanoides,27
+AvondaleEstates,Georgia,Acer saccharum,24
+AvondaleEstates,Georgia,Acer rubrum,23
+AvondaleEstates,Georgia,Acer saccharinum,15
+AvondaleEstates,Georgia,Tilia cordata,14
+AvondaleEstates,Georgia,Other,183
+Brookhaven,Georgia,Acer platanoides,19
+Brookhaven,Georgia,Acer saccharum,11
+Brookhaven,Georgia,Acer rubrum,8
+Brookhaven,Georgia,Acer saccharinum,8
+Brookhaven,Georgia,Tilia cordata,5
+Brookhaven,Georgia,Other,55
+CandlerMcAfee,Georgia,Acer platanoides,8
+CandlerMcAfee,Georgia,Acer saccharum,6
+CandlerMcAfee,Georgia,Acer rubrum,4
+CandlerMcAfee,Georgia,Acer saccharinum,2
+CandlerMcAfee,Georgia,Tilia cordata,1
+CandlerMcAfee,Georgia,Other,7
+Chamblee,Georgia,Acer platanoides,28
+Chamblee,Georgia,Acer saccharum,16
+Chamblee,Georgia,Acer rubrum,14
+Chamblee,Georgia,Acer saccharinum,12
+Chamblee,Georgia,Tilia cordata,10
+Chamblee,Georgia,Other,34
+Clarkston,Georgia,Acer platanoides,101
+Clarkston,Georgia,Acer saccharum,79
+Clarkston,Georgia,Acer rubrum,36
+Clarkston,Georgia,Acer saccharinum,11
+Clarkston,Georgia,Tilia cordata,4
+Clarkston,Georgia,Other,0
+CollegePark,Georgia,Acer platanoides,12
+CollegePark,Georgia,Acer saccharum,10
+CollegePark,Georgia,Acer rubrum,8
+CollegePark,Georgia,Acer saccharinum,7
+CollegePark,Georgia,Tilia cordata,7
+CollegePark,Georgia,Other,59
+Decatur,Georgia,Acer platanoides,221
+Decatur,Georgia,Acer saccharum,100
+Decatur,Georgia,Acer rubrum,76
+Decatur,Georgia,Acer saccharinum,67
+Decatur,Georgia,Tilia cordata,56
+Decatur,Georgia,Other,1338
+Doraville,Georgia,Acer platanoides,56
+Doraville,Georgia,Acer saccharum,15
+Doraville,Georgia,Acer rubrum,11
+Doraville,Georgia,Acer saccharinum,9
+Doraville,Georgia,Tilia cordata,8
+Doraville,Georgia,Other,26
+Dunwoody,Georgia,Acer platanoides,111
+Dunwoody,Georgia,Acer saccharum,79
+Dunwoody,Georgia,Acer rubrum,54
+Dunwoody,Georgia,Acer saccharinum,42
+Dunwoody,Georgia,Tilia cordata,39
+Dunwoody,Georgia,Other,610
+EastPoint,Georgia,Acer platanoides,84
+EastPoint,Georgia,Acer saccharum,48
+EastPoint,Georgia,Acer rubrum,41
+EastPoint,Georgia,Acer saccharinum,35
+EastPoint,Georgia,Tilia cordata,33
+EastPoint,Georgia,Other,343
+Hapeville,Georgia,Acer platanoides,51
+Hapeville,Georgia,Acer saccharum,31
+Hapeville,Georgia,Acer rubrum,30
+Hapeville,Georgia,Acer saccharinum,19
+Hapeville,Georgia,Tilia cordata,17
+Hapeville,Georgia,Other,100
+Marietta,Georgia,Acer platanoides,17
+Marietta,Georgia,Acer saccharum,14
+Marietta,Georgia,Acer rubrum,13
+Marietta,Georgia,Acer saccharinum,10
+Marietta,Georgia,Tilia cordata,7
+Marietta,Georgia,Other,21
+SandySprings,Georgia,Acer platanoides,26
+SandySprings,Georgia,Acer saccharum,14
+SandySprings,Georgia,Acer rubrum,12
+SandySprings,Georgia,Acer saccharinum,12
+SandySprings,Georgia,Tilia cordata,11
+SandySprings,Georgia,Other,140
+Scottdale,Georgia,Acer platanoides,21
+Scottdale,Georgia,Acer saccharum,11
+Scottdale,Georgia,Acer rubrum,6
+Scottdale,Georgia,Acer saccharinum,4
+Scottdale,Georgia,Tilia cordata,3
+Scottdale,Georgia,Other,0
+Unincorporated,Georgia,Acer platanoides,61
+Unincorporated,Georgia,Acer saccharum,52
+Unincorporated,Georgia,Acer rubrum,47
+Unincorporated,Georgia,Acer saccharinum,42
+Unincorporated,Georgia,Tilia cordata,38
+Unincorporated,Georgia,Other,255
+Aurora,Colorado,Acer platanoides,10428
+Aurora,Colorado,Acer saccharum,6107
+Aurora,Colorado,Acer rubrum,5465
+Aurora,Colorado,Acer saccharinum,4745
+Aurora,Colorado,Tilia cordata,3433
+Aurora,Colorado,Other,25441
+Austin,Texas,Acer platanoides,916
+Austin,Texas,Acer saccharum,831
+Austin,Texas,Acer rubrum,790
+Austin,Texas,Acer saccharinum,609
+Austin,Texas,Tilia cordata,590
+Austin,Texas,Other,2239
+Baltimore,Maryland,Acer platanoides,12910
+Baltimore,Maryland,Acer saccharum,6766
+Baltimore,Maryland,Acer rubrum,6056
+Baltimore,Maryland,Acer saccharinum,5932
+Baltimore,Maryland,Tilia cordata,5817
+Baltimore,Maryland,Other,83143
+Boston,Massachusetts,Acer platanoides,267
+Boston,Massachusetts,Acer saccharum,151
+Boston,Massachusetts,Acer rubrum,115
+Boston,Massachusetts,Acer saccharinum,87
+Boston,Massachusetts,Tilia cordata,74
+Boston,Massachusetts,Other,639
+Buffalo,New York,Acer platanoides,13265
+Buffalo,New York,Acer saccharum,9156
+Buffalo,New York,Acer rubrum,4725
+Buffalo,New York,Acer saccharinum,2731
+Buffalo,New York,Tilia cordata,2601
+Buffalo,New York,Other,41911
+Cape Coral,Florida,Acer platanoides,6632
+Cape Coral,Florida,Acer saccharum,5727
+Cape Coral,Florida,Acer rubrum,3298
+Cape Coral,Florida,Acer saccharinum,1724
+Cape Coral,Florida,Tilia cordata,903
+Cape Coral,Florida,Other,11627
+Colorado Springs,Colorado,Acer platanoides,1924
+Colorado Springs,Colorado,Acer saccharum,1844
+Colorado Springs,Colorado,Acer rubrum,952
+Colorado Springs,Colorado,Acer saccharinum,888
+Colorado Springs,Colorado,Tilia cordata,841
+Colorado Springs,Colorado,Other,8459
+Columbus,Ohio,Acer platanoides,9402
+Columbus,Ohio,Acer saccharum,9245
+Columbus,Ohio,Acer rubrum,8657
+Columbus,Ohio,Acer saccharinum,7512
+Columbus,Ohio,Tilia cordata,7090
+Columbus,Ohio,Other,93506
+Dallas,Texas,Acer platanoides,1238
+Dallas,Texas,Acer saccharum,844
+Dallas,Texas,Acer rubrum,761
+Dallas,Texas,Acer saccharinum,691
+Dallas,Texas,Tilia cordata,497
+Dallas,Texas,Other,2178
+Denver,Colorado,Acer platanoides,25736
+Denver,Colorado,Acer saccharum,24178
+Denver,Colorado,Acer rubrum,12961
+Denver,Colorado,Acer saccharinum,12735
+Denver,Colorado,Tilia cordata,11922
+Denver,Colorado,Other,196819
+Adair,Iowa,Acer platanoides,72
+Adair,Iowa,Acer saccharum,53
+Adair,Iowa,Acer rubrum,27
+Adair,Iowa,Acer saccharinum,22
+Adair,Iowa,Tilia cordata,16
+Adair,Iowa,Other,129
+Adel,Iowa,Acer platanoides,97
+Adel,Iowa,Acer saccharum,89
+Adel,Iowa,Acer rubrum,57
+Adel,Iowa,Acer saccharinum,40
+Adel,Iowa,Tilia cordata,39
+Adel,Iowa,Other,222
+Baxter,Iowa,Acer platanoides,146
+Baxter,Iowa,Acer saccharum,18
+Baxter,Iowa,Acer rubrum,13
+Baxter,Iowa,Acer saccharinum,11
+Baxter,Iowa,Tilia cordata,10
+Baxter,Iowa,Other,69
+Bayard,Iowa,Acer platanoides,13
+Bayard,Iowa,Acer saccharum,12
+Bayard,Iowa,Acer rubrum,11
+Bayard,Iowa,Acer saccharinum,9
+Bayard,Iowa,Tilia cordata,4
+Bayard,Iowa,Other,15
+Bondurant,Iowa,Acer platanoides,61
+Bondurant,Iowa,Acer saccharum,51
+Bondurant,Iowa,Acer rubrum,40
+Bondurant,Iowa,Acer saccharinum,34
+Bondurant,Iowa,Tilia cordata,22
+Bondurant,Iowa,Other,296
+Bouton,Iowa,Acer platanoides,49
+Bouton,Iowa,Acer saccharum,27
+Bouton,Iowa,Acer rubrum,18
+Bouton,Iowa,Acer saccharinum,14
+Bouton,Iowa,Tilia cordata,6
+Bouton,Iowa,Other,44
+Carlisle,Iowa,Acer platanoides,64
+Carlisle,Iowa,Acer saccharum,54
+Carlisle,Iowa,Acer rubrum,53
+Carlisle,Iowa,Acer saccharinum,51
+Carlisle,Iowa,Tilia cordata,43
+Carlisle,Iowa,Other,256
+Colfax,Iowa,Acer platanoides,53
+Colfax,Iowa,Acer saccharum,45
+Colfax,Iowa,Acer rubrum,29
+Colfax,Iowa,Acer saccharinum,28
+Colfax,Iowa,Tilia cordata,13
+Colfax,Iowa,Other,109
+Coon Rapids,Iowa,Acer platanoides,159
+Coon Rapids,Iowa,Acer saccharum,88
+Coon Rapids,Iowa,Acer rubrum,65
+Coon Rapids,Iowa,Acer saccharinum,40
+Coon Rapids,Iowa,Tilia cordata,34
+Coon Rapids,Iowa,Other,284
+Dallas Center,Iowa,Acer platanoides,148
+Dallas Center,Iowa,Acer saccharum,103
+Dallas Center,Iowa,Acer rubrum,94
+Dallas Center,Iowa,Acer saccharinum,83
+Dallas Center,Iowa,Tilia cordata,50
+Dallas Center,Iowa,Other,341
+De Soto,Iowa,Acer platanoides,73
+De Soto,Iowa,Acer saccharum,12
+De Soto,Iowa,Acer rubrum,12
+De Soto,Iowa,Acer saccharinum,9
+De Soto,Iowa,Tilia cordata,6
+De Soto,Iowa,Other,46
+Des Moines,Iowa,Acer platanoides,4
+Des Moines,Iowa,Acer saccharum,4
+Des Moines,Iowa,Acer rubrum,4
+Des Moines,Iowa,Acer saccharinum,4
+Des Moines,Iowa,Tilia cordata,3
+Des Moines,Iowa,Other,4
+Dexter,Iowa,Acer platanoides,31
+Dexter,Iowa,Acer saccharum,29
+Dexter,Iowa,Acer rubrum,25
+Dexter,Iowa,Acer saccharinum,19
+Dexter,Iowa,Tilia cordata,11
+Dexter,Iowa,Other,78
+Earlham,Iowa,Acer platanoides,151
+Earlham,Iowa,Acer saccharum,118
+Earlham,Iowa,Acer rubrum,54
+Earlham,Iowa,Acer saccharinum,35
+Earlham,Iowa,Tilia cordata,26
+Earlham,Iowa,Other,166
+Elkhart,Iowa,Acer platanoides,28
+Elkhart,Iowa,Acer saccharum,17
+Elkhart,Iowa,Acer rubrum,16
+Elkhart,Iowa,Acer saccharinum,12
+Elkhart,Iowa,Tilia cordata,10
+Elkhart,Iowa,Other,32
+Granger,Iowa,Acer platanoides,46
+Granger,Iowa,Acer saccharum,21
+Granger,Iowa,Acer rubrum,15
+Granger,Iowa,Acer saccharinum,12
+Granger,Iowa,Tilia cordata,11
+Granger,Iowa,Other,112
+Guthrie Center,Iowa,Acer platanoides,68
+Guthrie Center,Iowa,Acer saccharum,38
+Guthrie Center,Iowa,Acer rubrum,27
+Guthrie Center,Iowa,Acer saccharinum,20
+Guthrie Center,Iowa,Tilia cordata,17
+Guthrie Center,Iowa,Other,58
+Hartford,Iowa,Acer platanoides,4
+Hartford,Iowa,Acer saccharum,4
+Hartford,Iowa,Acer rubrum,2
+Hartford,Iowa,Acer saccharinum,2
+Hartford,Iowa,Tilia cordata,2
+Hartford,Iowa,Other,13
+Kellogg,Iowa,Acer platanoides,31
+Kellogg,Iowa,Acer saccharum,22
+Kellogg,Iowa,Acer rubrum,16
+Kellogg,Iowa,Acer saccharinum,8
+Kellogg,Iowa,Tilia cordata,8
+Kellogg,Iowa,Other,32
+Milo,Iowa,Acer platanoides,81
+Milo,Iowa,Acer saccharum,48
+Milo,Iowa,Acer rubrum,32
+Milo,Iowa,Acer saccharinum,19
+Milo,Iowa,Tilia cordata,19
+Milo,Iowa,Other,127
+Mitchellville,Iowa,Acer platanoides,51
+Mitchellville,Iowa,Acer saccharum,26
+Mitchellville,Iowa,Acer rubrum,22
+Mitchellville,Iowa,Acer saccharinum,20
+Mitchellville,Iowa,Tilia cordata,18
+Mitchellville,Iowa,Other,108
+Monroe,Iowa,Acer platanoides,33
+Monroe,Iowa,Acer saccharum,28
+Monroe,Iowa,Acer rubrum,27
+Monroe,Iowa,Acer saccharinum,25
+Monroe,Iowa,Tilia cordata,23
+Monroe,Iowa,Other,262
+Newton,Iowa,Acer platanoides,426
+Newton,Iowa,Acer saccharum,205
+Newton,Iowa,Acer rubrum,198
+Newton,Iowa,Acer saccharinum,160
+Newton,Iowa,Tilia cordata,151
+Newton,Iowa,Other,1977
+Oakland Acres,Iowa,Acer platanoides,10
+Oakland Acres,Iowa,Acer saccharum,6
+Oakland Acres,Iowa,Acer rubrum,5
+Oakland Acres,Iowa,Acer saccharinum,4
+Oakland Acres,Iowa,Tilia cordata,3
+Oakland Acres,Iowa,Other,4
+Panora,Iowa,Acer platanoides,56
+Panora,Iowa,Acer saccharum,45
+Panora,Iowa,Acer rubrum,22
+Panora,Iowa,Acer saccharinum,21
+Panora,Iowa,Tilia cordata,16
+Panora,Iowa,Other,59
+Pleasant Hill,Iowa,Acer platanoides,200
+Pleasant Hill,Iowa,Acer saccharum,168
+Pleasant Hill,Iowa,Acer rubrum,91
+Pleasant Hill,Iowa,Acer saccharinum,90
+Pleasant Hill,Iowa,Tilia cordata,80
+Pleasant Hill,Iowa,Other,775
+Polk City,Iowa,Acer platanoides,55
+Polk City,Iowa,Acer saccharum,21
+Polk City,Iowa,Acer rubrum,12
+Polk City,Iowa,Acer saccharinum,9
+Polk City,Iowa,Tilia cordata,6
+Polk City,Iowa,Other,15
+Prairie City,Iowa,Acer platanoides,55
+Prairie City,Iowa,Acer saccharum,33
+Prairie City,Iowa,Acer rubrum,29
+Prairie City,Iowa,Acer saccharinum,26
+Prairie City,Iowa,Tilia cordata,18
+Prairie City,Iowa,Other,151
+Redfield,Iowa,Acer platanoides,20
+Redfield,Iowa,Acer saccharum,17
+Redfield,Iowa,Acer rubrum,15
+Redfield,Iowa,Acer saccharinum,13
+Redfield,Iowa,Tilia cordata,10
+Redfield,Iowa,Other,70
+Runnells,Iowa,Acer platanoides,12
+Runnells,Iowa,Acer saccharum,11
+Runnells,Iowa,Acer rubrum,6
+Runnells,Iowa,Acer saccharinum,6
+Runnells,Iowa,Tilia cordata,6
+Runnells,Iowa,Other,22
+Stuart,Iowa,Acer platanoides,94
+Stuart,Iowa,Acer saccharum,94
+Stuart,Iowa,Acer rubrum,58
+Stuart,Iowa,Acer saccharinum,50
+Stuart,Iowa,Tilia cordata,18
+Stuart,Iowa,Other,134
+Sully,Iowa,Acer platanoides,22
+Sully,Iowa,Acer saccharum,21
+Sully,Iowa,Acer rubrum,20
+Sully,Iowa,Acer saccharinum,15
+Sully,Iowa,Tilia cordata,11
+Sully,Iowa,Other,70
+Union,Iowa,Acer platanoides,47
+Union,Iowa,Acer saccharum,21
+Union,Iowa,Acer rubrum,19
+Union,Iowa,Acer saccharinum,15
+Union,Iowa,Tilia cordata,13
+Union,Iowa,Other,50
+Van Meter,Iowa,Acer platanoides,11
+Van Meter,Iowa,Acer saccharum,8
+Van Meter,Iowa,Acer rubrum,6
+Van Meter,Iowa,Acer saccharinum,6
+Van Meter,Iowa,Tilia cordata,6
+Van Meter,Iowa,Other,13
+Waukee,Iowa,Acer platanoides,218
+Waukee,Iowa,Acer saccharum,200
+Waukee,Iowa,Acer rubrum,199
+Waukee,Iowa,Acer saccharinum,122
+Waukee,Iowa,Tilia cordata,111
+Waukee,Iowa,Other,1096
+Windsor Heights,Iowa,Acer platanoides,39
+Windsor Heights,Iowa,Acer saccharum,32
+Windsor Heights,Iowa,Acer rubrum,26
+Windsor Heights,Iowa,Acer saccharinum,25
+Windsor Heights,Iowa,Tilia cordata,22
+Windsor Heights,Iowa,Other,235
+Woodward,Iowa,Acer platanoides,105
+Woodward,Iowa,Acer saccharum,81
+Woodward,Iowa,Acer rubrum,66
+Woodward,Iowa,Acer saccharinum,49
+Woodward,Iowa,Tilia cordata,26
+Woodward,Iowa,Other,181
+Detroit,Michigan,Acer platanoides,1735
+Detroit,Michigan,Acer saccharum,1276
+Detroit,Michigan,Acer rubrum,1183
+Detroit,Michigan,Acer saccharinum,981
+Detroit,Michigan,Tilia cordata,980
+Detroit,Michigan,Other,14220
+Durham,North Carolina,Acer platanoides,3103
+Durham,North Carolina,Acer saccharum,2777
+Durham,North Carolina,Acer rubrum,1027
+Durham,North Carolina,Acer saccharinum,718
+Durham,North Carolina,Tilia cordata,573
+Durham,North Carolina,Other,7816
+Fresno,California,Acer platanoides,749
+Fresno,California,Acer saccharum,713
+Fresno,California,Acer rubrum,588
+Fresno,California,Acer saccharinum,444
+Fresno,California,Tilia cordata,397
+Fresno,California,Other,3282
+Garden Grove,California,Acer platanoides,2358
+Garden Grove,California,Acer saccharum,1643
+Garden Grove,California,Acer rubrum,1438
+Garden Grove,California,Acer saccharinum,1049
+Garden Grove,California,Tilia cordata,897
+Garden Grove,California,Other,9997
+Grand Rapids,Michigan,Acer platanoides,20433
+Grand Rapids,Michigan,Acer saccharum,5805
+Grand Rapids,Michigan,Acer rubrum,4523
+Grand Rapids,Michigan,Acer saccharinum,3954
+Grand Rapids,Michigan,Tilia cordata,3033
+Grand Rapids,Michigan,Other,31954
+Greensboro,North Carolina,Acer platanoides,713
+Greensboro,North Carolina,Acer saccharum,523
+Greensboro,North Carolina,Acer rubrum,437
+Greensboro,North Carolina,Acer saccharinum,405
+Greensboro,North Carolina,Tilia cordata,295
+Greensboro,North Carolina,Other,4206
+Ahuimanu,Hawaii,Acer platanoides,7
+Ahuimanu,Hawaii,Acer saccharum,5
+Ahuimanu,Hawaii,Acer rubrum,1
+Ahuimanu,Hawaii,Acer saccharinum,1
+Ahuimanu,Hawaii,Tilia cordata,0
+Honolulu,Hawaii,Acer platanoides,718
+Honolulu,Hawaii,Acer saccharum,635
+Honolulu,Hawaii,Acer rubrum,576
+Honolulu,Hawaii,Acer saccharinum,421
+Honolulu,Hawaii,Tilia cordata,332
+Honolulu,Hawaii,Other,4461
+Kailua,Hawaii,Acer platanoides,983
+Kailua,Hawaii,Acer saccharum,981
+Kailua,Hawaii,Acer rubrum,373
+Kailua,Hawaii,Acer saccharinum,345
+Kailua,Hawaii,Tilia cordata,251
+Kailua,Hawaii,Other,2474
+Kaneohe,Hawaii,Acer platanoides,297
+Kaneohe,Hawaii,Acer saccharum,154
+Kaneohe,Hawaii,Acer rubrum,145
+Kaneohe,Hawaii,Acer saccharinum,129
+Kaneohe,Hawaii,Tilia cordata,104
+Kaneohe,Hawaii,Other,1229
+Waipahu,Hawaii,Acer platanoides,27
+Waipahu,Hawaii,Acer saccharum,13
+Waipahu,Hawaii,Acer rubrum,2
+Waipahu,Hawaii,Acer saccharinum,1
+Waipahu,Hawaii,Tilia cordata,0
+Houston,Texas,Acer platanoides,44320
+Houston,Texas,Acer saccharum,44059
+Houston,Texas,Acer rubrum,13013
+Houston,Texas,Acer saccharinum,10804
+Houston,Texas,Tilia cordata,9561
+Houston,Texas,Other,90029
+Huntington Beach,California,Acer platanoides,4681
+Huntington Beach,California,Acer saccharum,4037
+Huntington Beach,California,Acer rubrum,3896
+Huntington Beach,California,Acer saccharinum,2574
+Huntington Beach,California,Tilia cordata,1665
+Huntington Beach,California,Other,28376
+Indianapolis,Indiana,Acer platanoides,7042
+Indianapolis,Indiana,Acer saccharum,5940
+Indianapolis,Indiana,Acer rubrum,5803
+Indianapolis,Indiana,Acer saccharinum,5717
+Indianapolis,Indiana,Tilia cordata,3977
+Indianapolis,Indiana,Other,68748
+Irvine,California,Acer platanoides,4578
+Irvine,California,Acer saccharum,3948
+Irvine,California,Acer rubrum,3830
+Irvine,California,Acer saccharinum,3810
+Irvine,California,Tilia cordata,3339
+Irvine,California,Other,38264
+Jersey City,New Jersey,Acer platanoides,111
+Jersey City,New Jersey,Acer saccharum,101
+Jersey City,New Jersey,Acer rubrum,92
+Jersey City,New Jersey,Acer saccharinum,78
+Jersey City,New Jersey,Tilia cordata,63
+Jersey City,New Jersey,Other,329
+Knoxville,Tennessee,Acer platanoides,683
+Knoxville,Tennessee,Acer saccharum,602
+Knoxville,Tennessee,Acer rubrum,594
+Knoxville,Tennessee,Acer saccharinum,517
+Knoxville,Tennessee,Tilia cordata,323
+Knoxville,Tennessee,Other,5653
+Las Vegas,Nevada,Acer platanoides,5888
+Las Vegas,Nevada,Acer saccharum,4480
+Las Vegas,Nevada,Acer rubrum,1844
+Las Vegas,Nevada,Acer saccharinum,1483
+Las Vegas,Nevada,Tilia cordata,1478
+Las Vegas,Nevada,Other,16691
+Los Angeles,California,Acer platanoides,37971
+Los Angeles,California,Acer saccharum,34729
+Los Angeles,California,Acer rubrum,30988
+Los Angeles,California,Acer saccharinum,30061
+Los Angeles,California,Tilia cordata,28681
+Los Angeles,California,Other,411180
+Louisville,Kentucky,Acer platanoides,1810
+Louisville,Kentucky,Acer saccharum,1678
+Louisville,Kentucky,Acer rubrum,1538
+Louisville,Kentucky,Acer saccharinum,1404
+Louisville,Kentucky,Tilia cordata,1086
+Louisville,Kentucky,Other,25195
+Madison,Wisconsin,Acer platanoides,20918
+Madison,Wisconsin,Acer saccharum,17377
+Madison,Wisconsin,Acer rubrum,4969
+Madison,Wisconsin,Acer saccharinum,3894
+Madison,Wisconsin,Tilia cordata,3390
+Madison,Wisconsin,Other,33210
+Miami,Florida,Acer platanoides,46
+Miami,Florida,Acer saccharum,41
+Miami,Florida,Acer rubrum,36
+Miami,Florida,Acer saccharinum,34
+Miami,Florida,Tilia cordata,33
+Miami,Florida,Other,541
+Brown Deer,Wisconsin,Acer platanoides,122
+Brown Deer,Wisconsin,Acer saccharum,90
+Brown Deer,Wisconsin,Acer rubrum,84
+Brown Deer,Wisconsin,Acer saccharinum,59
+Brown Deer,Wisconsin,Tilia cordata,49
+Brown Deer,Wisconsin,Other,176
+Cudahy,Wisconsin,Acer platanoides,63
+Cudahy,Wisconsin,Acer saccharum,41
+Cudahy,Wisconsin,Acer rubrum,36
+Cudahy,Wisconsin,Acer saccharinum,33
+Cudahy,Wisconsin,Tilia cordata,32
+Cudahy,Wisconsin,Other,218
+Fox Point,Wisconsin,Acer platanoides,25
+Fox Point,Wisconsin,Acer saccharum,19
+Fox Point,Wisconsin,Acer rubrum,19
+Fox Point,Wisconsin,Acer saccharinum,11
+Fox Point,Wisconsin,Tilia cordata,11
+Fox Point,Wisconsin,Other,75
+Franklin,Wisconsin,Acer platanoides,57
+Franklin,Wisconsin,Acer saccharum,27
+Franklin,Wisconsin,Acer rubrum,24
+Franklin,Wisconsin,Acer saccharinum,23
+Franklin,Wisconsin,Tilia cordata,23
+Franklin,Wisconsin,Other,174
+Glendale,Wisconsin,Acer platanoides,442
+Glendale,Wisconsin,Acer saccharum,186
+Glendale,Wisconsin,Acer rubrum,175
+Glendale,Wisconsin,Acer saccharinum,116
+Glendale,Wisconsin,Tilia cordata,111
+Glendale,Wisconsin,Other,706
+Greendale,Wisconsin,Acer platanoides,31
+Greendale,Wisconsin,Acer saccharum,27
+Greendale,Wisconsin,Acer rubrum,17
+Greendale,Wisconsin,Acer saccharinum,16
+Greendale,Wisconsin,Tilia cordata,14
+Greendale,Wisconsin,Other,165
+Greenfield,Wisconsin,Acer platanoides,61
+Greenfield,Wisconsin,Acer saccharum,26
+Greenfield,Wisconsin,Acer rubrum,26
+Greenfield,Wisconsin,Acer saccharinum,25
+Greenfield,Wisconsin,Tilia cordata,25
+Greenfield,Wisconsin,Other,209
+Hales Corners,Wisconsin,Acer platanoides,43
+Hales Corners,Wisconsin,Acer saccharum,43
+Hales Corners,Wisconsin,Acer rubrum,35
+Hales Corners,Wisconsin,Acer saccharinum,29
+Hales Corners,Wisconsin,Tilia cordata,24
+Hales Corners,Wisconsin,Other,262
+Milwaukee,Wisconsin,Acer platanoides,1411
+Milwaukee,Wisconsin,Acer saccharum,1356
+Milwaukee,Wisconsin,Acer rubrum,912
+Milwaukee,Wisconsin,Acer saccharinum,840
+Milwaukee,Wisconsin,Tilia cordata,700
+Milwaukee,Wisconsin,Other,5939
+New Berlin,Wisconsin,Acer platanoides,639
+New Berlin,Wisconsin,Acer saccharum,613
+New Berlin,Wisconsin,Acer rubrum,478
+New Berlin,Wisconsin,Acer saccharinum,300
+New Berlin,Wisconsin,Tilia cordata,285
+New Berlin,Wisconsin,Other,3955
+Oak Creek,Wisconsin,Acer platanoides,37
+Oak Creek,Wisconsin,Acer saccharum,25
+Oak Creek,Wisconsin,Acer rubrum,13
+Oak Creek,Wisconsin,Acer saccharinum,9
+Oak Creek,Wisconsin,Tilia cordata,9
+Oak Creek,Wisconsin,Other,92
+Shorewood,Wisconsin,Acer platanoides,16
+Shorewood,Wisconsin,Acer saccharum,14
+Shorewood,Wisconsin,Acer rubrum,11
+Shorewood,Wisconsin,Acer saccharinum,9
+Shorewood,Wisconsin,Tilia cordata,8
+Shorewood,Wisconsin,Other,36
+South Milwaukee,Wisconsin,Acer platanoides,54
+South Milwaukee,Wisconsin,Acer saccharum,45
+South Milwaukee,Wisconsin,Acer rubrum,31
+South Milwaukee,Wisconsin,Acer saccharinum,28
+South Milwaukee,Wisconsin,Tilia cordata,28
+South Milwaukee,Wisconsin,Other,245
+Watertown,Wisconsin,Acer platanoides,976
+Watertown,Wisconsin,Acer saccharum,401
+Watertown,Wisconsin,Acer rubrum,397
+Watertown,Wisconsin,Acer saccharinum,385
+Watertown,Wisconsin,Tilia cordata,354
+Watertown,Wisconsin,Other,3632
+Wauwatosa,Wisconsin,Acer platanoides,265
+Wauwatosa,Wisconsin,Acer saccharum,186
+Wauwatosa,Wisconsin,Acer rubrum,171
+Wauwatosa,Wisconsin,Acer saccharinum,157
+Wauwatosa,Wisconsin,Tilia cordata,151
+Wauwatosa,Wisconsin,Other,938
+West Allis,Wisconsin,Acer platanoides,348
+West Allis,Wisconsin,Acer saccharum,238
+West Allis,Wisconsin,Acer rubrum,144
+West Allis,Wisconsin,Acer saccharinum,87
+West Allis,Wisconsin,Tilia cordata,70
+West Allis,Wisconsin,Other,541
+West Milwaukee,Wisconsin,Acer platanoides,22
+West Milwaukee,Wisconsin,Acer saccharum,19
+West Milwaukee,Wisconsin,Acer rubrum,16
+West Milwaukee,Wisconsin,Acer saccharinum,13
+West Milwaukee,Wisconsin,Tilia cordata,9
+West Milwaukee,Wisconsin,Other,31
+Whitefish Bay,Wisconsin,Acer platanoides,10
+Whitefish Bay,Wisconsin,Acer saccharum,10
+Whitefish Bay,Wisconsin,Acer rubrum,8
+Whitefish Bay,Wisconsin,Acer saccharinum,7
+Whitefish Bay,Wisconsin,Tilia cordata,5
+Whitefish Bay,Wisconsin,Other,27
+Minneapolis,Minnesota,Acer platanoides,28206
+Minneapolis,Minnesota,Acer saccharum,20191
+Minneapolis,Minnesota,Acer rubrum,16232
+Minneapolis,Minnesota,Acer saccharinum,15362
+Minneapolis,Minnesota,Tilia cordata,12745
+Minneapolis,Minnesota,Other,96140
+Nashville,Tennessee,Acer platanoides,281
+Nashville,Tennessee,Acer saccharum,166
+Nashville,Tennessee,Acer rubrum,154
+Nashville,Tennessee,Acer saccharinum,131
+Nashville,Tennessee,Tilia cordata,120
+Nashville,Tennessee,Other,1187
+New Orleans,Louisiana,Acer platanoides,30244
+New Orleans,Louisiana,Acer saccharum,21775
+New Orleans,Louisiana,Acer rubrum,5409
+New Orleans,Louisiana,Acer saccharinum,4186
+New Orleans,Louisiana,Tilia cordata,3471
+New Orleans,Louisiana,Other,38987
+New York,New York,Acer platanoides,87014
+New York,New York,Acer saccharum,64264
+New York,New York,Acer rubrum,58931
+New York,New York,Acer saccharinum,53185
+New York,New York,Tilia cordata,40112
+New York,New York,Other,348663
+Oakland,California,Acer platanoides,3788
+Oakland,California,Acer saccharum,3312
+Oakland,California,Acer rubrum,2930
+Oakland,California,Acer saccharinum,2683
+Oakland,California,Tilia cordata,2161
+Oakland,California,Other,20694
+Oklahoma City,Oklahoma,Acer platanoides,711
+Oklahoma City,Oklahoma,Acer saccharum,689
+Oklahoma City,Oklahoma,Acer rubrum,584
+Oklahoma City,Oklahoma,Acer saccharinum,567
+Oklahoma City,Oklahoma,Tilia cordata,455
+Oklahoma City,Oklahoma,Other,5865
+Ontario,California,Acer platanoides,4630
+Ontario,California,Acer saccharum,4392
+Ontario,California,Acer rubrum,3900
+Ontario,California,Acer saccharinum,3328
+Ontario,California,Tilia cordata,3307
+Ontario,California,Other,38984
+Orlando,Florida,Acer platanoides,17126
+Orlando,Florida,Acer saccharum,14988
+Orlando,Florida,Acer rubrum,10620
+Orlando,Florida,Acer saccharinum,2855
+Orlando,Florida,Tilia cordata,2609
+Orlando,Florida,Other,17986
+Overland Park,Kansas,Acer platanoides,13289
+Overland Park,Kansas,Acer saccharum,7654
+Overland Park,Kansas,Acer rubrum,3419
+Overland Park,Kansas,Acer saccharinum,1983
+Overland Park,Kansas,Tilia cordata,1929
+Overland Park,Kansas,Other,16493
+Phoenix,Arizona,Acer platanoides,19
+Phoenix,Arizona,Acer saccharum,16
+Phoenix,Arizona,Acer rubrum,14
+Phoenix,Arizona,Acer saccharinum,12
+Phoenix,Arizona,Tilia cordata,11
+Phoenix,Arizona,Other,142
+Pittsburgh,Pennsylvania,Acer platanoides,3715
+Pittsburgh,Pennsylvania,Acer saccharum,3422
+Pittsburgh,Pennsylvania,Acer rubrum,3238
+Pittsburgh,Pennsylvania,Acer saccharinum,2969
+Pittsburgh,Pennsylvania,Tilia cordata,2413
+Pittsburgh,Pennsylvania,Other,24397
+Plano,Texas,Acer platanoides,3641
+Plano,Texas,Acer saccharum,3279
+Plano,Texas,Acer rubrum,2598
+Plano,Texas,Acer saccharinum,1906
+Plano,Texas,Tilia cordata,1598
+Plano,Texas,Other,9740
+Portland,Oregon,Acer platanoides,25635
+Portland,Oregon,Acer saccharum,19209
+Portland,Oregon,Acer rubrum,15475
+Portland,Oregon,Acer saccharinum,11700
+Portland,Oregon,Tilia cordata,10635
+Portland,Oregon,Other,134097
+Providence,Rhode Island,Acer platanoides,3054
+Providence,Rhode Island,Acer saccharum,2792
+Providence,Rhode Island,Acer rubrum,2050
+Providence,Rhode Island,Acer saccharinum,1867
+Providence,Rhode Island,Tilia cordata,1714
+Providence,Rhode Island,Other,12605
+Rancho Cucamonga,California,Acer platanoides,12889
+Rancho Cucamonga,California,Acer saccharum,5698
+Rancho Cucamonga,California,Acer rubrum,5549
+Rancho Cucamonga,California,Acer saccharinum,5016
+Rancho Cucamonga,California,Tilia cordata,4941
+Rancho Cucamonga,California,Other,46199
+Richmond,Virginia,Acer platanoides,227
+Richmond,Virginia,Acer saccharum,171
+Richmond,Virginia,Acer rubrum,161
+Richmond,Virginia,Acer saccharinum,148
+Richmond,Virginia,Tilia cordata,133
+Richmond,Virginia,Other,975
+Rochester,New York,Acer platanoides,6307
+Rochester,New York,Acer saccharum,3329
+Rochester,New York,Acer rubrum,2970
+Rochester,New York,Acer saccharinum,2499
+Rochester,New York,Tilia cordata,2178
+Rochester,New York,Other,28401
+Sacramento,California,Acer platanoides,14111
+Sacramento,California,Acer saccharum,4580
+Sacramento,California,Acer rubrum,4285
+Sacramento,California,Acer saccharinum,4146
+Sacramento,California,Tilia cordata,4047
+Sacramento,California,Other,53091
+San Diego,California,Acer platanoides,22624
+San Diego,California,Acer saccharum,15129
+San Diego,California,Acer rubrum,13608
+San Diego,California,Acer saccharinum,13269
+San Diego,California,Tilia cordata,12677
+San Diego,California,Other,134913
+San Francisco,California,Acer platanoides,11925
+San Francisco,California,Acer saccharum,8681
+San Francisco,California,Acer rubrum,8509
+San Francisco,California,Acer saccharinum,8236
+San Francisco,California,Tilia cordata,7793
+San Francisco,California,Other,129924
+San Jose,California,Acer platanoides,26291
+San Jose,California,Acer saccharum,24316
+San Jose,California,Acer rubrum,21636
+San Jose,California,Acer saccharinum,14644
+San Jose,California,Tilia cordata,9631
+San Jose,California,Other,168288
+Santa Rosa,California,Acer platanoides,468
+Santa Rosa,California,Acer saccharum,203
+Santa Rosa,California,Acer rubrum,155
+Santa Rosa,California,Acer saccharinum,139
+Santa Rosa,California,Tilia cordata,87
+Santa Rosa,California,Other,161
+Seattle,Washington,Acer platanoides,8244
+Seattle,Washington,Acer saccharum,7543
+Seattle,Washington,Acer rubrum,6304
+Seattle,Washington,Acer saccharinum,5206
+Seattle,Washington,Tilia cordata,4948
+Seattle,Washington,Other,132658
+Sioux Falls,South Dakota,Acer platanoides,21452
+Sioux Falls,South Dakota,Acer saccharum,5704
+Sioux Falls,South Dakota,Acer rubrum,4933
+Sioux Falls,South Dakota,Acer saccharinum,4327
+Sioux Falls,South Dakota,Tilia cordata,3097
+Sioux Falls,South Dakota,Other,21791
+St. Louis,Missouri,Acer platanoides,8575
+St. Louis,Missouri,Acer saccharum,7761
+St. Louis,Missouri,Acer rubrum,7210
+St. Louis,Missouri,Acer saccharinum,6503
+St. Louis,Missouri,Tilia cordata,4557
+St. Louis,Missouri,Other,48846
+Stockton,California,Acer platanoides,11392
+Stockton,California,Acer saccharum,7552
+Stockton,California,Acer rubrum,7354
+Stockton,California,Acer saccharinum,7179
+Stockton,California,Tilia cordata,5296
+Stockton,California,Other,58934
+Seffner,Florida,Acer platanoides,4
+Seffner,Florida,Acer saccharum,4
+Seffner,Florida,Acer rubrum,3
+Seffner,Florida,Acer saccharinum,1
+Seffner,Florida,Tilia cordata,0
+Tampa,Florida,Acer platanoides,5379
+Tampa,Florida,Acer saccharum,3248
+Tampa,Florida,Acer rubrum,2851
+Tampa,Florida,Acer saccharinum,1381
+Tampa,Florida,Tilia cordata,1236
+Tampa,Florida,Other,9563
+Temple Terrace,Florida,Acer platanoides,3
+Temple Terrace,Florida,Acer saccharum,3
+Temple Terrace,Florida,Acer rubrum,1
+Temple Terrace,Florida,Acer saccharinum,1
+Temple Terrace,Florida,Tilia cordata,0
+Washington DC,District of Columbia,Acer platanoides,12711
+Washington DC,District of Columbia,Acer saccharum,9981
+Washington DC,District of Columbia,Acer rubrum,9014
+Washington DC,District of Columbia,Acer saccharinum,8904
+Washington DC,District of Columbia,Tilia cordata,6343
+Washington DC,District of Columbia,Other,121052
+Worcester,Massachusetts,Acer platanoides,9364
+Worcester,Massachusetts,Acer saccharum,1346
+Worcester,Massachusetts,Acer rubrum,1029
+Worcester,Massachusetts,Acer saccharinum,342
+Worcester,Massachusetts,Tilia cordata,335
+Worcester,Massachusetts,Other,3061

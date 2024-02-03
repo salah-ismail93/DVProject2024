@@ -22,12 +22,24 @@
       </div>
     </div>
   </div>
+  <div class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+      <div class="flex">
+        <div class="charts">
+          <!-- Content for Heat Map Contribution Tab -->
+          <waffleChart />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 import HeatMapContribution from '../components/HeatMapContribution.vue';
+import waffleChart from '../components/waffleChart.vue';
 export default {
   name: 'WorldContribution',
   components: {
+    waffleChart,
     HeatMapContribution
   }
 };
