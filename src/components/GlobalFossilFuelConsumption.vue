@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-10xl py-16 lg:flex lg:items-center lg:justify-between">
         <div class="flex">
             <div class="text-gray-700 mt-10 mr-16">
-                <H1 class="font-bold">What countries have the most impact on our globe</H1>
+                <h1 class="font-bold">What countries have the most impact on our globe</h1>
                 <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
                     emission they have</p>
 
