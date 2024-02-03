@@ -2,7 +2,7 @@
     <div class="flex flex-col">
         <div id="outerContainer2" class="flex flex-col justify-center">
             <div class="mx-auto flex flex-col justify-center">
-                <div class="bg-green-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
+                <div class="overlayColor w-full mx-auto px-16 py-20 flex items-center justify-center">
                     <div id="areaChart" class="mr-16"></div>
                     <div class="flex flex-col">
                         <div class="mx-auto mb-16 flex items-center justify-center">
@@ -42,10 +42,11 @@
                     <div class="flex flex-col">
                         <div class="text-gray-700 ml-16 my-8">
                             <h1 class="font-bold">Another representation...</h1>
-                            <p class="mt-2">This polar area chart represent the same values above, but in a different way
+                            <p class="mt-2">The polar area chart, representing the same data in an alternative visual format, offers insights into these shifts, trends, and anomalies. 
                             </p>
 
-                            <p class="mt-2">we can notice the changes, trends and abnormality
+                            <p class="mt-2">  Take a moment to explore and analyze the changes encapsulated in this unique representation.
+
                             </p>
 
                         </div>
@@ -60,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-green-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
+                <div class="overlayColor w-full mx-auto px-16 py-20 flex items-center justify-center">
                     <div id="anomalyRadial" class="mr-16"></div>
                     <div class="flex flex-col">
                         <div class="text-gray-700 ml-16 my-8">
@@ -313,8 +314,9 @@ export default {
     font-size: .875rem;
     word-wrap: break-word;
 }
-.bg-green-100{
+.overlayColor{
   --tw-bg-opacity: 1;
-  background-color: rgb(221 249 226 / var(--tw-bg-opacity));
+  background-color:  rgb(18, 70, 40)
+  /*background-color: rgb(221 249 226 / var(--tw-bg-opacity));*/
 }
 </style>

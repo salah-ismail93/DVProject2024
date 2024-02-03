@@ -109,11 +109,12 @@ const scrollToSection = (sectionId) => {
   padding: 10px 20px;
 
   color: white;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .butt:hover {
-  background: rgba(27, 116, 22, 0.964);
+  
+  background: rgba(15, 78, 12, 0.964);
 }
 
 .butt:selected {
@@ -127,15 +128,15 @@ const scrollToSection = (sectionId) => {
   padding: 10px 20px;
 
   color: white;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .butt1:hover {
-  background: rgba(27, 116, 22, 0.964);
+  background: rgba(15, 78, 12, 0.964);
 
 }
 
 header{
-  background-color: rgba(8, 52, 26, 0.944);
+  background-color: rgba(60, 158, 101);
 }
 </style>
