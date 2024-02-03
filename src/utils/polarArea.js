@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 
 // Plot constants
 const MARGIN = {LEFT: 10, RIGHT: 10, TOP: 10, BOTTOM: 10};
-const WIDTH = 500 - MARGIN.LEFT - MARGIN.RIGHT;
+const WIDTH = 450 - MARGIN.LEFT - MARGIN.RIGHT;
 const HEIGHT = 500 - MARGIN.TOP - MARGIN.BOTTOM;
 const INNERRADIUS = 60;
 const OUTERRADIUS = Math.min(WIDTH, HEIGHT) / 2;

@@ -2,8 +2,7 @@
     <div class="flex flex-col">
         <div id="outerContainer2" class="flex flex-col justify-center">
             <div class="mx-auto flex flex-col justify-center">
-                <div class="bg-green-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
-                    <div id="areaChart" class="mr-16"></div>
+                <div class="bg-green-100 w-full mx-auto py-5 flex flex-col items-center justify-center">
                     <div class="flex flex-col">
                         <div class="mx-auto mb-16 flex items-center justify-center">
                             <div class="mx-5">
@@ -17,7 +16,25 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="text-gray-700 ml-16 my-8">
+                    </div>
+                    <button
+                        class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
+                    <div class="relative w-full max-w-5xl mb-6">
+                        <input type="range" value="0"
+                            class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
+                            id="yearSliderArea" />
+                        <span class="absolute start-0 -bottom-6">1901</span>
+                        <span class="absolute end-0 -bottom-6">2020</span>
+                    </div>
+                </div>
+                <div class="bg-green-100 w-full mx-auto py-5 flex items-center justify-center">
+                    <div id="areaChart" class="mx-1"></div>
+                    <div id="polarArea" class="mx-1"></div>
+                    <div id="anomalyRadial" class="mx-1"></div>
+                </div>
+                <div class="bg-green-100 w-full mx-auto py-5 flex items-center justify-center">
+                    <div class="flex flex-col">
+                        <div class="text-gray-700 mx-5 my-8">
                             <h1 class="font-bold">The average temperature of countries over years</h1>
                             <p class="mt-2">we can notice the area chart how it changes over the years, in general we can
                                 notice a raise in the temperature in the last 100 years</p>
@@ -26,21 +43,9 @@
                                 we notice this changes over the years
                             </p>
                         </div>
-                        <button
-                            class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
-                        <div class="relative mb-6">
-                            <input type="range" value="0"
-                                class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
-                                id="yearSliderArea" />
-                            <span class="absolute start-0 -bottom-6">1901</span>
-                            <span class="absolute end-0 -bottom-6">2020</span>
-                        </div>
                     </div>
-                </div>
-                <div class="bg-white w-full mx-auto px-16 py-20 flex items-center justify-center">
-                    <div id="polarArea" class="mr-16"></div>
                     <div class="flex flex-col">
-                        <div class="text-gray-700 ml-16 my-8">
+                        <div class="text-gray-700 mx-5 my-8">
                             <h1 class="font-bold">Another representation...</h1>
                             <p class="mt-2">This polar area chart represent the same values above, but in a different way
                             </p>
@@ -49,21 +54,9 @@
                             </p>
 
                         </div>
-                        <button
-                            class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
-                        <div class="relative mb-6">
-                            <input type="range" value="0"
-                                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
-                                id="yearSliderPolar" />
-                            <span class="absolute start-0 -bottom-6">1901</span>
-                            <span class="absolute end-0 -bottom-6">2020</span>
-                        </div>
                     </div>
-                </div>
-                <div class="bg-green-100 w-full mx-auto px-16 py-20 flex items-center justify-center">
-                    <div id="anomalyRadial" class="mr-16"></div>
                     <div class="flex flex-col">
-                        <div class="text-gray-700 ml-16 my-8">
+                        <div class="text-gray-700 mx-5 my-8">
                             <h1 class="font-bold">The temperature is raising!</h1>
                             <p class="mt-2">Over the years we can notice how differences between temperatures are increasing
                             </p>
@@ -72,15 +65,6 @@
                                 after the chart finishes drawing, it's clear how much difference there are
                             </p>
 
-                        </div>
-                        <button
-                            class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
-                        <div class="relative mb-6">
-                            <input type="range" value="0"
-                                class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
-                                id="yearSliderRadial" />
-                            <span class="absolute start-0 -bottom-6">1901</span>
-                            <span class="absolute end-0 -bottom-6">2020</span>
                         </div>
                     </div>
                 </div>
@@ -107,14 +91,8 @@ export default {
 
         // Init slider variables
         const slider = document.getElementById("yearSliderArea");
-        const slider2 = document.getElementById('yearSliderPolar');
-        const slider3 = document.getElementById('yearSliderRadial');
         slider.min = firstYear;
         slider.max = lastYear;
-        slider2.min = firstYear;
-        slider2.max = lastYear;
-        slider3.min = firstYear;
-        slider3.max = lastYear;
 
         // Init charts
         areaChart.initChart("#areaChart");
@@ -152,8 +130,6 @@ export default {
             let interval = d3.interval(() => {
                 year = year < lastYear ? year + 1 : firstYear;
                 slider.value = year;
-                slider2.value = year;
-                slider3.value = year;
                 updateCharts();
             }, 400);
 
@@ -168,50 +144,12 @@ export default {
                 year = +slider.value;
                 updateCharts();
             });
-            slider2.addEventListener("input", (event) => {
-                if (moving) {
-                    interval.stop();
-                }
-                year = +slider2.value;
-                updateCharts();
-            });
-            slider3.addEventListener("input", (event) => {
-                if (moving) {
-                    interval.stop();
-                }
-                year = +slider3.value;
-                updateCharts();
-            });
             // eslint-disable-next-line no-unused-vars
             slider.addEventListener("pointerup", (event) => {
                 if (moving) {
                     interval = d3.interval(() => {
                         year = year < lastYear ? year + 1 : firstYear;
                         slider.value = year;
-                        slider2.value = year;
-                        slider3.value = year;
-                        updateCharts();
-                    }, 400);
-                }
-            });
-            slider2.addEventListener("pointerup", (event) => {
-                if (moving) {
-                    interval = d3.interval(() => {
-                        year = year < lastYear ? year + 1 : firstYear;
-                        slider.value = year;
-                        slider2.value = year;
-                        slider3.value = year;
-                        updateCharts();
-                    }, 400);
-                }
-            });
-            slider3.addEventListener("pointerup", (event) => {
-                if (moving) {
-                    interval = d3.interval(() => {
-                        year = year < lastYear ? year + 1 : firstYear;
-                        slider.value = year;
-                        slider2.value = year;
-                        slider3.value = year;
                         updateCharts();
                     }, 400);
                 }
@@ -229,8 +167,6 @@ export default {
                     interval = d3.interval(() => {
                         year = year < lastYear ? year + 1 : firstYear;
                         slider.value = year;
-                        slider2.value = year;
-                        slider3.value = year;
                         updateCharts();
                     }, 400);
                     button.text("Pause");
@@ -254,8 +190,6 @@ export default {
             yearSelect.on('change', (value) => {
                 year = +value.target.value;
                 slider.value = year;
-                slider2.value = year;
-                slider3.value = year;
                 updateCharts();
             });
             // Add countries to countries drop down menu
@@ -313,8 +247,9 @@ export default {
     font-size: .875rem;
     word-wrap: break-word;
 }
-.bg-green-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(221 249 226 / var(--tw-bg-opacity));
+
+.bg-green-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(221 249 226 / var(--tw-bg-opacity));
 }
 </style>

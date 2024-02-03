@@ -1,12 +1,12 @@
 <template>
   <!-- GHG Chart -->
   <div class="bg-white px-6 py-16 lg:px-8 py-22 main ClimateChangeCauses" id="ClimateChangeCauses">
-    <div class="max-w-10xl text-left">
+    <div class="max-w-2xl text-left">
       <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Climate Change Causes</h1>
     </div>
     <div class="max-w-10xl">
       <div class="mt-16 text-left flex justify-between">
-        <div class="max-w-5xl ml-auto">
+        <div class="max-w-5xl">
           <p class="mt-6 pl-16 max-w-2xl font-bold text-base leading-8 text-white text-left">
             Human activities since the beginning of the Industrial Revolution have increased atmospheric methane
             concentrations
