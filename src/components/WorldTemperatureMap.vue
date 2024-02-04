@@ -22,6 +22,8 @@
                             id="yearSlider" />
                         <span class="absolute start-0 -bottom-6">1901</span>
                         <span class="absolute end-0 -bottom-6">2020</span>
+                     
+                        
                     </div>
                     <div id="choroplethMap"></div>
                 </div>
@@ -122,7 +124,7 @@ export default {
             playButton.on("click", (e) => {
                 console.log(e.target);
                 const button = d3.select(e.target);
-                if (button.text() == "Pause") {
+                if (button.text() == "Pause-Click Pause and choose") {
                     moving = false;
                     interval.stop();
                     console.log(interval);
@@ -134,7 +136,7 @@ export default {
                         slider.value = year;
                         updateCharts();
                     }, 400);
-                    button.text("Pause");
+                    button.text("Pause-Click Pause and choose");
                 }
             });
             // Add month names to months drop down menu

@@ -137,6 +137,6 @@ const scrollToSection = (sectionId) => {
 }
 
 header{
-  background-color: rgba(60, 158, 101);
+  background-color: rgb(0, 0, 0);
 }
 </style>
