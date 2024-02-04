@@ -2,16 +2,21 @@
     <div class="mx-auto max-w-10xl py-16 lg:flex lg:items-center lg:justify-between">
         <div class="flex">
             <div class="text-gray-700 mt-10 mr-16">
-                <h1 class="font-bold">What countries have the most impact on our globe</h1>
-                <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
-                    emission they have</p>
+                <h1 class="font-bold">So..Do we consume that much fuel?</h1>
+                <p class="mt-2">All the above levels of GHG are mainly caused by the consumption of fuel in different forms</p>
 
-                <p class="mt-2">It's noticeable that the United State of America has the lion's share with almost the
-                    quarter 23%, followed by the east Part of the world China,
-                    with 13% and its neighbor India having 14%.
+                <p class="mt-2">
+                    We can notice how increasingly are consumping more and more fuel since the invention of engines (around 1800), 
+                    and we are not going low even after many solution has raised regarding renewable energy which indicates a serious problem 
+                    need some real actions against it.
                 </p>
-                <p class="mt-2">Italy on the other hand has a reasonable percentage around 5% sharing this score similarly
-                    with Japan
+                
+                <p class="mt-2">we notice a drop in 2009 due to the global economic crisis that happened at the end of 2008 and continued till 2009,
+                    another drop is obvious is in 2020, which basically because of COVID-19 epidemic.
+                </p>
+
+                <p class="mt-2">we notice a drop in 2009 due to the global economic crisis that happened at the end of 2008 and continued till 2009,
+                    another drop is obvious is in 2020, which basically because of COVID-19 epidemic.
                 </p>
             </div>
             <div id="area_chart"></div>
