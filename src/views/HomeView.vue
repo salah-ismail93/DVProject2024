@@ -2,17 +2,17 @@
 <template>
   <main>
     <div class="flex screen	justify-center items-center my-6">
-      <info />
+      <!-- <info /> -->
     </div>
   </main>
 </template>
 <script>
-import info from "../components/info.vue";
+//import info from "../components/info.vue";
 
 export default {
   name: "HomeView",
   components: {
-    info
+    //info
   },
 };
 </script>

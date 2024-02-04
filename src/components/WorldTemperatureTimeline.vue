@@ -4,7 +4,7 @@
             <div class="mx-auto flex flex-col justify-center">
                 <div class="bg-green-100 w-full mx-auto py-5 flex flex-col items-center justify-center">
                     <div class="flex flex-col">
-                        <div class="mx-auto mb-16 flex items-center justify-center">
+                        <div class="mx-auto my-8 flex items-center justify-center">
                             <div class="mx-5">
                                 <label for="country-list2">Select Country:</label>
                                 <select id="country-list2">

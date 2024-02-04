@@ -3,7 +3,7 @@
         <div class="flex">
 
             <div class="text-gray-700">
-                <h1 class="font-bold">What countries have the most impact on our globe</h1>
+                <h1 class="font-bold">What countries have the most impact on our globe (2021)?</h1>
                 <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
                     emission they have</p>
 
