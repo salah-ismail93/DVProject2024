@@ -28,7 +28,10 @@
                      
                         
                     </div>
-                    <div id="choroplethMap"></div>
+                    <div class="mx-auto flex flex-row justify-center">
+                        <div id="choroplethMap"></div>
+                        <div id="anomalyRadial"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,6 +41,7 @@
 
 <script>
 import * as choroplethMap from "../utils/choroplethMap.js";
+import * as anomalyRadial from "../utils/anomalyRadial.js";
 import * as d3 from 'd3';
 
 export default {
@@ -71,11 +75,13 @@ export default {
 
         // Init charts
         choroplethMap.initChart("#choroplethMap");
+        anomalyRadial.initChart("#anomalyRadial");
 
         // Datasets to load
         const dataPromises = [
             d3.csv("/temp-1901-2020-all.csv"),
-            d3.json("/world.geo.json")
+            d3.json("/world.geo.json"),
+            d3.csv("/HadCRUT4.csv")
         ];
 
         // Load datasets and start visualization
@@ -87,10 +93,15 @@ export default {
                 (d) => d.Year,
                 (d) => d.ISO3
             );
+            const anomalyData = d3.group(
+                data[2],
+                (d) => d.Year
+            );
 
             let updateCharts = () => {
                 const yearData = tempData.get(String(year));
                 choroplethMap.updateChart(topoData, yearData, month);
+                anomalyRadial.updateChart(anomalyData, year);
             }
             updateCharts();
 

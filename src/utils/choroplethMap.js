@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 
 // Plot constants
-const WIDTH = 1300;
+const WIDTH = 1000;
 const HEIGHT = 600;
 
 let svg, g, path, projection, colorScale, title, tooltip, tipCountry, tipData;
@@ -45,7 +45,7 @@ function initChart(canvasElement) {
   path = d3.geoPath();
   projection = d3
     .geoEqualEarth()
-    .scale(200)
+    .scale(175)
     .center([0, 0])
     .translate([WIDTH / 2, HEIGHT / 2]);
 

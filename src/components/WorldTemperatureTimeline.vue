@@ -35,9 +35,12 @@
                         </div>
                     </div>
                     <div class="overlayColor w-full mx-auto pt-5 flex items-center justify-center">
-                        <div id="areaChart" class="mx-1"></div>
-                        <div id="polarArea" class="mx-1"></div>
-                        <div id="anomalyRadial" class="mx-1"></div>
+                        <div class="flex flex-col w-full">
+                            <div id="areaChart" class="m-auto"></div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <div id="polarArea" class="m-auto"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="overlayColor w-full mx-auto pb-5 flex items-center justify-center">
@@ -64,18 +67,6 @@
 
                         </div>
                     </div>
-                    <div class="flex flex-col">
-                        <div class="text-gray-700 mx-5 my-8">
-                            <h1 class="font-bold">The temperature is rising!</h1>
-                            <p class="mt-2">Over the years we can notice how differences between temperatures are increasing
-                            </p>
-
-                            <p class="mt-2">It's obvious how each year we see a raise in the temperature<br>
-                                after the chart finishes drawing, it's clear how much difference there are
-                            </p>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -86,7 +77,6 @@
 <script>
 import * as areaChart from "../utils/areaChart.js";
 import * as polarArea from "../utils/polarArea.js";
-import * as anomalyRadial from "../utils/anomalyRadial.js";
 import * as d3 from 'd3';
 
 export default {
@@ -106,12 +96,10 @@ export default {
         // Init charts
         areaChart.initChart("#areaChart");
         polarArea.initChart("#polarArea");
-        anomalyRadial.initChart("#anomalyRadial");
 
         // Datasets to load
         const dataPromises = [
-            d3.csv("/temp-1901-2020-all.csv"),
-            d3.csv("/HadCRUT4.csv")
+            d3.csv("/temp-1901-2020-all.csv")
         ];
 
         // Load datasets and start visualization
@@ -122,17 +110,12 @@ export default {
                 (d) => d.Year,
                 (d) => d.ISO3
             );
-            const anomalyData = d3.group(
-                data[1],
-                (d) => d.Year
-            );
 
             function updateCharts() {
                 const yearData = tempData.get(String(year));
                 const countryData = yearData.get(country);
                 polarArea.updateChart(countryData);
                 areaChart.updateChart(countryData);
-                anomalyRadial.updateChart(anomalyData, year);
             }
             updateCharts();
 

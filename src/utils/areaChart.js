@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 
 // Plot constants
 const MARGIN = {LEFT: 100, RIGHT: 20, TOP: 20, BOTTOM: 100};
-const WIDTH = 550 - MARGIN.LEFT - MARGIN.RIGHT;
+const WIDTH = 700 - MARGIN.LEFT - MARGIN.RIGHT;
 const HEIGHT = 500 - MARGIN.TOP - MARGIN.BOTTOM;
 
 let svg,
