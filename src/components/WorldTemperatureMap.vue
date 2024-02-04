@@ -15,13 +15,15 @@
         <div id="outerContainer" class="flex flex-col justify-center">
             <div class="mx-auto flex flex-col justify-center">
                 <div class="centered-flex flex flex-col justify-center">
-                    <button id="play-button" class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Pause</button>
+                    <button id="play-button" class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Pause-Click Pause and choose</button>
                     <div class="relative mb-6">
                         <input type="range" value="0"
                             class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5"
                             id="yearSlider" />
                         <span class="absolute start-0 -bottom-6">1901</span>
                         <span class="absolute end-0 -bottom-6">2020</span>
+                     
+                        
                     </div>
                     <div id="choroplethMap"></div>
                 </div>
@@ -122,7 +124,7 @@ export default {
             playButton.on("click", (e) => {
                 console.log(e.target);
                 const button = d3.select(e.target);
-                if (button.text() == "Pause") {
+                if (button.text() == "Pause-Click Pause and choose") {
                     moving = false;
                     interval.stop();
                     console.log(interval);
@@ -134,7 +136,7 @@ export default {
                         slider.value = year;
                         updateCharts();
                     }, 400);
-                    button.text("Pause");
+                    button.text("Pause-Click Pause and choose");
                 }
             });
             // Add month names to months drop down menu
