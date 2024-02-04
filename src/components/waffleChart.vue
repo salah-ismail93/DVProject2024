@@ -4,11 +4,13 @@
     Waffle Chart
   </h3>
   <div class="flex flex-wrap justify-center py-3 flex-column hidden" id="waffle-container">
+    
     <div class="flex flex-wrap flex-row">
       <div class="flex-custom" v-for="(value, key, index) in cities" :key="index" :id="'A1chart5-' + (index + 1)">
         <h3 class="text-left">{{ key }}</h3>
       </div>
       <div id="chart_5_legend"></div>
+
     </div>
   </div>
 </div>
@@ -24,13 +26,13 @@ export default {
       cities: {},
       color_map: {
         'Parties': 0,
-        'Observer states': 1,
-        'UN secretariat observers': 2,
-        'UN specialised agency observers': 3,
-        'IGO observers': 4,
-        'NGO observers': 5,
-        'Media': 6,
-        'Overflow': 7,
+        'Media': 1,
+        'Observer states' : 2,
+        'IGO observers': 3,
+        'NGO observers': 4,
+        'Overflow': 5,
+        'UN secretariat observers': 6,
+        'UN specialised agency observers':7,
         'Combined parties': 8,
         'Combined observers': 9,
       },
@@ -50,21 +52,21 @@ export default {
     data.sort((a, b) => (a.COP > b.COP) ? 1 : -1);
 
     // Take the last 10 items
-    const last10COP = data.slice(20);
+    const last10COP = data
 
     document.getElementById('waffle-container').classList.add('hidden');
 
     // Extract unique city names
-    let uniqueCities = Array.from(new Set(last10COP.map(d => d.city)));
+    let uniqueCities = Array.from(new Set(last10COP.map(d => d.state)));
 
     // Generate cities object with unique identifiers
     this.cities = {};
-    uniqueCities.forEach((city, index) => {
-      this.cities[city] = index + 1;
+    uniqueCities.forEach((state, index) => {
+      this.cities[state] = index + 1;
     });
 
     // Group data by city
-    let groupedData = d3.group(last10COP, d => d.city);
+    let groupedData = d3.group(last10COP, d => d.state);
 
     // Iterate over the cities and generate the waffle charts for each one
     setTimeout(() => {
@@ -86,30 +88,43 @@ export default {
   const legendContainer = d3.select('#chart_5_legend');
   legendContainer.selectAll('*').remove(); // Clear existing content
 
+  const legendItemWidth = 100; // Adjust the width of each legend item
+  const legendWidth = legendData.length * legendItemWidth;
+
   const legend = legendContainer
     .append('svg')
-    .attr('width', 200)
-    .attr('height', legendData.length * 20) // Adjust the height based on the number of categories
+    .attr('width', legendWidth)
+    .attr('height', 30)
     .selectAll('g')
     .data(legendData)
     .enter()
     .append('g')
-    .attr('transform', (d, i) => `translate(0, ${i * 20})`);
+    .attr('transform', (d, i) => `translate(${i * legendItemWidth}, 0)`)
+    ;
 
   legend
     .append('rect')
+    
     .attr('width', 18)
     .attr('height', 18)
+    
     .style('fill', (d) => this.color(this.color_map[d]));
 
   legend
     .append('text')
     .attr('x', 24)
-    .attr('y', 9)
+    .attr('y', 10)
     .attr('dy', '.35em')
+    .attr('dx','.05em')
+    //.style('font-size', '12px')
+    //.style('white-space', 'nowrap')
+    //.style('overflow', 'hidden')
+    //.style('text-overflow', 'ellipsis')
+    .style('margin','1px')
     .text((d) => d);
 },
-    // Create a function to generate the waffle chart for a given city
+
+    // Create a function to generate the waffle chart for a given cop
     generateWaffleChart(cities, data) {
       var total = 0;
       var widthWaffle,
@@ -132,7 +147,7 @@ export default {
 
       // remap data
 let color_map = this.color_map;
-let smallCategoryThreshold = 0.5;  // Adjust this threshold based on your data
+let smallCategoryThreshold = 0.8;  // Adjust this threshold based on your data
 data.forEach(function (d) {
   d.tree_count = +d.tree_count;
   d.units = Math.round(d.tree_count / squareValue);
@@ -173,7 +188,7 @@ data.forEach(function (d) {
       widthWaffle = (squareSize * widthSquares) + widthSquares * gap + 25;
       heightWaffle = (squareSize * heightSquares) + heightSquares * gap + 25;
 
-      let waffle = d3.select(`#A1chart5-${cities[data[0]['city']]}`);
+      let waffle = d3.select(`#A1chart5-${cities[data[0]['state']]}`);
 waffle.selectAll('svg').remove();
 let color = this.color;
 
@@ -223,28 +238,29 @@ waffle
 
 <style scoped>
   .flex-custom {
-    flex: 1 1 25%;
+    flex: 1 1 5%;
   }
 
   #waffle-container {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   #waffle-container .flex-custom {
     text-align: center;
-    margin: 10px;
+    margin: 5px;
   }
 
   #waffle-container svg {
+    margin-right:100%;
+
     border: 1px solid #ccc; /* Add a border for better visibility */
   }
 
   #chart_5_legend {
-    margin-top: 20px;
+    margin-right:100%;
   }
 
   #chart_5_legend svg {
-    display: block;
-    margin: auto;
+   margin-right:100%;
   }
 </style>

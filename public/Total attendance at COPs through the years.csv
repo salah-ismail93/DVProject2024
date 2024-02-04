@@ -5,7 +5,6 @@ COP1,Berlin,UN specialised agency observers,26
 COP1,Berlin,IGO observers,28
 COP1,Berlin,NGO observers,23
 COP1,Berlin,Media,979
-COP1,Berlin,Overflow,0
 COP3,Kyoto,Parties,1534
 COP3,Kyoto,Observer states,29
 COP3,Kyoto,UN secretariat observers,90
@@ -14,218 +13,6 @@ COP3,Kyoto,IGO observers,79
 COP3,Kyoto,NGO observers,3663
 COP3,Kyoto,Media,3712
 COP3,Kyoto,Overflow,710
-COP3,Kyoto,Combined parties,0
-COP3,Kyoto,Combined observers,0
-COP4,Buenos Aires,Parties,1391
-COP4,Buenos Aires,Observer states,39
-COP4,Buenos Aires,UN secretariat observers,68
-COP4,Buenos Aires,UN specialised agency observers,83
-COP4,Buenos Aires,IGO observers,120
-COP4,Buenos Aires,NGO observers,2357
-COP4,Buenos Aires,Media,883
-COP4,Buenos Aires,Overflow,682
-COP4,Buenos Aires,Combined parties,0
-COP4,Buenos Aires,Combined observers,0
-COP5,Bonn,Parties,0
-COP5,Bonn,Observer states,0
-COP5,Bonn,UN secretariat observers,0
-COP5,Bonn,UN specialised agency observers,0
-COP5,Bonn,IGO observers,0
-COP5,Bonn,NGO observers,0
-COP5,Bonn,Media,534
-COP5,Bonn,Overflow,0
-COP5,Bonn,Combined parties,0
-COP5,Bonn,Combined observers,0
-COP6,The Hague,Parties,2195
-COP6,The Hague,Observer states,20
-COP6,The Hague,UN secretariat observers,92
-COP6,The Hague,UN specialised agency observers,84
-COP6,The Hague,IGO observers,107
-COP6,The Hague,NGO observers,3552
-COP6,The Hague,Media,944
-COP6,The Hague,Overflow,0
-COP6,The Hague,Combined parties,0
-COP6,The Hague,Combined observers,0
-COP6,Pt2,Parties,1813
-COP6,Pt2,Observer states,6
-COP6,Pt2,UN secretariat observers,49
-COP6,Pt2,UN specialised agency observers,38
-COP6,Pt2,IGO observers,49
-COP6,Pt2,NGO observers,1587
-COP6,Pt2,Media,1086
-COP6,Pt2,Overflow,0
-COP6,Pt2,Combined parties,0
-COP6,Pt2,Combined observers,0
-COP7,Marrakech,Parties,2414
-COP7,Marrakech,Observer states,18
-COP7,Marrakech,UN secretariat observers,57
-COP7,Marrakech,UN specialised agency observers,67
-COP7,Marrakech,IGO observers,118
-COP7,Marrakech,NGO observers,1327
-COP7,Marrakech,Media,459
-COP7,Marrakech,Overflow,0
-COP7,Marrakech,Combined parties,0
-COP7,Marrakech,Combined observers,0
-COP8,New Delhi,Parties,1456
-COP8,New Delhi,Observer states,12
-COP8,New Delhi,UN secretariat observers,66
-COP8,New Delhi,UN specialised agency observers,63
-COP8,New Delhi,IGO observers,102
-COP8,New Delhi,NGO observers,1858
-COP8,New Delhi,Media,795
-COP8,New Delhi,Overflow,0
-COP8,New Delhi,Combined parties,0
-COP8,New Delhi,Combined observers,0
-COP9,Milan,Parties,1931
-COP9,Milan,Observer states,16
-COP9,Milan,UN secretariat observers,72
-COP9,Milan,UN specialised agency observers,95
-COP9,Milan,IGO observers,127
-COP9,Milan,NGO observers,2404
-COP9,Milan,Media,506
-COP9,Milan,Overflow,0
-COP9,Milan,Combined parties,0
-COP9,Milan,Combined observers,0
-COP10,Buenos Aires,Parties,2210
-COP10,Buenos Aires,Observer states,9
-COP10,Buenos Aires,UN secretariat observers,73
-COP10,Buenos Aires,UN specialised agency observers,90
-COP10,Buenos Aires,IGO observers,96
-COP10,Buenos Aires,NGO observers,2888
-COP10,Buenos Aires,Media,785
-COP10,Buenos Aires,Overflow,0
-COP10,Buenos Aires,Combined parties,0
-COP10,Buenos Aires,Combined observers,0
-COP11,Montereal,Parties,2804
-COP11,Montereal,Observer states,5
-COP11,Montereal,UN secretariat observers,115
-COP11,Montereal,UN specialised agency observers,119
-COP11,Montereal,IGO observers,179
-COP11,Montereal,NGO observers,5435
-COP11,Montereal,Media,817
-COP11,Montereal,Overflow,0
-COP11,Montereal,Combined parties,0
-COP11,Montereal,Combined observers,0
-COP12,Nairobi,Parties,2344
-COP12,Nairobi,Observer states,8
-COP12,Nairobi,UN secretariat observers,141
-COP12,Nairobi,UN specialised agency observers,98
-COP12,Nairobi,IGO observers,161
-COP12,Nairobi,NGO observers,2533
-COP12,Nairobi,Media,663
-COP12,Nairobi,Overflow,0
-COP12,Nairobi,Combined parties,0
-COP12,Nairobi,Combined observers,0
-COP13,Bali,Parties,3508
-COP13,Bali,Observer states,8
-COP13,Bali,UN secretariat observers,255
-COP13,Bali,UN specialised agency observers,251
-COP13,Bali,IGO observers,316
-COP13,Bali,NGO observers,4993
-COP13,Bali,Media,1498
-COP13,Bali,Overflow,0
-COP13,Bali,Combined parties,0
-COP13,Bali,Combined observers,0
-COP14,Poznan,Parties,3958
-COP14,Poznan,Observer states,9
-COP14,Poznan,UN secretariat observers,193
-COP14,Poznan,UN specialised agency observers,152
-COP14,Poznan,IGO observers,252
-COP14,Poznan,NGO observers,3869
-COP14,Poznan,Media,819
-COP14,Poznan,Overflow,0
-COP14,Poznan,Combined parties,0
-COP14,Poznan,Combined observers,0
-COP15,Copenhagen,Parties,10583
-COP15,Copenhagen,Observer states,15
-COP15,Copenhagen,UN secretariat observers,530
-COP15,Copenhagen,UN specialised agency observers,336
-COP15,Copenhagen,IGO observers,568
-COP15,Copenhagen,NGO observers,12048
-COP15,Copenhagen,Media,3221
-COP15,Copenhagen,Overflow,0
-COP15,Copenhagen,Combined parties,0
-COP15,Copenhagen,Combined observers,0
-COP16,Cancun,Parties,5183
-COP16,Cancun,Observer states,9
-COP16,Cancun,UN secretariat observers,265
-COP16,Cancun,UN specialised agency observers,210
-COP16,Cancun,IGO observers,351
-COP16,Cancun,NGO observers,4560
-COP16,Cancun,Media,1270
-COP16,Cancun,Overflow,0
-COP16,Cancun,Combined parties,0
-COP16,Cancun,Combined observers,0
-COP17,Durban,Parties,5399
-COP17,Durban,Observer states,14
-COP17,Durban,UN secretariat observers,297
-COP17,Durban,UN specialised agency observers,258
-COP17,Durban,IGO observers,484
-COP17,Durban,NGO observers,4772
-COP17,Durban,Media,1265
-COP17,Durban,Overflow,0
-COP17,Durban,Combined parties,0
-COP17,Durban,Combined observers,0
-COP18,Doha,Parties,4343
-COP18,Doha,Observer states,13
-COP18,Doha,UN secretariat observers,209
-COP18,Doha,UN specialised agency observers,135
-COP18,Doha,IGO observers,329
-COP18,Doha,NGO observers,3292
-COP18,Doha,Media,683
-COP18,Doha,Overflow,0
-COP18,Doha,Combined parties,0
-COP18,Doha,Combined observers,0
-COP19,Warsaw,Parties,4011
-COP19,Warsaw,Observer states,11
-COP19,Warsaw,UN secretariat observers,156
-COP19,Warsaw,UN specialised agency observers,145
-COP19,Warsaw,IGO observers,363
-COP19,Warsaw,NGO observers,3031
-COP19,Warsaw,Media,658
-COP19,Warsaw,Overflow,0
-COP19,Warsaw,Combined parties,0
-COP19,Warsaw,Combined observers,0
-COP20,Lima,Parties,6291
-COP20,Lima,Observer states,5
-COP20,Lima,UN secretariat observers,245
-COP20,Lima,UN specialised agency observers,197
-COP20,Lima,IGO observers,439
-COP20,Lima,NGO observers,3104
-COP20,Lima,Media,904
-COP20,Lima,Overflow,0
-COP20,Lima,Combined parties,0
-COP20,Lima,Combined observers,0
-COP21,Paris,Parties,19208
-COP21,Paris,Observer states,52
-COP21,Paris,UN secretariat observers,556
-COP21,Paris,UN specialised agency observers,415
-COP21,Paris,IGO observers,1037
-COP21,Paris,NGO observers,6306
-COP21,Paris,Media,2798
-COP21,Paris,Overflow,0
-COP21,Paris,Combined parties,0
-COP21,Paris,Combined observers,0
-COP22,Marrakech,Parties,15878
-COP22,Marrakech,Observer states,7
-COP22,Marrakech,UN secretariat observers,340
-COP22,Marrakech,UN specialised agency observers,362
-COP22,Marrakech,IGO observers,618
-COP22,Marrakech,NGO observers,4155
-COP22,Marrakech,Media,1204
-COP22,Marrakech,Overflow,0
-COP22,Marrakech,Combined parties,0
-COP22,Marrakech,Combined observers,0
-COP23,Bonn,Parties,9196
-COP23,Bonn,Observer states,6
-COP23,Bonn,UN secretariat observers,465
-COP23,Bonn,UN specialised agency observers,386
-COP23,Bonn,IGO observers,597
-COP23,Bonn,NGO observers,4095
-COP23,Bonn,Media,1283
-COP23,Bonn,Overflow,0
-COP23,Bonn,Combined parties,0
-COP23,Bonn,Combined observers,0
 COP24,Katowice,Parties,11090
 COP24,Katowice,Observer states,10
 COP24,Katowice,UN secretariat observers,216
@@ -233,9 +20,6 @@ COP24,Katowice,UN specialised agency observers,271
 COP24,Katowice,IGO observers,652
 COP24,Katowice,NGO observers,5054
 COP24,Katowice,Media,1126
-COP24,Katowice,Overflow,0
-COP24,Katowice,Combined parties,0
-COP24,Katowice,Combined observers,0
 COP25,Madrid,Parties,11406
 COP25,Madrid,Observer states,8
 COP25,Madrid,UN secretariat observers,306
@@ -243,6 +27,3 @@ COP25,Madrid,UN specialised agency observers,400
 COP25,Madrid,IGO observers,652
 COP25,Madrid,NGO observers,7417
 COP25,Madrid,Media,2165
-COP25,Madrid,Overflow,0
-COP25,Madrid,Combined parties,0
-COP25,Madrid,Combined observers,0
