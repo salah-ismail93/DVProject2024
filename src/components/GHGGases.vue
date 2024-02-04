@@ -1,23 +1,18 @@
 <template>
     <div>
-        <div class="mx-auto max-w-10xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <div class="mx-auto max-w-10xl px-6 py-1 lg:flex lg:items-center lg:justify-between lg:px-8">
             <div class="flex">
                 <div id="viz_container"></div>
                 <div class="text-gray-700">
-                    <h1 class="font-bold">What sectors have the most impact on our globe?</h1>
-                    <p class="mt-2">According to the 2020 statistics from <b><u>Ourworldindata.org</u></b> regarding the
-                        impact of each life sector in the global warming,
-                        we can make a small comparison to know where to target with our efforts in general.</p>
+                    <h1 class="font-bold">How much does each gas contribute to global greenhouse gas emissions
+?</h1>
+                    <p class="mt-2">A greenhouse gas (GHG) is a gas that causes the atmosphere to warm by absorbing and emitting radiant energy. Greenhouse gases absorb radiation that is radiated by Earth, preventing this heat from escaping to space.
 
-                    <p class="mt-2">The aside pie chart illustrates the distribution of GHG across different
-                        Industries.</p>
+Carbon dioxide (CO₂) is the most well-known greenhouse gas, but there are others including methane, nitrous oxide, and in fact, water vapor.
 
-                    <p class="mt-2">We can notice that Electricity and heat has the most powerful impact regarding the GHG,
-                        followed by Transportation, which
-                        is very predictable since these sectors relay the most on engines and machines run by gas.
-                    </p>
-                    <p class="mt-2">After that we have Manufacturing and Construction for almost 13% and Agriculture with
-                        slightly less value for 12.14%, and then we have other sectors that are under 10%.
+Human-made emissions of greenhouse gases from fossil fuels, industry, and agriculture are the leading cause of global climate change.
+
+Greenhouse gas emissions measure the total amount of all greenhouse gases that are emitted. These are often quantified in carbon dioxide equivalents (CO₂eq) which take account of the amount of warming that each molecule of different gases creates.
                     </p>
 
                 </div>

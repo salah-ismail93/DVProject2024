@@ -1,11 +1,14 @@
 <template>
     <div class="m-16">
-        <h2 class="font-bold text-2xl">Consumption-based CO₂ emissions per capita vs. GDP per capita, 2021</h2>
+        <h2 class="font-bold text-2xl">Consumption-based CO₂ emissions per capita vs. GDP(Gross Domestic Product) per capita, 2021</h2>
         <p class="mt-4">
-            Consumption-based emissions are measured in tonnes per person. They are territorial emissions minus emissions
-            embedded in exports, plus emissions embedded in imports. GDP per capita is adjusted for price differences
-            between
-            countries (PPP) and over time (inflation).
+            Consumption-based emissions are national or regional emissions that have been adjusted for trade.
+
+            They are calculated as domestic (or ‘production-based’ emissions) emissions minus the emissions generated in the 
+            production of goods and services that are exported to other countries or regions, plus emissions from the production 
+            of goods and services that are imported.
+
+            Consumption-based emissions = Production-based – Exported + Imported emissions
         </p>
         <div id="chart5"></div>
     </div>
@@ -172,11 +175,11 @@ export default {
                 isHighlighted = !isHighlighted;
                 if (isHighlighted) {
                // If highlighted, set opacity to 1 for the selected bubbles
-               d3.selectAll(".bubbles").style("opacity", 0);
-               d3.selectAll(".bubbles." + d.replaceAll(" ", ".")).style("opacity", 0.7);
+               d3.selectAll(".bubbles").style("display", "none");
+               d3.selectAll(".bubbles." + d.replaceAll(" ", ".")).style("opacity", 0.7).style("display","block");
                 } else {
                  // If not highlighted, set opacity back to 0.8 for all bubbles
-                  d3.selectAll(".bubbles").style("opacity", 0.7);
+                  d3.selectAll(".bubbles").style("opacity", 0.7).style("display","block");
                   }
                 console.log(d.replaceAll(" ", "."))
             };

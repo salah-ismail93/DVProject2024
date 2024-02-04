@@ -58,7 +58,7 @@
                     </div>
                     <div class="flex flex-col">
                         <div class="text-gray-700 mx-5 my-8">
-                            <h1 class="font-bold">The temperature is raising!</h1>
+                            <h1 class="font-bold">The temperature is rising!</h1>
                             <p class="mt-2">Over the years we can notice how differences between temperatures are increasing
                             </p>
 
