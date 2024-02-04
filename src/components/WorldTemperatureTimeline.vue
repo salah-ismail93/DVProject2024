@@ -22,7 +22,7 @@
                         </div>
                         <div class="flex justify-between">
                             <button @click="enterFullScreen()"
-                                class="ml-auto mr-2 rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 full-screen">Full Screen</button>
+                                class="ml-auto mr-5 rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 full-screen">Full Screen</button>
                             <button
                                 class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
                         </div>
