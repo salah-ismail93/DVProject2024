@@ -9,9 +9,9 @@
           <div class="mx-auto max-w-5xl">
             <p class="mx-auto mt-6 max-w-4xl text-base leading-8 text-gray-600 text-center">
              Let's start with a global look at the world temperature over the last 120 years,
-             in the below dynamic map, you can notice the changing in the average temperature over the years in each country.
+             in the below dynamic map, you can notice the changing in the average temperature over the years for the selected month in each country.
              <br><b>You can pause the slider to 
-             select the country and year you want to investigate more.
+             select the month and year you want to investigate more.
             </b></p>
             <p class="mt-4 text-base leading-7 text-black-600 sm:text-2xl">Enjoy our interactive map!</p>
            </div>

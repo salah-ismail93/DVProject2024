@@ -17,6 +17,8 @@
                                     </select>
                                 </div>
                             </div>
+                        <p>You can pause the slider to select the country and year you want to investigate more</p>
+                        <br>
                         </div>
                         <div class="flex justify-between">
                             <button @click="enterFullScreen()"
