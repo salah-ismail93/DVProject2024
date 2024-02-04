@@ -1,40 +1,42 @@
 <template>
     <div class="flex flex-col">
-        <div id="outerContainer2" class="flex flex-col justify-center">
+        <div class="flex flex-col justify-center">
             <div class="mx-auto flex flex-col justify-center">
-                <div class="overlayColor w-full mx-auto pt-5 flex flex-col items-center justify-center">
-                    <div class="flex flex-col">
-                        <div class="mx-auto my-8 flex items-center justify-center">
-                            <div class="mx-5">
-                                <label for="country-list2">Select Country:</label>
-                                <select id="country-list2">
-                                </select>
-                            </div>
-                            <div class="mx-5">
-                                <label for="year-list2">Select Year:</label>
-                                <select id="year-list2">
-                                </select>
+                <div id="outerContainer2">
+                    <div class="overlayColor w-full mx-auto pt-5 flex flex-col items-center justify-center">
+                        <div class="flex flex-col">
+                            <div class="mx-auto my-8 flex items-center justify-center">
+                                <div class="mx-5">
+                                    <label for="country-list2">Select Country:</label>
+                                    <select id="country-list2">
+                                    </select>
+                                </div>
+                                <div class="mx-5">
+                                    <label for="year-list2">Select Year:</label>
+                                    <select id="year-list2">
+                                    </select>
+                                </div>
                             </div>
                         </div>
+                        <div class="flex justify-between">
+                            <button @click="enterFullScreen()"
+                                class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 full-screen">Full Screen</button>
+                            <button
+                                class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
+                        </div>
+                        <div class="relative w-full max-w-5xl mb-1">
+                            <input type="range" value="0"
+                                class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
+                                id="yearSliderArea" />
+                            <span class="absolute start-0 -bottom-6">1901</span>
+                            <span class="absolute end-0 -bottom-6">2020</span>
+                        </div>
                     </div>
-                    <div class="flex justify-between">
-                        <button @click="enterFullScreen()"
-                            class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 full-screen">Full Screen</button>
-                        <button
-                            class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 play-button">Pause</button>
+                    <div class="overlayColor w-full mx-auto py-5 flex items-center justify-center">
+                        <div id="areaChart" class="mx-1"></div>
+                        <div id="polarArea" class="mx-1"></div>
+                        <div id="anomalyRadial" class="mx-1"></div>
                     </div>
-                    <div class="relative w-full max-w-5xl mb-1">
-                        <input type="range" value="0"
-                            class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 mt-5 yearSlider"
-                            id="yearSliderArea" />
-                        <span class="absolute start-0 -bottom-6">1901</span>
-                        <span class="absolute end-0 -bottom-6">2020</span>
-                    </div>
-                </div>
-                <div class="overlayColor w-full mx-auto py-5 flex items-center justify-center">
-                    <div id="areaChart" class="mx-1"></div>
-                    <div id="polarArea" class="mx-1"></div>
-                    <div id="anomalyRadial" class="mx-1"></div>
                 </div>
                 <div class="overlayColor w-full mx-auto py-5 flex items-center justify-center">
                     <div class="flex flex-col">
