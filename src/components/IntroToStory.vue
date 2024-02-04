@@ -20,7 +20,7 @@
   }
   </script>
   
-  <style scoped>
+  <style>
   /* Add your component-specific styles here */
   h1 {
     font-family: 'Fantasy', sans-serif;
@@ -47,6 +47,34 @@
   max-height: 1000px; 
 } 
 */
+
+.hero {
+    margin-top: 5px;
+    width: 100rem;
+}
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2em !important;
+    color: rgb(1, 81, 48)
+}
+.mText {
+    font-size: 2em !important;
+    color: rgb(3, 67, 3)
+}
+.arrow {
+    text-align: center;
+    display: relative;
+    width: 10%;
+    margin-left: 80%;
+    transform: rotate(-45deg);
+}
+.king {
+    text-align: center;
+    display: relative;
+    width: 60%;
+    margin-left: 20%;
+}
 
   </style>
   
