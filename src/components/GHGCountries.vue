@@ -3,17 +3,18 @@
         <div class="flex">
 
             <div class="text-gray-700">
-                <h1 class="font-bold">What countries have the most impact on our globe (2021)?</h1>
-                <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
-                    emission they have</p>
+                <h1 class="font-bold">Global warming means Sea level rising !!</h1>
+                <p class="mt-2">Sea levels are inextricably tied to global temperatures and the levels of land-based ice. 
+                     When temperatures rise, land-based ice is lost and sea levels rise.</p>
 
-                <p class="mt-2">It's noticeable that the United State of America has the lion's share with almost the
-                    quarter 23%, followed by the east Part of the world China,
-                    with 13% and its neighbor India having 14%.
-                </p>
-                <p class="mt-2">Italy on the other hand has a reasonable percentage around 5% sharing this score similarly
-                    with Japan
-                </p>
+                <p class="mt-2">Time passing by, the sea level rise caused by each major factor
+                     has increased, which is consistent with the conclusion that the rate of sea 
+                     level rise is accelerating. The contributions of each major factor to global 
+                     sea level rise are shown in the donut chart for the period between 1993-2018
+                    </p>
+                    <p>
+                        And ofcourse each of these factors are effected in different percentages by the global warming, and that as shown has a huge impact on the sea level
+                    </p>
             </div>
             <div id="GHGCountrieslegend"></div>
             <div id="GHGCountries"></div>
@@ -50,7 +51,7 @@ export default {
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
         // Read data from CSV file
-        d3.csv("/GHGCountries.csv").then(function (data) {
+        d3.csv("/sea.csv").then(function (data) {
             data.forEach(function (d) {
                 d.CO2_emission_Megatons = +d.CO2_emission_Megatons;
                 d.percentage = +d.percentage;
@@ -82,7 +83,7 @@ export default {
                         .html(
                             d.data.Country +
                             "<br>" +
-                            d.data.CO2_emission_Megatons +
+                         
                             " (" +
                             ((d.data.percentage)) +
                             "%)"

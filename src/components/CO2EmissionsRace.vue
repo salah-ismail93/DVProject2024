@@ -6,12 +6,14 @@
                 <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
                     emission they have</p>
 
-                <p class="mt-2">It's noticeable that the United State of America has the lion's share with almost the
-                    quarter 23%, followed by the east Part of the world China,
-                    with 13% and its neighbor India having 14%.
+                <p class="mt-2"> Over the years we notice that United States of America is winning the race among the other countries in
+                    C02 emissions 
                 </p>
-                <p class="mt-2">Italy on the other hand has a reasonable percentage around 5% sharing this score similarly
-                    with Japan
+                <p class="mt-2">On the other hand we notice that Russia took the second place at the beginning of the 2000s, and after few years 
+                    China had exceed with a very fast increment especially after 2010
+                </p>
+                <p class="mt-2">As we can notice India as a developing country among the developed countries, racing by emissioning CO2 more than France, Canada and Ukraine, 
+                    mainly after the growing economic situation it try to achieve after 2010.  
                 </p>
             </div>
             <div id="viz_container2"></div>
