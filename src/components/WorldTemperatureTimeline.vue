@@ -1,11 +1,11 @@
 <template>
     <div class="flex flex-col">
         <div class="flex flex-col justify-center">
-            <div class="mx-auto flex flex-col justify-center">
-                <div id="outerContainer2">
+            <div id="outerContainer2" class="mx-auto flex flex-col justify-center">
+                <div>
                     <div class="overlayColor w-full mx-auto pt-5 flex flex-col items-center justify-center">
                         <div class="flex flex-col">
-                            <div class="mx-auto my-8 flex items-center justify-center">
+                            <div class="mx-auto mt-8 mb-4 flex items-center justify-center">
                                 <div class="mx-5">
                                     <label for="country-list2">Select Country:</label>
                                     <select id="country-list2">
@@ -32,15 +32,15 @@
                             <span class="absolute end-0 -bottom-6">2020</span>
                         </div>
                     </div>
-                    <div class="overlayColor w-full mx-auto py-5 flex items-center justify-center">
+                    <div class="overlayColor w-full mx-auto pt-5 flex items-center justify-center">
                         <div id="areaChart" class="mx-1"></div>
                         <div id="polarArea" class="mx-1"></div>
                         <div id="anomalyRadial" class="mx-1"></div>
                     </div>
                 </div>
-                <div class="overlayColor w-full mx-auto py-5 flex items-center justify-center">
+                <div class="overlayColor w-full mx-auto pb-5 flex items-center justify-center">
                     <div class="flex flex-col">
-                        <div class="text-gray-700 mx-5 my-8">
+                        <div class="text-gray-700 mx-5 mb-8">
                             <h1 class="font-bold">The average temperature of countries over years</h1>
                             <p class="mt-2">we can notice the area chart how it changes over the years, in general we can
                                 notice a raise in the temperature in the last 100 years</p>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col">
-                        <div class="text-gray-700 mx-5 my-8">
+                        <div class="text-gray-700 mx-5 mb-8">
                             <h1 class="font-bold">Another representation...</h1>
                             <p class="mt-2">The polar area chart, representing the same data in an alternative visual format, offers insights into these shifts, trends, and anomalies. 
                             </p>
@@ -230,7 +230,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tooltip2 {
     opacity: 0;
     background-color: #2f2f2f;
@@ -264,5 +264,12 @@ export default {
 .overlayColor {
     --tw-bg-opacity: 1;
     background-color: rgb(221 249 226 / var(--tw-bg-opacity));
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 1.6em !important;
+    color: rgb(1, 81, 48)
 }
 </style>
