@@ -23,8 +23,8 @@
           to="/WorldTemperature">World Temperature</a>
         <a @click="scrollToSection('ClimateChangeCauses')" class="text-sm font-semibold leading-6 text-gray-900 butt"
           to="/ClimateChangeCauses">Climate Change Causes</a>
-        <a @click="scrollToSection('WorldContribution')" class="text-sm font-semibold leading-6 text-gray-900 butt">Europe
-          contribution</a>
+        <a @click="scrollToSection('WorldContribution')" class="text-sm font-semibold leading-6 text-gray-900 butt">World
+                Actions</a>
       </div>
       <div class="hidden lg:flex lg:gap-x-12 lg:flex-1 lg:justify-end">
         <a href="https://github.com/salah-ismail93/DVProject2024" target="_blank"
@@ -58,8 +58,8 @@
             </div>
             <div class="space-y-2 py-6">
               <a @click="scrollToSection('WorldContribution')"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 butt">Europe
-                Contribution</a>
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 butt">World
+                Actions</a>
             </div>
             <div class="py-6">
               <a href="https://github.com/salah-ismail93/DVProject2024"

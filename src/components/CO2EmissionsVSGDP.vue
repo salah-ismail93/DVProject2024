@@ -1,6 +1,6 @@
 <template>
     <div class="m-16">
-        <h2 class="font-bold text-2xl">Consumption-based CO₂ emissions per capita vs. GDP(Gross Domestic Product) per capita, 2021</h2>
+        <h1 class="font-bold text-2xl">Consumption-based CO₂ emissions per capita vs. GDP(Gross Domestic Product) per capita, 2021</h1>
         <p class="mt-4">
             Consumption-based emissions are national or regional emissions that have been adjusted for trade.
 
