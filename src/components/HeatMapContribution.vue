@@ -2,9 +2,9 @@
   <!-- Heatmap -->
   <div class="bg-white px-6 lg:px-8 text-center">
     <div class="mx-auto max-w-5xl">
-      <h2 class="title" style=" font-size: 20px; font-weight: 100;"> Who is helping! </h2>
+      <h2 class="title" style=" font-size: 20px; font-weight: 100;">Actions speak louder than words! </h2>
       <p class="mt-3 text-base leading-7 text-indigo-100 sm:text-l" id="texttt">
-        The heatmap below illustrates the financial performance of the top 10 countries over the selected years.
+        The heatmap below illustrates the financial performance of 10 countries in 2014.
          Each cell in the heatmap represents the financial value (in Million of Euros) for a specific country in a given year. Darker shades indicate higher financial values, while lighter shades indicate lower values.
         
          Explore the heatmap to analyze how the financial performance of different countries has evolved over time. 
