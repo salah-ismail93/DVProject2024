@@ -32,14 +32,23 @@
         </div>
       </div>
     </div>
+    <div class="bg-white">
+      <div class="flex justify-center">
+        <div class="flex justify-center">
+          <SeaLevelRising />
+        </div>
+      </div>
+    </div>
   </template>
   <script>
   import WorldTemperatureMap from '../components/WorldTemperatureMap.vue';
   import WorldTemperatureTimeline from '../components/WorldTemperatureTimeline.vue';
+  import SeaLevelRising from '../components/SeaLevelRising.vue';
   export default {
     name: 'WorldTemperature',
     components: {
       WorldTemperatureMap,
+      SeaLevelRising,
       WorldTemperatureTimeline
     },
   };

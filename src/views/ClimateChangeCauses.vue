@@ -29,41 +29,34 @@
     </div>
   </div>
   <div class="overlayColor">
-    <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
-      <div class="flex justify-center">
-        <GHGCountries />
-      </div>
-    </div>
-  </div>
-  <div class="bg-white">
     <div class="mx-auto max-w-10xl px-6 pt-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GHGGases />
       </div>
     </div>
   </div>
-  <div class="overlayColor">
+  <div class="bg-white">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <GlobalFossilFuelConsumption />
       </div>
     </div>
   </div>
-  <div class="bg-white">
+  <div class="overlayColor">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2EmissionsVSGDP />
       </div>
     </div>
   </div>
-  <div class="overlayColor">
+  <div class="bg-white">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2AverageCapitaEmissions />
       </div>
     </div>
   </div>
-  <div class="bg-white">
+  <div class="overlayColor">
     <div class="mx-auto max-w-10xl px-6 py-16 lg:px-8 flex justify-center">
       <div class="flex justify-center">
         <CO2EmissionsRace />
@@ -73,7 +66,7 @@
 </template>
 <script>
 import GHGSectors from '../components/GHGSectors.vue';
-import GHGCountries from '../components/GHGCountries.vue';
+import SeaLevelRising from '../components/SeaLevelRising.vue';
 import GHGGases from '../components/GHGGases.vue';
 import CO2EmissionsRace from '../components/CO2EmissionsRace.vue';
 import CO2EmissionsVSGDP from '../components/CO2EmissionsVSGDP.vue';
@@ -83,7 +76,7 @@ export default {
   name: 'ClimateChangeCauses',
   components: {
     GHGSectors,
-    GHGCountries,
+    SeaLevelRising,
     GHGGases,
     CO2EmissionsRace,
     CO2EmissionsVSGDP,

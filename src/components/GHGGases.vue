@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white">
+    <div>
         <div class="mx-auto max-w-10xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
             <div class="flex">
                 <div id="viz_container"></div>

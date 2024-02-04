@@ -16,8 +16,8 @@
                         And ofcourse each of these factors are effected in different percentages by the global warming, and that as shown has a huge impact on the sea level
                     </p>
             </div>
-            <div id="GHGCountrieslegend"></div>
-            <div id="GHGCountries"></div>
+            <div id="SeaLevelRisinglegend"></div>
+            <div id="SeaLevelRising"></div>
 
         </div>
     </div>
@@ -27,7 +27,7 @@
 import * as d3 from 'd3';
 
 export default {
-    name: 'GHGCountries',
+    name: 'SeaLevelRising',
 
     mounted() {
         // Width and height of the chart
@@ -41,9 +41,9 @@ export default {
         var color = d3.scaleOrdinal(d3.schemeCategory10);
 
         // Create SVG element
-        d3.select("#GHGCountries").html(""); // Clear the content before re-rendering
+        d3.select("#SeaLevelRising").html(""); // Clear the content before re-rendering
         var svg = d3
-            .select("#GHGCountries")
+            .select("#SeaLevelRising")
             .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -111,9 +111,9 @@ export default {
                 .style("visibility", "hidden");
 
             // Create legend
-            d3.select("#GHGCountrieslegend").html(""); // Clear the content before re-rendering
+            d3.select("#SeaLevelRisinglegend").html(""); // Clear the content before re-rendering
             var legendSvg = d3
-                .select("#GHGCountrieslegend")
+                .select("#SeaLevelRisinglegend")
                 .append("svg")
                 .attr("width", 250)
                 .attr("height", height);
@@ -157,7 +157,7 @@ export default {
 </script>
 
 <style>
-#GHGCountrieslegend {
+#SeaLevelRisinglegend {
     margin-left: 15px;
 
 
