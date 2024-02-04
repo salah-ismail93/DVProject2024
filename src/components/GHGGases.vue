@@ -36,7 +36,7 @@ export default {
         const svg = d3.select("#viz_container")
             .append("svg")
             .attr("width", 900)
-            .attr("height", 700)
+            .attr("height", 650)
             .attr("viewBox", "0 0 450 350")
             .attr("preserveAspectRatio", "xMinYMin")
             .append("g")

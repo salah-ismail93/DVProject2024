@@ -1,5 +1,5 @@
 <template>
-    <div class="m-16">
+    <div class="text-gray-700">
         <h2 class="font-bold text-2xl">Consumption-based CO₂ emissions per capita vs. GDP(Gross Domestic Product) per capita, 2021</h2>
         <p class="mt-4">
             Consumption-based emissions are national or regional emissions that have been adjusted for trade.
@@ -32,7 +32,7 @@ export default {
             .attr("id", "SVG5_ID")
             // .attr("width", width + margin.left + margin.right)
             // .attr("height", height + margin.top + margin.bottom)
-            .attr("viewBox", `0 0 800 500`)
+            .attr("viewBox", `0 0 800 450`)
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 

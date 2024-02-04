@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto max-w-10xl py-16 lg:flex lg:items-center lg:justify-between">
+    <div class="mx-auto max-w-10xl py-1 lg:flex lg:items-center lg:justify-between">
         <div class="flex">
             <div class="text-gray-700 mt-10 mr-16">
                 <h1 class="font-bold">So..Do we consume that much fuel?</h1>
@@ -41,7 +41,7 @@ export default {
         const svg = d3.select("#area_chart")
             .append("svg")
             .attr("width", 900)
-            .attr("height", 900)
+            .attr("height", 700)
             .attr("viewBox", "0 0 450 350")
             .attr("preserveAspectRatio", "xMinYMin")
             .append("g")
