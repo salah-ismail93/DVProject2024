@@ -4,7 +4,9 @@
             <div class="mx-auto flex flex-col justify-center">
                 <div class="overlayColor w-full mx-auto pt-5 flex flex-col items-center justify-center">
                     <div class="flex flex-col">
+                        
                         <div class="mx-auto my-8 flex items-center justify-center">
+                            
                             <div class="mx-5">
                                 <label for="country-list2">Select Country:</label>
                                 <select id="country-list2">
@@ -16,6 +18,8 @@
                                 </select>
                             </div>
                         </div>
+                        <p>You can pause the slider to select the country and year you want to investigate more</p>
+                        <br>
                     </div>
                     <div class="flex justify-between">
                         <button @click="enterFullScreen()"
