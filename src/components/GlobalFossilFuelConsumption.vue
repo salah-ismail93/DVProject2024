@@ -3,6 +3,7 @@
         <div class="flex">
             <div class="text-gray-700 mt-10 mr-16">
                 <h1 class="font-bold">So..Do we consume that much fuel?</h1>
+                <br>
                 <p class="mt-2">All the above levels of GHG are mainly caused by the consumption of fuel in different forms</p>
 
                 <p class="mt-2">
