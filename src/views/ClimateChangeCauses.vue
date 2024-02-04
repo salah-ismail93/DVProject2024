@@ -95,7 +95,7 @@ export default {
 
 <style>
 .ClimateChangeCauses {
-  background-image: url('/causes.jpg');
+  background-image: url('/src/assets/causes22.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
