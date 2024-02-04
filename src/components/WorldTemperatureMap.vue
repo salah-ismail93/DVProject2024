@@ -16,8 +16,8 @@
             <div class="mx-auto flex flex-col justify-center">
                 <div class="centered-flex flex flex-col justify-center">
                     <div class="flex justify-center">
-                        <button @click="enterFullScreen()" id="full-screen" class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Full Screen</button>
-                        <button id="play-button" class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Pause</button>
+                        <button @click="enterFullScreen()" id="full-screen" class="rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Full Screen</button>
+                        <button id="play-button" class="rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Pause</button>
                     </div>
                     <div class="relative">
                         <input type="range" value="0"
