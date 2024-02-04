@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white">
-        <div class="mx-auto max-w-10xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <div class="mx-auto max-w-10xl px-6 py-1 lg:flex lg:items-center lg:justify-between lg:px-8">
             <div class="flex">
                 <div id="GHGSectors"></div>
                 <div id="GHGSectorslegend"></div>

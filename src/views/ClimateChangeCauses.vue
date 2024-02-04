@@ -66,7 +66,6 @@
 </template>
 <script>
 import GHGSectors from '../components/GHGSectors.vue';
-import SeaLevelRising from '../components/SeaLevelRising.vue';
 import GHGGases from '../components/GHGGases.vue';
 import CO2EmissionsRace from '../components/CO2EmissionsRace.vue';
 import CO2EmissionsVSGDP from '../components/CO2EmissionsVSGDP.vue';
@@ -76,7 +75,6 @@ export default {
   name: 'ClimateChangeCauses',
   components: {
     GHGSectors,
-    SeaLevelRising,
     GHGGases,
     CO2EmissionsRace,
     CO2EmissionsVSGDP,

@@ -1,8 +1,8 @@
 <template>
-    <div class="mx-auto max-w-10xl px-6 py-16 lg:flex lg:items-center lg:justify-between lg:px-8">
+    <div class="mx-auto max-w-10xl px-6 py-1 lg:flex lg:items-center lg:justify-between lg:px-8">
         <div class="flex">
 
-            <div class="text-gray-700">
+            <div class="text-gray-700 my-auto">
                 <h1 class="font-bold">Global warming means Sea level rising !!</h1>
                 <p class="mt-2">Sea levels are inextricably tied to global temperatures and the levels of land-based ice. 
                      When temperatures rise, land-based ice is lost and sea levels rise.</p>
@@ -13,7 +13,7 @@
                      sea level rise are shown in the donut chart for the period between 1993-2018
                     </p>
                     <p>
-                        And ofcourse each of these factors are effected in different percentages by the global warming, and that as shown has a huge impact on the sea level
+                        And of course each of these factors are effected in different percentages by the global warming, and that as shown has a huge impact on the sea level
                     </p>
             </div>
             <div id="SeaLevelRisinglegend"></div>
