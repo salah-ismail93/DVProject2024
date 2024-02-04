@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col">
+    <div id="outerContainer" class="flex flex-col bg-white">
         <div class="mx-auto my-5 flex items-center justify-center">
             <div class="mx-5">
                 <label for="year-list">Select Year: </label>
@@ -12,10 +12,13 @@
                 </select>
             </div>
         </div>
-        <div id="outerContainer" class="flex flex-col justify-center">
+        <div class="flex flex-col justify-center bg-white">
             <div class="mx-auto flex flex-col justify-center">
                 <div class="centered-flex flex flex-col justify-center">
-                    <button id="play-button" class="mx-auto rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Pause</button>
+                    <div class="flex justify-center">
+                        <button @click="enterFullScreen()" id="full-screen" class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Full Screen</button>
+                        <button id="play-button" class="mx-auto rounded-md bg-white px-3 mx-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Pause</button>
+                    </div>
                     <div class="relative">
                         <input type="range" value="0"
                             class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
@@ -179,7 +182,13 @@ export default {
                 updateCharts();
             });
         });
+    },
+    methods: {
+    enterFullScreen() {
+      // Your logic or function to be executed on button click
+      document.getElementById('outerContainer').requestFullscreen();
     }
+  }
 }
 </script>
 

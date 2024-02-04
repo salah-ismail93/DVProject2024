@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-white">
+    <div class="overlayColor">
       <div class="flex justify-center">
         <div class="flex justify-center">
           <WorldTemperatureTimeline />
