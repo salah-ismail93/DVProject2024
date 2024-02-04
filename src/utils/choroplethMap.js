@@ -2,7 +2,7 @@ import * as d3 from "d3";
 
 // Plot constants
 const WIDTH = 1300;
-const HEIGHT = 750;
+const HEIGHT = 600;
 
 let svg, g, path, projection, colorScale, title, tooltip, tipCountry, tipData;
 let hovered = false;
@@ -45,7 +45,7 @@ function initChart(canvasElement) {
   path = d3.geoPath();
   projection = d3
     .geoEqualEarth()
-    .scale(250)
+    .scale(200)
     .center([0, 0])
     .translate([WIDTH / 2, HEIGHT / 2]);
 
@@ -84,13 +84,13 @@ function initChart(canvasElement) {
     .attr("width", w - 100)
     .attr("height", h)
     .style("fill", "url(#gradient)")
-    .attr("transform", "translate(0,200)");
+    .attr("transform", "translate(0,100)");
 
   var yAxis = d3.axisRight(y).tickFormat((d) => d + "℃");
 
   g.append("g")
     .attr("class", "y axis")
-    .attr("transform", "translate(10,200)")
+    .attr("transform", "translate(10,100)")
     .call(yAxis);
 
   // Tooltip placeholder
