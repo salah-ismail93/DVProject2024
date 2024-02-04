@@ -119,7 +119,10 @@ function updateChart(data) {
 
   xLabel.text(`${data[0].Country}, ${data[0].Year}`);
   // Add domains
-  y.domain([d3.min(data, (d) => Number(d.Temperature)) < 0 ? -30 : 0, d3.max(data, (d) => Number(d.Temperature))]);
+  let min = d3.min(data, (d) => Number(d.Temperature));
+  let max = d3.max(data, (d) => Number(d.Temperature));
+  min = Math.min(0, min);
+  y.domain([min, max]);
 
   // Line and area generator
   let curve = d3.curveMonotoneX;
@@ -140,7 +143,7 @@ function updateChart(data) {
   const yAxisCall = d3.axisLeft(y);
   yAxisGroup.call(yAxisCall);
 
-  gradient.attr("y1", y(-30)).attr("y2", y(35));
+  gradient.attr("y1", y(min)).attr("y2", y(max));
 
   const linePath = g.selectAll("path.plot").datum(data);
 
