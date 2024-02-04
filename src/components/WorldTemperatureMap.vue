@@ -124,7 +124,7 @@ export default {
             playButton.on("click", (e) => {
                 console.log(e.target);
                 const button = d3.select(e.target);
-                if (button.text() == "Pause-Click Pause and choose") {
+                if (button.text() == "Pause") {
                     moving = false;
                     interval.stop();
                     console.log(interval);
@@ -136,7 +136,7 @@ export default {
                         slider.value = year;
                         updateCharts();
                     }, 400);
-                    button.text("Pause-Click Pause and choose");
+                    button.text("Pause");
                 }
             });
             // Add month names to months drop down menu
