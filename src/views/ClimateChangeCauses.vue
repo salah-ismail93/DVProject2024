@@ -1,13 +1,13 @@
 <template>
   <!-- GHG Chart -->
   <div class="bg-white px-6 py-16 lg:px-8 py-22 main ClimateChangeCauses" id="ClimateChangeCauses">
-    <div class="max-w-2xl text-left">
+    <div class="max-w-lg text-left">
       <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">Climate Change Causes</h1>
     </div>
     <div class="max-w-10xl">
       <div class="mt-16 text-left flex justify-between">
         <div class="max-w-5xl">
-          <p class="mt-6 pl-16 max-w-2xl font-bold text-base leading-8 text-white text-left">
+          <p class="mt-6 max-w-sm font-bold text-base leading-8 text-white text-left">
             Human activities since the beginning of the Industrial Revolution have increased atmospheric methane
             concentrations
             by over 150% and carbon dioxide by over 50%, up to a level not seen in over 3 million years.
@@ -124,7 +124,7 @@ export default {
 
 .ClimateChangeCauses h1 {
   color: #fff; /* Text color */
-  font-size: 4em !important; /* Adjust the font size */
+  font-size: 3.3em !important; /* Adjust the font size */
   font-weight: bold;
   text-align: right;
   text-shadow: 20px 20px 40px rgba(0, 0, 0, 1); /* Add a subtle text shadow for better visibility */
