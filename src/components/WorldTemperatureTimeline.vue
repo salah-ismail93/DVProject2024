@@ -269,7 +269,7 @@ export default {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-family: fantasy;
     font-size: 1.6em !important;
     color: rgb(1, 81, 48)
