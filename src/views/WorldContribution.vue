@@ -2,7 +2,7 @@
   <!-- Heat Map Contribution Chart -->
   <div class="bg-white px-6 lg:px-8 py-22 main WorldContribution" id="WorldContribution">
     <div class="max-w-5xl text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">World Contribution</h1>
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">World Actions</h1>
     </div>
     <div class="mx-auto max-w-5xl">
       <div class="bg-white px-6 lg:px-8 text-center">

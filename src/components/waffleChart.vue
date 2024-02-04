@@ -1,9 +1,14 @@
 <template>
   <div class="mx-auto">
-    <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
-      Waffle Chart
-    </h3>
-    <div class="flex flex-wrap justify-center py-3 flex-column hidden" id="waffle-container">
+    <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+      The Conference of the Parties (COP)    </h1>
+      
+    <div><br>The Conference of the Parties (COP) is the main decision-making body of the United Nations Framework Convention on Climate Change (UNFCCC). It brings together the 198 Parties –197 nations plus the European Union – that have signed on to the Framework Convention.
+
+The inaugural COP gathering took place in Berlin, Germany, in March 1995, and today the COP secretariat is headquartered in Bonn. COPs are hosted annually in different countries, under the auspices of the UNFCCC, with the UAE hosting COP28.</div>
+<p>We can see how each COP the Participants are enlarging and more parties and organizations are getting involved in the climate change activities and willing to take decisions to assistant the global efforts.</p>    
+<br>
+<div class="flex flex-wrap justify-center py-3 flex-column hidden" id="waffle-container">
 
       <div class="flex flex-wrap flex-row">
         <div class="flex flex-row">
