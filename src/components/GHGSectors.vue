@@ -15,7 +15,7 @@
                     <p class="mt-2">We can notice that Electricity and heat has the most powerful impact regarding the GHG, followed by Transportation, which 
                         is very predictable since these sectors relay the most on engines and machines run by gas.
                     </p>
-                    <p class="mt-2">After that we have Manufacturing and Construction  for almost 13% and Agriculture with slightly less value for 12.14%, and then we have other sectors that are under 10%.
+                    <p class="mt-2">After that we have Agriculture for almost 13% and Manufacturing and Construction with slightly less value for 12.24%, and then we have other sectors that are under 10%.
                     </p>
                    
                 </div>
@@ -52,9 +52,9 @@ export default {
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
         // Read data from CSV file
-        d3.csv("/GHGSectors.csv").then(function (data) {
+        d3.csv("/ghg-emissions-by-sectors.csv").then(function (data) {
             data.forEach(function (d) {
-                d.percentage = +d.percentage;
+                d.percentage = (+d.percentage).toFixed(2);
             });
 
             // Generate pie chart
