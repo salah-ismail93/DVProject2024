@@ -62,12 +62,12 @@ export default {
             .style('text-anchor', 'end')
             .html('CO2 emission value (megatons)');
 
-        let caption = svg.append('text')
+        /*let caption = svg.append('text')
             .attr('class', 'caption')
             .attr('x', width - 20)
             .attr('y', height - 5)
             .style('text-anchor', 'end')
-            .html('Source: Interbrand');
+            .html('Source: Interbrand');*/
 
         let year = 2000;
 
