@@ -4,9 +4,11 @@
             <div class="flex">
                 <div id="GHGSectors"></div>
                 <div id="GHGSectorslegend"></div>
-                <div class="text-gray-700">
-                    <h1 class="font-bold">What sectors have the most impact on our globe?</h1>
-                    <p class="mt-2">According to the 2020 statistics from <b><u>Ourworldindata.org</u></b> regarding the impact of each life sector in the global warming, 
+                <div class="text-gray-700 text-left">
+                    <h1 class="font-bold text-left">Emissions by sector: where do greenhouse gases come from?</h1>
+                    <p class="mt-2">According to the 2020 statistics from <b>
+                        <a target="_blank" href="https://ourworldindata.org/emissions-by-sector"><u>Ourworldindata.org</u></a>
+                        </b> regarding the impact of each life sector in the global warming, 
                         we can make a small comparison to know where to target with our efforts in general.</p>
                      
                     <p class="mt-2">The aside pie chart illustrates the distribution of GHG across different

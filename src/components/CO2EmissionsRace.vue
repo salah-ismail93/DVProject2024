@@ -2,17 +2,17 @@
     <div class="mx-auto max-w-10xl px-6 py-1 lg:flex lg:items-center lg:justify-between lg:px-8">
         <div class="flex">
             <div class="text-gray-700">
-                <h1 class="font-bold">What countries have the most impact on our globe</h1>
-                <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the C02
+                <h1 class="font-bold text-left">What countries have the most impact on our globe?</h1>
+                <p class="mt-2">Here we can see some of the major countries around the world and their percentage of the CO₂
                     emission they have</p>
 
                 <p class="mt-2"> Over the years we notice that United States of America is winning the race among the other countries in
-                    C02 emissions 
+                    CO₂ emissions 
                 </p>
                 <p class="mt-2">On the other hand we notice that Russia took the second place at the beginning of the 2000s, and after few years 
                     China had exceed with a very fast increment especially after 2010
                 </p>
-                <p class="mt-2">As we can notice India as a developing country among the developed countries, racing by emissioning CO2 more than France, Canada and Ukraine, 
+                <p class="mt-2">As we can notice India as a developing country among the developed countries, racing by emissioning CO₂ more than France, Canada and Ukraine, 
                     mainly after the growing economic situation it try to achieve after 2010.  
                 </p>
             </div>
@@ -52,7 +52,7 @@ export default {
             .attr('class', 'title')
             .attr('x', 30)
             .attr('y', 24)
-            .text('21 years of CO2 Emissions - Top 10 Countries (across 220 countries)');
+            .text('21 years of CO₂ Emissions - Top 10 Countries (across 220 countries)');
 
     
         let subTitle = svg.append('text')
@@ -60,7 +60,7 @@ export default {
             .attr('x', width - 20)
             .attr('y', height - 20)
             .style('text-anchor', 'end')
-            .html('CO2 emission value (megatons)');
+            .html('CO₂ emission value (megatons)');
 
         /*let caption = svg.append('text')
             .attr('class', 'caption')

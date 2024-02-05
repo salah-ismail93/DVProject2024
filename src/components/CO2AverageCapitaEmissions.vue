@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col">
         <div class="mx-auto max-w-5xl py-3">
-            <h1 class="mt-4 text-base leading-7 text-center">Who is above or below the global rate of capita emissions!</h1>
+            <h1 class="mt-4 text-base leading-7 text-center">Who is above or below the global average of capita CO₂ emissions!</h1>
             <p class="mt-6 max-w-2xl text-base leading-8 text-gray-600 text-left">
                 This map visual comparison of countries in terms of per capita emissions. So it indicates whether a country's average per capita emissions are above or below the value of global per
-                capita emissions. This is based on territorial emissions, which don't
+                capita emissions (5 tonnes per person). This is based on territorial emissions, which don't
                 adjust for trade.
             </p>
         </div>

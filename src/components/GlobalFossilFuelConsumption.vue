@@ -12,12 +12,13 @@
                     need some real actions against it.
                 </p>
                 
-                <p class="mt-2">we notice a drop in 2009 due to the global economic crisis that happened at the end of 2008 and continued till 2009,
+                <p class="mt-2">We notice a drop in 2009 due to the global economic crisis that happened at the end of 2008 and continued till 2009,
                     another drop is obvious is in 2020, which basically because of COVID-19 epidemic.
                 </p>
 
-                <p class="mt-2">we notice a drop in 2009 due to the global economic crisis that happened at the end of 2008 and continued till 2009,
-                    another drop is obvious is in 2020, which basically because of COVID-19 epidemic.
+                <p class="mt-2">While consumption has increased, there has been a shift in the types of fossil fuels being used.
+                    Initially, there was a heavy reliance on coal. However, in more recent times, the consumption of coal has been decreasing
+                    in many parts of the world. Meanwhile, oil and gas consumption has continued to grow rapidly.
                 </p>
             </div>
             <div id="area_chart"></div>
