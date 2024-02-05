@@ -319,7 +319,7 @@ export default {
                     .attr("x", -(margin.left) * 0.6)
                     .attr("y", height + margin.bottom * 0.9)
                     .attr("text-anchor", "start")
-                    .text("Article, https://ourworldindata.org/fossil-fuels")
+                    .text("Reference, https://ourworldindata.org/fossil-fuels")
 
                 //set legend
                 svg

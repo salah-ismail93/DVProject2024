@@ -162,7 +162,7 @@ export default {
                     .attr("x", -(margin.left) * 0.7)
                     .attr("y", height + margin.bottom * 0.9)
                     .attr("text-anchor", "start")
-                    .text("Article, https://ourworldindata.org/greenhouse-gas-emissions")
+                    .text("Reference, https://ourworldindata.org/greenhouse-gas-emissions")
 
                 //set legend
                 svg
