@@ -3,7 +3,7 @@
         <div class="flex">
 
             <div class="text-gray-700 my-auto">
-                <h1 class="font-bold">Global warming means Sea level rising !!</h1>
+                <h1 class="font-bold text-left">Global warming means Sea level rising !!</h1>
                 <p class="mt-2">Sea levels are inextricably tied to global temperatures and the levels of land-based ice. 
                      When temperatures rise, land-based ice is lost and sea levels rise.</p>
 
