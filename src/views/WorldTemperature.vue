@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-5xl">
         <div class="bg-white px-6 lg:px-8 text-center">
           <div class="mx-auto max-w-5xl">
-            <p class="mx-auto mt-6 max-w-4xl text-base leading-8 text-gray-600 text-center">
+            <p class="mx-auto mt-6 max-w-4xl text-base leading-8 text-gray-600 text-left">
              Let's start with a global look at the world temperature over the last 120 years,
              in the below dynamic map, you can notice the changing in the average temperature over the years for the selected month in each country.
              <br>In the the <b>radar chart</b> we notice that over the years we can notice how differences between temperatures are increasing.

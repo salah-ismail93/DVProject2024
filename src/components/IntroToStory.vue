@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center justify-center " style="margin-top:50px">
       <div class="flex-auto flex-auto max-w-sm mx-10 mx-10" >
-        <h1 class="text-4xl font-bold mb-4 text-center text-green-800">Climate Change & Global Warming</h1>
+        <h1 class="text-4xl font-bold mb-4 text-left text-green-800">Climate Change & Global Warming</h1>
         <p class="text-lg leading-7 text-left text-gray-600">
           Climate change refers to long-term shifts in temperatures and weather patterns. These shifts may be natural, but since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels (like coal, oil and gas), which produces heat-trapping gases.
         </p>

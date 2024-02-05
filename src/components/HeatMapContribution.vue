@@ -1,6 +1,6 @@
 <template>
   <!-- Heatmap -->
-  <div class="bg-white px-6 lg:px-8 text-center">
+  <div class="bg-white px-6 lg:px-8 text-left">
     <div class="mx-auto max-w-5xl">
       <h1 class="title" style=" font-size: 20px; font-weight: 100;">Actions speak louder than words! </h1>
       <p class="mt-3 text-base leading-7 text-indigo-100 sm:text-l" id="texttt">
