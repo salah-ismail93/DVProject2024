@@ -57,7 +57,7 @@
                     </div>
                     <div class="flex flex-col">
                         <div class="text-gray-700 mx-5 mb-8">
-                            <h1 class="font-bold">Another representation...</h1>
+                            <h1 class="font-bold">Polar Insights: Shifts, Trends, Anomalies</h1>
                             <p class="mt-2">The polar area chart, representing the same data in an alternative visual format, offers insights into these shifts, trends, and anomalies. 
                             </p>
 
